@@ -1,0 +1,41 @@
+##_DOCTYPE_##
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>捨釈杓ﾌ鋙蜴ｹ酌鴫紗｡｡DBB</title>
+<meta name="keywords" CONTENT="柴酌借鴫紗赦酌鴫漆斜酌鴫勺,捨釈杓ﾌ鋙�,叱鴫柴酌嫉酌鴫紗,七爵邪軸爵嫉酌鴫紗">
+<meta name="description" CONTENT="ﾄｺﾅﾀ､ﾜｻﾘ､ｻ｡ｪ捨釈杓ﾌ鋙蜴ﾁ鴫紗ｰ鯊ｮ七爵邪軸爵嫉酌鴫紗">
+</head>
+<body bgcolor="#103042">
+
+<font size="1">
+<div align="center">
+<img src="##_IMAGE_PATH_##/titleimg_blog.gif" alt="捨釈杓ﾌ鋙蜴ｹ酌鴫紗 DBB">
+<font color="#ffffff" size="1">
+<br />柴酌借鴫紗赦酌鴫漆斜酌鴫勺
+<br />謝写酌軸勺
+</font>
+</div>
+<br />
+<font color="#ffffff">
+<div align="center">
+<hr color="#ffffff">
+､ｴｳﾎﾇｧ､ｯ､ﾀ､ｵ､､
+<hr color="#ffffff">
+</div>
+<form action="##_USER_URL_##" method="post">
+<input type="hidden" name="from_error" value="1">
+##_HIDDEN_##
+##_ERROR_##
+##_QUERY_##
+<br />
+<input type="submit" name="from_error" value="ﾌ皃�">
+<hr color=#CCCCCC noshade size=5>
+<br /><div><font size=-1>Copyright(C)2006-2010<br />ASJ Inc. All Rights Reserved.</div>
+<hr color=#CCCCCC noshade size=5>
+</font>
+</font>
+</form>
+
+</body>
+</html>

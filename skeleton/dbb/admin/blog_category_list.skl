@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>カテゴリーの設定</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://help.d-bb.com/blog/" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="DreamBaseballブログ　管理者メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center">カテゴリーの設定</td>
+</tr>
+</table>
+
+<table border="0" width="600" cellpadding="0" cellspacing="0">
+<tr class="a1">
+	<td align="center" style="padding:20 0 0 0;">カテゴリーは30まで登録できます。</td>
+</tr>
+</table>
+
+<form action="./blog_category.cgi" method="POST">
+##_HIDDEN_##
+<table border="0" cellpadding="5" cellspacing="1">
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="2" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+<tr>
+	<td nowrap align="center">
+##_LIST_##
+	</td>
+	<td>
+		<table border="0" cellpadding="5" cellspacing="1">
+		<tr>
+			<td><input type="image" src="##_IMAGES_##/ueue.gif" value="↑↑" name="BTN_TOP_CATEGORY"></td>
+		</tr>
+		<tr>
+			<td><input type="image" src="##_IMAGES_##/ue.gif" value="↑" name="BTN_UP_CATEGORY"></td>
+		</tr>
+		<tr>
+			<td><input type="image" src="##_IMAGES_##/sita.gif" value="↓" name="BTN_DOWN_CATEGORY"></td>
+		</tr>
+		<tr>
+			<td><input type="image" src="##_IMAGES_##/sitasita.gif" value="↓↓" name="BTN_BOTTOM_CATEGORY"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<br>
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<tr bgcolor="#a2c2ef">
+	<td align="center">
+		<input type="image" src="##_IMAGES_##/new_category.gif" value="新規カテゴリーの追加" name="BTN_DISP_NEWCATEGORY">　
+		<input type="image" src="##_IMAGES_##/henshu.gif" value="編集" name="BTN_DISP_EDITCATEGORY">　
+		<input type="image" src="##_IMAGES_##/delete.gif" value="削除" name="BTN_DISP_DELETECATEGORY_ASK">
+	</td>
+</tr>
+</table>
+</form>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) Sports Ratings Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+
+##_DIALOG_##
+
+</body>
+</html>

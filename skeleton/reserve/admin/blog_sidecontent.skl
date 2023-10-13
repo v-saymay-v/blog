@@ -1,0 +1,530 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>サイドバーの設定</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+<script language="JavaScript">
+<!--
+function SetShow(p1, p2, p3, p4, p5)
+{
+	document.getElementById("page1").style.display = p1;
+	document.getElementById("page2").style.display = p2;
+	document.getElementById("page3").style.display = p3;
+	document.getElementById("page4").style.display = p4;
+	document.getElementById("page5").style.display = p5;
+}
+//-->
+</script>
+<style>
+##_STYLE_##
+</style>
+</head>
+
+<body onload="SetShow('##_PAGE1_##', '##_PAGE2_##', '##_PAGE3_##', '##_PAGE4_##', '##_PAGE5_##')">
+
+<div id="help">
+	<p><a href="http://www.asj.ne.jp/manual/e-reserve_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif"></a></p>
+</div>
+
+<div id="header">
+	<p><img src="##_IMAGES_##/logo.gif"></p>
+</div>
+
+<center>
+<br>
+
+<form action="./blog_sidecontent.cgi" method="POST">
+##_HIDDEN_##
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<tr class="a0" bgcolor="#64C2BF">
+	<td align="center">サイドバーの設定</td>
+</tr>
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+</table>
+
+<div id="page1" style="display: none">
+	<!--サブタイトル-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_01.gif" border="0" usemap="#m_01"></td>
+		<map name="m_01">
+			<area shape="rect" coords="0,30,122,60" href="javascript:SetShow('','none','none','none','none')" alt="表示項目の設定">
+			<area shape="rect" coords="123,30,320,60" href="javascript:SetShow('none','','none','none','none')" alt="オリジナルリンク集の追加">
+			<area shape="rect" coords="321,30,445,60" href="javascript:SetShow('none','none','','none','none')" alt="RSSの追加">
+			<area shape="rect" coords="446,30,600,60" href="javascript:SetShow('none','none','none','','none')" alt="表示に関する詳細設定">
+			<area shape="rect" coords="0,0,154,30" href="javascript:SetShow('none','none','none','none','')" alt="ブログパーツの追加">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#A3E0A3;"></td>
+	</tr>
+	</table>
+
+	<!--内容-->
+	<table border="0" cellpadding="2" cellspacing="0" class="a1">
+	<tr>
+		<td valign="bottom" align="center">表示項目</td>
+		<td></td>
+		<td valign="bottom" align="center">非表示項目</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap rowspan="6" align="left" valign="top">
+##_SIDECONTENT_##
+		</td>
+		<td align="center"><input type="image" src="##_IMAGES_##/ueue.gif" value="↑↑" name="BTN_TOP_SIDECONTENT"></td>
+		<td nowrap rowspan="6" align="right" valign="top">
+##_SIDECONTENT_TO_ADD_##
+		</td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/ue.gif" value="↑" name="BTN_UP_SIDECONTENT"></td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/mae_b.gif" value="←" name="BTN_ADD_SIDECONTENT"></td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/tugi_b.gif" value="→" name="BTN_UNABLE_DISP_SIDECONTENT"></td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/sita.gif" value="↓" name="BTN_DOWN_SIDECONTENT"></td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/sitasita.gif" value="↓↓" name="BTN_BOTTOM_SIDECONTENT"></td>
+	</tr>
+	</table>
+
+	<br>
+	<table border="0" width="600" cellpadding="5" cellspacing="1">
+	<tr class="a1" bgcolor="#64C2BF">
+		<td height="30"></td>
+	</tr>
+	</table>
+</div>
+
+<div id="page2" style="display: none">
+	<!--サブタイトル-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_02.gif" border="0" usemap="#m_02"></td>
+		<map name="m_02">
+			<area shape="rect" coords="0,30,122,60" href="javascript:SetShow('','none','none','none','none')" alt="表示項目の設定">
+			<area shape="rect" coords="123,30,320,60" href="javascript:SetShow('none','','none','none','none')" alt="オリジナルリンク集の追加">
+			<area shape="rect" coords="321,30,445,60" href="javascript:SetShow('none','none','','none','none')" alt="RSSの追加">
+			<area shape="rect" coords="446,30,600,60" href="javascript:SetShow('none','none','none','','none')" alt="表示に関する詳細設定">
+			<area shape="rect" coords="0,0,154,30" href="javascript:SetShow('none','none','none','none','')" alt="ブログパーツの追加">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#A3E0A3;"></td>
+	</tr>
+	</table>
+
+	<!--内容-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0" class="a1" style="padding:10 0 10 0;">
+	<tr>
+		<td align="center">
+			「オリジナルリンク集 作成へ」ボタンをクリックして、リンク集を作成してください。<br>
+			リンク集は10件まで作成できます。
+		</td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/linkshu.gif" value="オリジナルリンク集 作成へ" name="BTN_NEW_LINKITEM" ##_LINKDISABLE_##></td>
+	</tr>
+	</table>
+	<br>
+	<br>
+	<!--一覧-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td align="center">
+		<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border:solid #64C2BF 1px;">
+		<tr>
+			<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#64C2BF" class="a1">
+				<tr>
+					<td align="left" style="padding:4 8 4;"></td>
+					<td align="center" style="padding:4 0 4;"><b>リンク集全 ##_LINKCOUNT_## 件</b></td>
+					<td align="right" style="padding:4 8 4;"></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a2" style="padding:8 6 8;">
+##_LINK_LIST_##
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#64C2BF" class="a1">
+				<tr>
+					<td align="left" style="padding:4 8 4;"></td>
+					<td align="right" style="padding:4 8 4;"></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+
+	<br>
+	<table border="0" width="600" cellpadding="5" cellspacing="1">
+	<tr class="a1" bgcolor="#64C2BF">
+		<td height="30"></td>
+	</tr>
+	</table>
+</div>
+
+<div id="page3" style="display: none">
+	<!--サブタイトル-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_03.gif" border="0" usemap="#m_03"></td>
+		<map name="m_03">
+			<area shape="rect" coords="0,30,122,60" href="javascript:SetShow('','none','none','none','none')" alt="表示項目の設定">
+			<area shape="rect" coords="123,30,320,60" href="javascript:SetShow('none','','none','none','none')" alt="オリジナルリンク集の追加">
+			<area shape="rect" coords="321,30,445,60" href="javascript:SetShow('none','none','','none','none')" alt="RSSの追加">
+			<area shape="rect" coords="446,30,600,60" href="javascript:SetShow('none','none','none','','none')" alt="表示に関する詳細設定">
+			<area shape="rect" coords="0,0,154,30" href="javascript:SetShow('none','none','none','none','')" alt="ブログパーツの追加">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#A3E0A3;"></td>
+	</tr>
+	</table>
+
+	<!--内容-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0" class="a1" style="padding:10 0 10 0;">
+	<tr>
+		<td align="center">
+			「RSSを追加する」ボタンをクリックして、追加してください。<br>
+			RSSは10件まで追加登録できます。
+		</td>
+	</tr>
+	<tr>
+		<td align="center"><input type="image" src="##_IMAGES_##/rss_tuika.gif" value="RSSを追加する" name="BTN_NEW_RSSITEM" ##_RSSDISABLE_##></td>
+	</tr>
+	</table>
+	<br>
+	<br>
+	<!--一覧-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td align="center">
+		<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border:solid #64C2BF 1px;">
+		<tr>
+			<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#64C2BF" class="a1">
+				<tr>
+					<td align="left" style="padding:4 8 4;"></td>
+					<td align="center" style="padding:4 0 4;"><b>RSS全 ##_RSSCOUNT_## 件</b></td>
+					<td align="right" style="padding:4 8 4;"></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a2" style="padding:8 6 8;">
+##_RSS_LIST_##
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#64C2BF" class="a1">
+				<tr>
+					<td align="left" style="padding:4 8 4;"></td>
+					<td align="right" style="padding:4 8 4;"></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+
+	<br>
+	<table border="0" width="600" cellpadding="5" cellspacing="1">
+	<tr class="a1" bgcolor="#64C2BF">
+		<td height="30"></td>
+	</tr>
+	</table>
+</div>
+
+<div id="page4" style="display: none">
+	<!--サブタイトル-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_04.gif" border="0" usemap="#m_04"></td>
+		<map name="m_04">
+			<area shape="rect" coords="0,30,122,60" href="javascript:SetShow('','none','none','none','none')" alt="表示項目の設定">
+			<area shape="rect" coords="123,30,320,60" href="javascript:SetShow('none','','none','none','none')" alt="オリジナルリンク集の追加">
+			<area shape="rect" coords="321,30,445,60" href="javascript:SetShow('none','none','','none','none')" alt="RSSの追加">
+			<area shape="rect" coords="446,30,600,60" href="javascript:SetShow('none','none','none','','none')" alt="表示に関する詳細設定">
+			<area shape="rect" coords="0,0,154,30" href="javascript:SetShow('none','none','none','none','')" alt="ブログパーツの追加">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#A3E0A3;"></td>
+	</tr>
+	</table>
+
+	<!--内容-->
+	<table width="600" cellpadding="6" cellspacing="4" border="0">
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">カレンダー</td>
+		<td style="padding:10 10 10 4;">
+			<table width="" cellpadding="0" cellspacing="0" border="0" class="a1">
+			<tr>
+				<td nowrap width="450">
+				<input type="checkbox" name="japanese_calendar" value="1" ##_JAPANESE_CALENDAR_##>カレンダーを日本語で表示する
+			</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">月別アーカイブ</td>
+		<td style="padding:10 10 10 4;">
+			<table width="" cellpadding="0" cellspacing="0" border="0" class="a1">
+			<tr>
+				<td nowrap width="450">
+					<input type="radio" name="range_type" id="range_type0" value="0" ##_RANGE_TYPE0_##><label for="range_type0">投稿がある全ての年を表示する</label><br>
+					<input type="radio" name="range_type" id="range_type1" value="1" ##_RANGE_TYPE1_##><label for="range_type1">最新の記事から</label>
+					<input type="text" name="archive_month" value="##_ARCHIVE_MONTH_VALUE_##" size="3" maxlength="2"><label for="range_type1"> 年分を表示する</label>（1年以上10年以内）
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">最新コメント</td>
+		<td style="padding:10 10 10 4;">
+			<table width="" cellpadding="0" cellspacing="0" border="0" class="a1">
+			<tr>
+				<td nowrap width="450">
+					最新 <input type="text" name="archive_comment" size="2" value="##_ARCHIVE_COMMENT_##" maxlength="2"> 件のコメントを表示する（1件以上50件以内）
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">最新トラックバック</td>
+		<td style="padding:10 10 10 4;">
+			<table width="" cellpadding="0" cellspacing="0" border="0" class="a1">
+			<tr>
+				<td nowrap width="450">
+					最新 <input type="text" name="archive_trackback" size="2" value="##_ARCHIVE_TRACKBACK_##" maxlength="2"> 件のトラックバックを表示する（1件以上50件以内）
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">ブログについて</td>
+		<td style="padding:10 10 10 4;">→<a href="./blog_sidecontent.cgi?BTN_DISP_BLOG_SETTING=1">「全体の設定」</a>ページへ</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">最新記事</td>
+		<td style="padding:10 10 10 4;">
+			<table width="" cellpadding="0" cellspacing="0" border="0" class="a1">
+			<tr>
+				<td nowrap width="450">
+					最新 <input type="text" name="archive_newentry" size="2" value="##_ARCHIVE_NEWENTRY_##" maxlength="2"> 件の記事を表示する（1件以上50件以内）
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+<!-- ##_ITEMINFO_START_##
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">商品情報</td>
+		<td style="padding:10 10 10 4;">
+			<table width="" cellpadding="0" cellspacing="0" border="0" class="a1">
+			<tr>
+				<td nowrap width="450">
+##_ITEM_INFO_##
+					を <input type="text" name="items_number" size="2" value="##_ITEMS_NUMBER_##" maxlength="1"> 件表示する（1件以上9件以内）
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+##_ITEMINFO_END_## -->
+	</table>
+	<br>
+	<table border="0" width="600" height=""cellpadding="5" cellspacing="1">
+	<tr class="a0" bgcolor="#64C2BF">
+		<td align="center" colspan="2">
+			<input type="image" src="##_IMAGES_##/settei.gif" value="設定" name="BTN_SET_ARCHIVE">
+			<a href="./blog_sidecontent.cgi?BTN_DISP_SETTING_DISPLAY=1##_FROM_USER_##"><img src="##_IMAGES_##/reset.gif" border="0"></a>
+		</td>
+	</tr>
+	</table>
+</div>
+
+<div id="page5" style="display: none">
+	<!--サブタイトル-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_05.gif" border="0" usemap="#m_05"></td>
+		<map name="m_05">
+			<area shape="rect" coords="0,0,122,30" href="javascript:SetShow('','none','none','none','none')" alt="表示項目の設定">
+			<area shape="rect" coords="123,0,320,30" href="javascript:SetShow('none','','none','none','none')" alt="オリジナルリンク集の追加">
+			<area shape="rect" coords="321,0,445,30" href="javascript:SetShow('none','none','','none','none')" alt="RSSの追加">
+			<area shape="rect" coords="446,0,600,30" href="javascript:SetShow('none','none','none','','none')" alt="表示に関する詳細設定">
+			<area shape="rect" coords="0,30,154,60" href="javascript:SetShow('none','none','none','none','')" alt="ブログパーツの追加">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#A3E0A3;"></td>
+	</tr>
+	</table>
+
+	<!--内容-->
+	<br />
+	<table width="600" cellpadding="3" cellspacing="1" border="0" class="a1">
+	<tr class="a0" bgcolor="#64C2BF">
+		<td align="center" colspan="2">ブログパーツの##_PARTS_EIDT_##</td>
+	</tr>
+	<label for="rss01">
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">
+			ブログパーツ のタイトル<br>
+			<span style="font-size:11;">(半角50字、全角25字以内)</span>
+		</td>
+		<td>
+			<input type="text" name="parts_title" size="56" maxlength="50" value="##_PARTS_TITLE_##"><br />
+			<input type="checkbox" name="parts_disp" value="1" id="parts_disp_title" ##_PARTS_DISP_##><label for="parts_disp_title">タイトルを表示する</label>
+		</td>
+	</tr>
+	<tr class="a1">
+		<td nowrap valign="top" bgcolor="#B3E1E0">ブログパーツのソース </td>
+		<td><textarea name="parts_body" cols="60" rows="12">##_PARTS_BODY_##</textarea></td>
+	</tr>
+	<tr class="a1">
+		<td colspan="2" align="center" bgcolor="#B3E1E0">
+			<input type="image" src="##_IMAGES_##/##_PARTS_BTN_##" value="##_PARTS_EDIT_##" name="##_PARTS_NAME_##">
+			<a href="./blog_sidecontent.cgi?BTN_DISP_ADD_BLOGPARTS=1"><img src="##_IMAGES_##/reset.gif" border="0"></a>
+		</td>
+	</tr>
+	</table>
+	<br>
+	<br>
+	<!--一覧-->
+	<table width="600" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td align="center">
+		<table border="0" width="100%" cellpadding="0" cellspacing="0" style="border:solid #64C2BF 1px;">
+		<tr>
+			<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#64C2BF" class="a1">
+				<tr>
+					<td align="left" style="padding:4 8 4;"></td>
+					<td align="center" style="padding:4 0 4;"><b>パーツ全 ##_PARTSCOUNT_## 件</b></td>
+					<td align="right" style="padding:4 8 4;"></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a2" style="padding:8 6 8;">
+##_PARTS_LIST_##
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#64C2BF" class="a1">
+				<tr>
+					<td align="left" style="padding:4 8 4;"></td>
+					<td align="right" style="padding:4 8 4;"></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+
+	<br>
+	<table border="0" width="600" cellpadding="5" cellspacing="1">
+	<tr class="a1" bgcolor="#64C2BF">
+		<td height="30"></td>
+	</tr>
+	</table>
+</div>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+</center>
+<br>
+
+<!--コピーライトー-->
+<div id="copyright">
+	<p><img src="##_IMAGES_##/copyright.gif"></p>
+</div>
+
+##_DIALOG_##
+</form>
+</body>
+</html>

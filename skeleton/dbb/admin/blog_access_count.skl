@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>アクセス数の設定</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://help.d-bb.com/blog/" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="DreamBaseballブログ　管理者メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpadding="5" cellspacing="1" width="600">
+<form action="./blog_sidecontent.cgi" method="POST">
+##_HIDDEN_##
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">アクセス数の設定</td>
+</tr>
+<tr>
+	<td align="center" colspan="2" style="padding:10 0 10 0;">
+	<table width="500" cellpadding="0" cellspacing="0" border="0" class="a1">
+	<tr>
+		<td>昨日までのブログへの累計アクセス数を変更します。<br>
+	変更したい数値を入力後、設定ボタンをクリックしてください。<br>
+	　　※数値は目安としてお考え下さい。<br>
+	<font color="red">　　※数値を変更すると「本日のアクセス数」は0（ゼロ）になります。</font></td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap bgcolor="#c2e2ff">アクセス数</td>
+	<td bgcolor="#F0F8FF"><input type="text" name="pv_all" size="6" value="##_PV_ALL_##"></td>
+</tr>
+<tr class="a1">
+	<td nowrap bgcolor="#c2e2ff">訪問者数</td>
+	<td bgcolor="#F0F8FF"><input type="text" name="uu_all" size="6" value="##_UU_ALL_##"></td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center"><input type="submit" value=" 設定 " name="BTN_UPDATE_ACCESS">　<input type="reset" value="リセット" name="BTN_RESET"></td>
+</tr>
+
+</form>
+</table>
+
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) Sports Ratings Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

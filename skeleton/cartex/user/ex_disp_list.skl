@@ -1,0 +1,126 @@
+<tr##_BG_COLOR_##><a name="##_ITEM_ID_##"></a>
+	<td align="center">##_DISP_ITEM_DETAIL_CGI_##<img src="##_ITEM_IMAGE_##" alt="##_ITEM_NAME_##" border="0"##_IMAGE_SIZE_##></td>
+	<td valign="top">
+		<table align="center" cellspacing="0" cellpadding="3" border="0">
+<!--iteminfo-->
+		<tr>
+			<td valign="top" nowrap align="right">商品名：</td>
+			<td>##_DISP_ITEM_DETAIL_CGI_####_ITEM_NAME_##</a></td>
+		</tr>
+##_MAKER1_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>メーカー：</td>
+			<td>##_MAKER_URL_####_MAKER_NAME_##&nbsp;&nbsp;</a></td>
+		</tr>
+##_MAKER1_END_##
+##_MAKER2_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>&nbsp;</td>
+			<td>##_MAKER_URL_##メーカーリンク</a></td>
+		</tr>
+##_MAKER2_END_##
+##_MAKER_TYPE_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>メーカー型番：</td>
+			<td>##_MAKER_TYPE_##&nbsp;&nbsp;</a></td>
+		</tr>
+##_MAKER_TYPE_END_##
+##_STANDARD_PRICE_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>標準価格：</td>
+			<td>##_STANDARD_PRICE_##</td>
+		</tr>
+##_STANDARD_PRICE_END_##
+##_VIP_PRICE2_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>一般価格：</td>
+			<td>##_ITEM_PRICE_##</td>
+		</tr>
+		<tr>
+			<td align="right" valign="top" nowrap>会員価格：</td>
+			<td>##_VIP_PRICE_##</td>
+		</tr>
+##_VIP_PRICE2_END_##
+##_VIP_PRICE1_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>会員価格：</td>
+			<td>##_VIP_PRICE_##</td>
+		</tr>
+##_VIP_PRICE1_END_##
+##_VIP_PRICE0_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>価格：</td>
+			<td>##_ITEM_PRICE_##</td>
+		</tr>
+##_VIP_PRICE0_END_##
+##_POINT_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>ポイント還元：</td>
+			<td>##_POINT_####_POINT_UNIT_##</td>
+		</tr>
+##_POINT_END_##
+##_POSTAGE_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>送料：</td>
+			<td>##_POSTAGE_##</td>
+		</tr>
+##_POSTAGE_END_##
+##_COOL_POSTAGE_START_##
+		<tr>
+			<td align="right" valign="top" nowrap><span class="small">クール便送料：</span></td>
+			<td><span class="small">##_COOL_POSTAGE_##</span></td>
+		</tr>
+##_COOL_POSTAGE_END_##
+##_EXTRA_POSTAGE_START_##
+		<tr>
+			<td align="right" valign="top" nowrap><span class="small">##_NAME_SPECIAL_##：</span></td>
+			<td><span class="small">##_EXTRA_POSTAGE_##</span></td>
+		</tr>
+##_EXTRA_POSTAGE_END_##
+##_STOCK_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>在庫数：</td>
+			<td>##_STOCK_##</td>
+		</tr>
+##_STOCK_END_##
+##_RESERVE_STOCK_START_##
+		<tr>
+			<td align="right" valign="top" nowrap><font color="##_TEXT_EMPHASIS_COLOR_##">[予約販売]&nbsp;</font>在庫数：</td>
+			<td>##_RESERVE_STOCK_##</td>
+		</tr>
+##_RESERVE_STOCK_END_##
+##_UNDISP_STOCK_START_##
+		<tr>
+			<td align="right" valign="top" nowrap>&nbsp;</td>
+			<td>##_UNDISP_STOCK_##</td>
+		</tr>
+##_UNDISP_STOCK_END_##
+##_RESERVE_UNDISP_STOCK_START_##
+		<tr>
+			<td align="right" valign="top" nowrap><font color="##_TEXT_EMPHASIS_COLOR_##">[予約販売]&nbsp;</font>&nbsp;&nbsp;</td>
+			<td>##_RESERVE_UNDISP_STOCK_##</td>
+		</tr>
+##_RESERVE_UNDISP_STOCK_END_##
+##_RESERVE_UNUSE_STOCK_START_##
+		<tr>
+			<td align="right" valign="top" nowrap><font color="##_TEXT_EMPHASIS_COLOR_##">[予約販売]&nbsp;</font>&nbsp;&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+##_RESERVE_UNUSE_STOCK_END_##
+<!--iteminfo_foot_other-->
+		<form action="##_PURCHASE_ITEM_CGI_##" method="post" name="##_ITEM_ID_##">
+		<input type="hidden" name="related.x" value="0">
+		<input type="hidden" name="related.y" value="0">
+##_HIDDEN_##
+		<tr>
+			<td colspan="2" align="center">##_ITEM_VARIATION_####_BUTTON_BUY_START_##</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="##_BTNTYPE_##" ##_CART_ACTION_NAME_## value="カートに入れる">##_BUTTON_BUY_END_##</td>
+		</tr>
+##_REVIEW_##
+##_RELATED_##
+		</form>
+		</table>
+	</td>
+</tr>

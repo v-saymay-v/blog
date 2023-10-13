@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Dream Baseballブログ</title>
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+</head>
+
+<body>
+<!--header_area-->
+<a name="top"></a>
+
+<table width="760" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+	<td colspan=4>
+	<!--title_area-->
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td class="site_title">
+		<a href="">管理者のブログ</a><br>
+		<span class="description">今日も元気に過ごしましょう！＼(^_^)／</td>
+	</tr>
+	</table></td>
+</tr>
+<!--HEAD OF MAINAREA-->
+<tr>
+	<td colspan=4 align="center">
+	<table width="100%" cellpadding=0 cellspacing=0 class="tab-design">
+	<tr>
+		<td colspan=4><img src="/as-blog/images/theme/transparent.gif" height="7"></td>
+	</tr>
+	<tr>
+		<!--sidebar-->
+		<td width="15"><img src="/as-blog/images/theme/transparent.gif"></td>
+		<td width="20%" valign="top">
+		<table border="0" cellspacing="0" cellpadding="0" class="sidebar">
+		<tr>
+			<a name="calendar"></a>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">カレンダー</td>
+		</tr>
+		<tr>
+			<td class="side-calendar">
+			<table cellspacing="1" width="100%">
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="1">
+				<a href="" title="2006 June">&lt;&lt;</a></td>
+				<td colspan="5"><span class="calendar-month">2006 July</span></td>
+				<td colspan="1"><a href="" title="2006 August">&gt;&gt;</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="calendar-week">日</td>
+				<td class="calendar-week">月</td>
+				<td class="calendar-week">火</td>
+				<td class="calendar-week">水</td>
+				<td class="calendar-week">木</td>
+				<td class="calendar-week">金</td>
+				<td class="calendar-week">土</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="cell"> 1</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell"> 2</td>
+				<td class="cell"> 3</td>
+				<td class="cell"> 4</td>
+				<td class="cell"><a href=""> 5</a></td>
+				<td class="today"><a href="" title="today"><span title="today">  6</span></a></td>
+				<td class="cell"> 7</td>
+				<td class="cell"> 8</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell"> 9</td>
+				<td class="cell">10</td>
+				<td class="cell">11</td>
+				<td class="cell">12</td>
+				<td class="cell">13</td>
+				<td class="cell">14</td>
+				<td class="cell">15</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell">16</td>
+				<td class="cell">17</td>
+				<td class="cell">18</td>
+				<td class="cell">19</td>
+				<td class="cell">20</td>
+				<td class="cell">21</td>
+				<td class="cell">22</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell">23</td>
+				<td class="cell">24</td>
+				<td class="cell">25</td>
+				<td class="cell">26</td>
+				<td class="cell">27</td>
+				<td class="cell">28</td>
+				<td class="cell">29</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell">30</td>
+				<td class="cell">31</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<a name="marchive"></a>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">月別アーカイブ</td>
+		</tr>
+		<tr>
+			<td class="side-marchive">
+			<table border="0" width="100%">
+			<tr>
+				<td colspan="5" class="side-marchive-year">- <b>2006</b></td>
+			</tr>
+			<tr>
+				<td nowrap>&nbsp;</td>
+				<td nowrap>1月</td>
+				<td nowrap>2月</td>
+				<td nowrap>3月</td>
+				<td nowrap>4月</td>
+				<td nowrap>5月</td>
+				<td nowrap>6月</td>
+			</tr>
+			<tr>
+				<td nowrap>&nbsp;</td>
+				<td nowrap><a href="">7月</a></td>
+				<td nowrap>8月</td>
+				<td nowrap>9月</td>
+				<td nowrap>10月</td>
+				<td nowrap>11月</td>
+				<td nowrap>12月</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">カテゴリー別アーカイブ</td>
+		</tr>
+		<tr>
+			<td class="side-carchive">
+			<ul>
+			<li><a href="">もっと楽しもう(2)</a></li>
+			<li><a href="">健康飲料とは？(5)</a></li>
+			<li><a href="">ショッピングの楽しみ方(1)</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">最新記事</td>
+		</tr>
+		<tr>
+			<td class="side-latest-article">
+			<table width="100%">
+			<tr>
+				<td valign="top" width="10">*</td>
+				<td><a href="">ダイエットの始め方</a></td>
+			</tr>
+			<tr>
+				<td valign="top" width="10"></td>
+				<td>(2006年11月06日 11:48)</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+		<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">最新コメント</td>
+		</tr>
+		<tr>
+			<td class="side-latest-comment">
+			<table width="100%">
+			<tr>
+				<td valign="top" width="10">*</td>
+				<td valign="top"><a href="">もっともな話</a></td>
+			</tr>
+			<tr>
+				<td valign="top" width="10"></td>
+				<td valign="top">⇒健康飲料とは？</td>
+			</tr>
+			<tr>
+				<td valign="top" width="10"></td>
+				<td valign="top">(2006年11月04日 15:13)</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">ブログ内検索</td>
+		</tr>
+		<tr>
+			<td class="side-blog-search">
+			<table width="100%">
+			<tr>
+				<form method="post" action="blog_build_html.cgi">
+				<input type="hidden" name="bid" value="26">
+				<td>
+				<input type="text" name="search_string"><input type="submit" name="BTN_BLOG_SEARCH" value="検索"></td>
+				</tr>
+				<tr>
+					<td>
+					<input type="checkbox" name="search_subject" value="1">件名
+					<input type="checkbox" name="search_content" value="1" checked>本文
+					<input type="checkbox" name="search_comment" value="1">コメント
+					<input type="checkbox" name="search_trackback" value="1">TB</td>
+				</tr>
+				</form></td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">アクセス数</td>
+		</tr>
+		<tr>
+			<td class="side-access-counter">
+			<table width="100%">
+			<tr>
+				<td align="left"><b>・</b>PV(累計)</td>
+				<td align="right">458</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>UU(累計)</td>
+				<td align="right">446</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>PV(本日)</td>
+				<td align="right">40</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>UU(本日)</td>
+				<td align="right">35</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/as-blog/images/theme/minus_01.gif">お気に入りリンク集</td>
+		</tr>
+		<tr>
+			<td class="side-links">
+			<table width="100%">
+			<tr>
+				<td width="12" valign="top"><img src="/as-blog/images/theme/link.gif"></td>
+				<td valign="top"><a href="" target="_blank">親切なサイトです</a></td>
+			</tr>
+			<tr>
+				<td valign="top"><img src="/as-blog/images/theme/link.gif"></td>
+				<td valign="top"><a href="" target="_blank">役に立つブログです</a></td>
+			</tr>
+			</table></td>
+		</tr>
+		</table></td>
+		<td width="5"><img src="/as-blog/images/theme/transparent.gif"></td>
+		<!--article_area-->
+		<td width="" valign="top">
+		<a name="entry">
+		<table border="0" cellpadding="0" cellspacing="0" class="top-main">
+		<tr>
+			<td class="frame-top-left"></td>
+			<td class="frame-top-middle"></td>
+			<td class="frame-top-right"></td>
+		</tr>
+		<tr>
+			<td class="frame-middle-left"></td>
+			<td align="left">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entry-day-title">
+			<tr>
+				<td height="30">2006年11月06日</td>
+			</tr>
+			</table>
+
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entrytable">
+			<tr>
+				<td>
+					<div class="entry_title"><a href="">もっと楽しもう</a></div>
+					<div class="entry_body">
+						このショップは、皆さんの健康の役に立てばと開店しました。
+						<br>例えば、毎日気軽に飲める価格の体によいミネラルウォーターや、手軽に栄養を補給できるサプリメントなど。
+						<br>毎日のことだから、価格も抑えたいですよね。
+						<br>そんなお客様の気持ちに立って品揃えをしています。
+						<br>もっと気軽に、もっと楽しく。
+						<br>そんなテーマをもって、やっていこうと思っています。
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><div class="entry_state"><a href="">もっと楽しもう</a> | 11:48 | <a href="">comments(0)</a> | <a href="">trackbacks(0)</a> | <a href="#top">↑TOP</a></div></td>
+			</tr>
+			</table>
+			
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entrytable">
+			<tr>
+				<td>
+					<div class="entry_title"><a href="">健康飲料とは?</a></div>
+					<div class="entry_body">
+						健康に必要なものってなんだろう?
+						<br>健康のためになにを体に取り入れれば良いんだろう?
+						<br>
+						<br>そうやって考えると、人間の体の大半を占める「水」にも気を遣いたくなりますよね。
+						<br>昔から、良い水は大切にされてきました。
+						<br>昔の人は、体に良い水を知っていたんでしょうね。
+						<br>今売られているミネラルウォーターも昔から珍重されていたものが多くありますし。
+						<br>最高の健康飲料は、良い水なのかもしれません。
+						<blockquote>引用の表示<br>
+						引用した文章はこのように表示されます。</blockquote>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><div class="entry_state"><a href="">健康飲料とは？</a> | 10:48 | <a href="">comments(0)</a> | <a href="">trackbacks(0)</a> | <a href="#top">↑TOP</a></div></td>
+			</tr>
+			</table></td>
+			<td class="frame-middle-right"></td>
+		</tr>
+		<tr>
+			<td class="frame-bottom-left"></td>
+			<td class="frame-bottom-middle"></td>
+			<td class="frame-bottom-right"></td>
+		</tr>
+		</table>
+
+		<table border="0" width="100%">
+		<tr>
+			<td align="center"><a href="#top"><img src="/as-blog/images/theme/back_top.gif" border="0" alt="ページのTOPへ"></a>　<a href=""><img src="/as-blog/images/theme/back_blogtop.gif" border="0" alt="ブログのTOPへ"></a></td>
+		</tr>
+		</table></td>
+	</tr>
+	</table></td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+
+<!--footer-->
+<table width="760" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td class="copyright">
+		<img src="##_IMAGES_##/copyright.gif" alt="Copyright(C) ADMIRAL SYSTEM Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

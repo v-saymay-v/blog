@@ -1,0 +1,822 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<!--龠龠龠-->
+<!--RN=59200-->
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title lang="ja">[PIMP] goo ウェブ検索結果</title>
+<meta name="content-language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" type="text/css" href="search.css">
+<link rel="shortcut icon" href="gooicon.ico">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://search.goo.ne.jp/rss/newkw.rdf" />
+<script type="text/javascript" language="JavaScript" src="/js/sethome.js"></script>
+<script type="text/javascript" language="JavaScript">
+<!--
+// for NS4 reloaded
+NS4 = document.layers;
+if (NS4) {
+origWidth = innerWidth;
+origHeight = innerHeight;
+}
+function reDo() {
+if (innerWidth != origWidth || innerHeight != origHeight)
+location.reload();
+}
+if (NS4) onresize = reDo;
+
+function ss(w){window.status=w;return true;}
+function cs(){window.status='';}
+function swopt(){
+        obj=getE("OPT");
+        sw(obj);
+        sw(getE("gs"))
+        if(obj.style.display!="none")   getE("sw").innerHTML="▲";
+        else    getE("sw").innerHTML="▼";
+	document.query.from.value = 'navi';
+        return false;
+}
+
+function sw(ref){
+        if(ref.style.display!="none"){ref.style.display="none";}
+        else{ref.style.display="";}
+}
+
+function getE(input){
+        if(document.all){out=document.all(input);}
+        else if(document.getElementById){out=document.getElementById(input);}
+        else if(document.layers){out=document.layers[input];}
+        return out;
+}
+
+//-->
+</script>
+<STYLE type="text/css">
+<!--
+.style3 {color: blue}
+.style4 {color: green}
+-->
+</STYLE>
+</head>
+<body bgcolor="#ffffff" text="#333333" link="#0033cc" vlink="#660099" leftmargin="10" marginheight="10" marginwidth="10" topmargin="10">
+<!--HEADER GLOBAL-->
+<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+  <TBODY>
+    <TR>
+      <TD vAlign="top" width="1%"><TABLE cellSpacing="0" cellPadding="0" width="81" border="0">
+        <TBODY>
+          <TR>
+            <TD><A href="http://www.goo.ne.jp/"><IMG height="37" alt="goo" src="http://www.goo.ne.jp/img/goo.gif" width="71" border="0"></A></TD>
+
+          </TR>
+        </TBODY>
+      </TABLE></TD>
+      <TD vAlign="top" width="99%"><TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+        <TBODY>
+          <TR>
+            <TD vAlign="top" width="99%"><TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+              <!--ICON & TITLE-->
+              <TBODY>
+
+                <TR>
+                  <TD><IMG height="6" alt="" src="/img/clear.gif" width="1"><BR>
+                        <A href="http://search.goo.ne.jp"><IMG height="24" alt="ウェブ検索" src="http://cmm001.goo.ne.jp/img/sn/sn_01.gif" width="122" border="0"></A></TD>
+                </TR>
+                <!--/ICON & TITLE-->
+              </TBODY>
+            </TABLE></TD>
+            <TD width="1%"><IMG height="1" alt="" src="/img/clear.gif" width="10"></TD>
+            <TD vAlign="top" align="right" width="1%"><TABLE cellSpacing="0" cellPadding="0" border="0">
+
+              <TBODY>
+                <TR>
+                  <TD align="right"><TABLE cellSpacing="0" cellPadding="0" border="0">
+                    <TBODY>
+                      <TR>
+                        <TD vAlign="top" noWrap><font size="-1"><A href="http://www.goo.ne.jp/">gooトップ</A></font></TD>
+                        <TD vAlign="top"><font size="-1">｜</font></TD>
+                        <TD vAlign="top" noWrap><font size="-1"><A href="http://help.goo.ne.jp/info/map.html">サイトマップ</A></font></TD>
+
+                        <TD vAlign="top"><font size="-1">｜</font></TD>
+                        <TD vAlign="top" noWrap><font size="-1"><A href="http://help.goo.ne.jp/">ヘルプ</A></font></TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE></TD>
+                </TR>
+                <TR>
+                  <TD height="5"><font size="-1">&nbsp;</font></TD>
+
+                </TR>
+
+                <TR>
+                  <TD align="right"><font size="-1">&nbsp;</font></TD>
+                </TR>
+              </TBODY>
+            </TABLE></TD>
+          </TR>
+        </TBODY>
+
+      </TABLE>
+          <IMG height="1" alt="" src="/img/clear.gif" width="659"><BR></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<!--/HEADER GLOBAL-->
+<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+  <TBODY>
+    <TR>
+      <TD height="10"></TD>
+
+    </TR>
+    <TR>
+      <TD align="middle"></TD>
+    </TR>
+    <TR>
+      <TD height="5"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<!--/HEADER GLOBAL-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10"></td></tr><tr><td align="center"></td></tr><tr><td height="5"></td></tr></table>
+<!--AD-->
+<!--/AD-->
+<!--SEARCHBOX-->
+<TABLE cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+<TBODY>
+ <TR>
+  <form action="web.jsp" method="get" name="query">
+  <input type="hidden" name="SM" value="MC">
+  <TD>
+   <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+    <TBODY>
+     <TR>
+      <TD background="http://cmm001.goo.ne.jp/img/bg/header2_blue.gif" bgColor="#9dcce0">
+       <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+       <TBODY>
+        <TR>
+         <TD width="100%" bgColor="#9dcce0"><IMG height="1" alt="" src="/img/clear.gif" width="740"></TD>
+        </TR>
+        <TR>
+         <TD width="100%"><IMG height="1" alt="" src="/img/clear.gif" width="740"></TD>
+        </TR>
+        <TR>
+         <TD width="100%"><IMG height="4" alt="" src="/img/clear.gif" width="1"></TD>
+        </TR>
+       </TBODY>
+       </TABLE>
+       <TABLE cellSpacing="1" cellPadding="0" width="100%" border="0">
+       <TBODY>
+        <TR>
+         <TD width="5%" rowspan="2"><IMG height="1" alt="" src="/img/clear.gif" width="50" border="0"></TD>
+         <TD width="1%" rowspan="2" noWrap><IMG height="1" alt="" src="/img/clear.gif" width="8" border="0"></TD>
+        </TR>
+        <TR>
+         <TD width="22%">
+          <input style="form" type="text" name="MT" value="PIMP" size="45" >
+         </TD>
+         <TD width="1%"><IMG height="1" alt="" src="/img/clear.gif" width="2"></TD>
+         <TD width="9%"><input type="image" height="22" alt="ウェブ" width="96" src="http://www.goo.ne.jp/img/bt/bt_search.gif" value="ウェブ" border="0" name="web2"></TD>
+         <TD width="1%"><IMG height="1" alt="" src="/img/clear.gif" width="10"></TD>
+         <TD width="9%" noWrap><font size="-1">
+          <input type="checkbox" name="MD"  id="phrase"><label for="phrase">文章検索</label>
+          </font>
+         </TD>
+         <TD width="26%" noWrap><font size="-1">
+          <A href="http://search.goo.ne.jp/advanced.jsp?MT=PIMP&MD=&BO=0" >検索設定</A>&nbsp;
+         </TD>
+         <TD width="26%" align="right" noWrap><font size="-1"><A href="http://guide.search.goo.ne.jp/howto/">使い方</A></font></TD>
+        </TR>
+       </TBODY>
+       </TABLE>
+       <TABLE height="3" cellSpacing="0" cellPadding="0" width="100%" border="0">
+       <TBODY>
+        <TR>
+         <TD></TD>
+        </TR>
+       </TBODY>
+       </TABLE>
+      </TD>
+     </TR>
+    </TBODY>
+    </TABLE>
+    <TABLE height="1" cellSpacing="0" cellPadding="0" width="100%" bgColor="#9dcce0" border="0">
+    <TBODY>
+      <TR>
+        <TD></TD>
+      </TR>
+    </TBODY>
+    </TABLE>
+    <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+    <TBODY>
+     <TR>
+      <TD bgColor="#d9d8bc" height="1"></TD>
+     </TR>
+     <TR>
+      <TD bgColor="#f0f0f0" height="1"></TD>
+     </TR>
+     <TR>
+      <TD bgColor="#f7f7f7" height="1"></TD>
+     </TR>
+    </TBODY>
+    </TABLE>
+   </TD>
+  </FORM>
+ </TR>
+ <TR>
+  <TD><IMG height="4" alt="" src="/img/clear.gif" width="1"></TD>
+ </TR>
+  </TBODY>
+</TABLE>
+<!--/SEARCHBOX-->
+<!--HEADING-->
+<img src="/img/clear.gif" alt="" height="3" width="1"><font size="-1">[ <b>PIMP</b> ] の検索結果です。&nbsp;
+<font color="#666666"></font>&nbsp;&nbsp;
+（&nbsp;<strong>約59,200</strong>件中<strong>&nbsp;1</strong>&nbsp;-&nbsp;<strong>50</strong>件を表示 ）
+&nbsp;[&nbsp;
+日本語のみ&nbsp;|&nbsp;<a href="web.jsp?MT=PIMP&JP=0&from=jpsw">すべて</a>&nbsp;]&nbsp;
+&nbsp;&nbsp;&nbsp;<b>
+
+&nbsp;<a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=50&from=next">
+<strong>次の結果→</strong></a>
+</b>
+</font>
+<br>
+<!--/HEADING-->
+<!--RESULT-->
+<table width="8" border="0" cellspacing="0" cellpadding="0" height="7"><tr><td></td></tr></table>
+<!--SYNONYM-->
+<!--/SYNONYM-->
+<!-- RIGHTPANE delete -->
+<!--GOO-->
+<div style="margin-left:15px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+</td></tr></table>
+</div>
+<table width="8" border="0" cellspacing="0" cellpadding="0" height="7"><tr><td></td></tr></table>
+<!--/GOO-->
+     <!--SPONSOR-->
+     <div class="sponsor" id="sponsor">
+<div style="margin-left:17px;margin-bottom:.3em">
+<font color="#666666" size="-1">▼スポンサーリンク</font>&nbsp;&nbsp;<font color="#666666" size="-2">-</font>&nbsp;<a href="/sponsorship.html" onClick="javascript: window.open('/sponsorship.html','sponsorship','toolbar=no,location=no,status=no,scrollbars=yes,resizable=yes,height=500,width=340');" target="sponsorship"><font color="#666666" size="-2">詳細</font></a><br></div>
+<div style="margin-left:17px;margin-bottom:1.1em">
+<a href="http://www.google.com/pagead/iclk?sa=l&ai=B2pUxUuncRr_ZHpeksAKB_NCLCoWV5yzbquvRAb6EnQXAlrECCAAQARgBIICT-AE4AVCn6rqBB2CJ08CE7BOgAcG74v0DqgEIbnR0eC1nb2_IAQGAAgGpAsIpbLIMi0I-2QNqdfiBJP1edQ&adurl=http://item.rakuten.co.jp/mens/c/0000000115/" onMouseOver="return ss('http://www.rakuten.co.jp/mens/')" onMouseOut="cs()">
+<b>Pimp</b> LED 腕時計 送料無料</a><br>
+<font size="-1">他にはない限定版<b>Pimp</b> LED買うなら 送料・ベルト調整無料の正規代理店で<br>http://www.rakuten.co.jp/mens/</font><br>
+<img src="" width="1" height="1" alt=""/>
+</div>
+<div style="margin-left:17px;margin-bottom:1.1em">
+<a href="http://rd.xlisting.jp/clk/?ini=2eea8ea8446dce952741b2231226172&ckid=6220969&&chid=1&ip=219.118.192.4&ua=Wget%2F1.10.2&c=f7f2f63f54e9986e5fafd54bb1411718" onMouseOver="return ss('http://www.rakuten.co.jp')" onMouseOut="cs()">
+新作ゾクゾク入荷中！<B>Pimp</B>のことなら、楽天時計市場へ</a><br>
+<font size="-1">日本最大級ネットショッピングモールだから、新品・中古・アウトレット商品が満載！キ<br>ーワード・ジャンル・サイズ別検索で比較も簡単！ランキングも見逃せない。<br>http://www.rakuten.co.jp</font><br>
+<img src="http://xml.xlisting.jp/ads/beacon/?ini=2eea8ea8446dce952741b2231226172&pt=nttr&sv=goo&ch=web&q=PIMP&ua=Wget%2F1.10.2&ip=219.118.192.4&cpi=11333&cki=6220969&cpa=0&t=1188882770&c=a5401d5133d3c541a6cf14f85fbe29f5" width="1" height="1" alt=""/>
+</div>
+     </div>
+     <!--/SPONSOR-->
+
+<!--WEBSEARCH RESULT-->
+<div style="margin-left:17px;margin-bottom:.3em">
+<font size="-1" color="#666666">▼ウェブ検索結果　
+（&nbsp;<strong>約59,200</strong>件中<strong>&nbsp;1</strong>&nbsp;-&nbsp;<strong>50</strong>件を表示 ）
+</font>
+</div>
+<!-- google search result -->
+<div style="margin-left:5px">
+1&nbsp;  <a href="http://www.pimp-watches.com/"><b>Pimp</b> Watches</a><br> <div class="r">  <font size="-1">   We produce super-quality limited edition watches in outragous designs never made <br>  before. Combining 70s style with future modern day concepts. Trends are fine but <br>  being unique is even better! Our watches are custom designed in Japan and <b>...</b><br>   <div class="g">
+    http://www.pimp-watches.com/    &nbsp;-&nbsp;12k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:R17ajqFRZicJ:http://www.pimp-watches.com/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.pimp-watches.com/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+2&nbsp;  <a href="http://www.soilpimp.com/">SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS@Victor Entertainment</a><br> <div class="r">  <font size="-1">   SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS. Japanese &middot; English. &copy;2004-2007 Victor Entertainment,Inc. <br>  All rights reserved.<br>   <div class="g">
+    http://www.soilpimp.com/    &nbsp;-&nbsp;2k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:g6ctFUf1qLkJ:http://www.soilpimp.com/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.soilpimp.com/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+3&nbsp;  <a href="http://ja.wikipedia.org/wiki/SOIL&%22PIMP%22SESSIONS">SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS - Wikipedia</a><br> <div class="r">  <font size="-1">   SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS（ソイル・アンド・ピンプ・セッションズ）は、日本の6人組ジャズ<br>  バンドである。メジャーデビューをきっかけ <b>...</b> この「SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS」は、音楽<br>  に関連した書きかけ項目です。加筆、訂正などをして下さる協力者を求めています。 <b>...</b><br>   <div class="g">
+    http://ja.wikipedia.org/wiki/SOIL&amp;"PIMP"SESSIONS    &nbsp;-&nbsp;29k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:ZyjaMwGYCMUJ:http://ja.wikipedia.org/wiki/SOIL%26%2522PIMP%2522SESSIONS+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://ja.wikipedia.org/wiki/SOIL&%22PIMP%22SESSIONS" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+4&nbsp;  <a href="http://ja.wikipedia.org/wiki/Pimp_My_Ride"><b>Pimp</b> My Ride - Wikipedia</a><br> <div class="r">  <font size="-1">   2005年6月にはイギリス版「<b>Pimp</b> My Ride UK」が独自のラインナップで放送されているが、<br>  本国ではすでにシーズン3でWest Coast Customsが番組から離脱しており、続くシーズン4<br>  は「Galpin Auto Sport（GAS）」がカスタムを担当していた。 <b>...</b><br>   <div class="g">
+    http://ja.wikipedia.org/wiki/Pimp_My_Ride    &nbsp;-&nbsp;27k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:rJi05vfSrQkJ:http://ja.wikipedia.org/wiki/Pimp_My_Ride+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://ja.wikipedia.org/wiki/Pimp_My_Ride" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+5&nbsp;  <a href="http://www.jvcmusic.co.jp/soilpimp/index_jp.html">SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS@Victor Entertainment</a><br> <div class="r">  <font size="-1">   SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS. contents :; Discography &middot; Live schedule &middot; Profile &middot; Information &middot; <br>  BBS &middot; Photo Gallery &middot; Staff Blog &middot; Goods. New Release. 3rd Full Album. PIMPOINT. <br>  2007.03.07 release. VICL-62305 &#165;2800(tax incl.) <b>...</b><br>   <div class="g">
+    http://www.jvcmusic.co.jp/soilpimp/index_jp.html    &nbsp;-&nbsp;5k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:xBvjSwwYzvoJ:http://www.jvcmusic.co.jp/soilpimp/index_jp.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.jvcmusic.co.jp/soilpimp/index_jp.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+6&nbsp;  <a href="http://www.jvcmusic.co.jp/soilpimp/discography/index.html">SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS@Victor Entertainment</a><br> <div class="r">  <font size="-1">   椎名林檎×SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS. 2006.11.11 release. 映画『さくらん』主題歌 [ more <br>  information&gt;&gt; ]. Single. 2nd Single <b>...</b> [ more information&gt;&gt; ] 2005年型最新<br>  ジャズ！SOIL ＆“<b>PIMP</b>”SESSIONSオリジナル1stフル・アルバム. Track List <b>...</b><br>   <div class="g">
+    http://www.jvcmusic.co.jp/soilpimp/discography/index.html    &nbsp;-&nbsp;23k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:wRkizAL4xDwJ:http://www.jvcmusic.co.jp/soilpimp/discography/index.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.jvcmusic.co.jp/soilpimp/discography/index.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+7&nbsp;  <a href="http://www.amazon.co.jp/PIMP-MASTER-SOIL-%E2%80%9CPIMP%E2%80%9DSESSIONS/dp/B0006TPGEU">Amazon.co.jp： <b>PIMP</b> MASTER: 音楽: SOIL&amp;“<b>PIMP</b>”SESSIONS</a><br> <div class="r">  <font size="-1">   Amazon.co.jp： <b>PIMP</b> MASTER: 音楽: SOIL&amp;“<b>PIMP</b>”SESSIONS by SOIL&amp;“<b>PIMP</b>”SESSIONS.<br>   <div class="g">
+    http://www.amazon.co.jp/PIMP-MASTER-SOIL-“PIMP”SESSI...    &nbsp;-&nbsp;96k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:6YoJ_YmxDX0J:http://www.amazon.co.jp/PIMP-MASTER-SOIL-%25E2%2580%259CPIMP%25E2%2580%259DSESSIONS/dp/B0006TPGEU+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.amazon.co.jp/PIMP-MASTER-SOIL-%E2%80%9CPIMP%E2%80%9DSESSIONS/dp/B0006TPGEU" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+8&nbsp;  <a href="http://www.amazon.co.jp/PIMP-YEAR-SOIL-%E2%80%9CPIMP%E2%80%9DSESSIONS/dp/B000E113YC">Amazon.co.jp： <b>PIMP</b> OF THE YEAR: 音楽: SOIL&amp;“<b>PIMP</b>”SESSIONS</a><br> <div class="r">  <font size="-1">   Amazon.co.jp： <b>PIMP</b> OF THE YEAR: 音楽: SOIL&amp;“<b>PIMP</b>”SESSIONS by SOIL&amp;“<b>PIMP</b>”SESSIONS.<br>   <div class="g">
+    http://www.amazon.co.jp/PIMP-YEAR-SOIL-“PIMP”SESSION...    &nbsp;-&nbsp;91k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:XR51lX6SXNYJ:http://www.amazon.co.jp/PIMP-YEAR-SOIL-%25E2%2580%259CPIMP%25E2%2580%259DSESSIONS/dp/B000E113YC+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.amazon.co.jp/PIMP-YEAR-SOIL-%E2%80%9CPIMP%E2%80%9DSESSIONS/dp/B000E113YC" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+9&nbsp;  <a href="http://www.pimplion.com/">welcome to PIMPLION WEB STORE</a><br> <div class="r">  <font size="-1">   <b>...</b> GO HEMP/ GO WEST/ RENATURE/ CHAHAT/ TWO JUPITERS/ AGO/ CANNABINOL ORIGINAL <br>  BRAND- MOAMBASSA (JAMAICA &amp; RASTA がテ&#65293;マ！ ) ジャマイカ ZION エチオピア REGGAE <br>  レゲエ オ&#65293;ガニック ヘンプ 古着 USED サンフランシスコ ピンプ ライオン <b>PIMP</b> LION.<br>   <div class="g">
+    http://www.pimplion.com/    &nbsp;-&nbsp;7k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:dhdQyO0ZNysJ:http://www.pimplion.com/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.pimplion.com/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+10&nbsp;  <a href="http://blog.excite.co.jp/soilpimp/">エキサイトミュージック連載ブログ：SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS 社長のBLOG <b>...</b></a><br> <div class="r">  <font size="-1">   PROFILE. 社長（agitator）. SOIL &amp; &quot;<b>PIMP</b>&quot; SESSIONSのアジテーター(扇動者)であり、<br>  バンドとオーディエスをひとつにつなげる役割を担う。 車、パソコンにめっぽう詳しい。<br>  現在の愛車はLANDROVER。 OFFICIAL WEB SITE <b>...</b><br>   <div class="g">
+    http://blog.excite.co.jp/soilpimp/    &nbsp;-&nbsp;63k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:95VvGwq9OZEJ:http://blog.excite.co.jp/soilpimp/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://blog.excite.co.jp/soilpimp/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+11&nbsp;  <a href="http://www.vampandpimp.com/">vamp <b>pimp</b></a><br> <div class="r">  <font size="-1">   VAMP＆<b>PIMP</b>. 更新しました・・・・2007 08 03 welcom to vamp&amp;pimp.... <br>  ☆★堀江に実店舗があります★☆. オリジナルアクセ中心のお店です。女の子が大好き<br>  なpop&amp;cute&amp;sweet&amp;lovely&amp;pretty!!!!!な物がいっぱいです♪ちょっとのぞいて見てね☆ <b>...</b><br>   <div class="g">
+    http://www.vampandpimp.com/    &nbsp;-&nbsp;1k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:ffSvjqbt3iIJ:http://www.vampandpimp.com/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.vampandpimp.com/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+12&nbsp;  <a href="http://www.youtube.com/watch?v=EYKVvysl-Mo">YouTube - Soil &amp; &quot;<b>PIMP</b>&quot; Sessions - Avalanche</a><br> <div class="r">  <font size="-1">   Music video of Soil &amp; &quot;<b>PIMP</b>&quot; Sessions&#39; &#39;Avalanche&#39; track off the &#39;<b>Pimp</b> Master&#39; album.<br>   <div class="g">
+    http://www.youtube.com/watch?v=EYKVvysl-Mo    &nbsp;-&nbsp;117k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:eaP8hQ0Xk_UJ:http://www.youtube.com/watch%3Fv%3DEYKVvysl-Mo+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.youtube.com/watch?v=EYKVvysl-Mo" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+13&nbsp;  <a href="http://www.youtube.com/watch?v=l-5HiqvBsMY">YouTube - Soil &amp; <b>Pimp</b> Sessions (ENORME !!)</a><br> <div class="r">  <font size="-1">   Soil &amp; <b>Pimp</b> Sessions @ Théâtre de la Mer (Sète, France) - Worldwide Festival by <br>  Gilles Peterson.<br>   <div class="g">
+    http://www.youtube.com/watch?v=l-5HiqvBsMY    &nbsp;-&nbsp;117k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:M54KY-en9IQJ:http://www.youtube.com/watch%3Fv%3Dl-5HiqvBsMY+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.youtube.com/watch?v=l-5HiqvBsMY" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+14&nbsp;  <a href="http://listen.jp/store/artist_1167125.htm">歌詞:試聴:SOIL＆“<b>PIMP</b>”SESSIONS (そいる・あんど・ぴんぷ・せっしょん <b>...</b></a><br> <div class="r">  <font size="-1">   SOIL＆“<b>PIMP</b>”SESSIONSの曲がダウンロード＆試聴できます。 音楽ダウンロード，音楽<br>  配信，歌詞のことならListen Japan！最新ミュージック情報はもちろん、無料で音楽試聴<br>  もできます。有名ミュージシャンのメッセージの視聴も！<br>   <div class="g">
+    http://listen.jp/store/artist_1167125.htm    &nbsp;-&nbsp;92k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:CZQNzf-bZzMJ:http://listen.jp/store/artist_1167125.htm+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://listen.jp/store/artist_1167125.htm" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+15&nbsp;  <a href="http://www.myspace.com/soilandpimpsessions">MySpace.com - Soil and <b>Pimp</b> Sessions - - Nu-Jazz / Funk / Punk <b>...</b></a><br> <div class="r">  <font size="-1">   MySpace music profile for Soil and <b>Pimp</b> Sessions with tour dates, songs, videos, <br>  pictures, blogs, band information, downloads and more.<br>   <div class="g">
+    http://www.myspace.com/soilandpimpsessions    &nbsp;-&nbsp;133k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:p-EGtUlUVyYJ:http://www.myspace.com/soilandpimpsessions+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.myspace.com/soilandpimpsessions" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+16&nbsp;  <a href="http://d.hatena.ne.jp/keyword/SOIL&%A1%C8PIMP%A1%C9SESSIONS">SOIL&amp;“<b>PIMP</b>”SESSIONSとは - はてなダイアリー</a><br> <div class="r">  <font size="-1">   SOIL&amp;“<b>PIMP</b>”SESSIONS - タブゾンビ(Tp)、 社長(アジテーター)、 元晴(sax)、 丈青(p)、 <br>  みどりん(ds)、 秋田ゴールドマン(b) の6人組。 2001年に結成され、 エンターテイメント<br>  のあるライブ、 パ...<br>   <div class="g">
+    http://d.hatena.ne.jp/keyword/SOIL&amp;??PIMP??SESSIONS    &nbsp;-&nbsp;28k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:ICbicKp8IWoJ:http://d.hatena.ne.jp/keyword/SOIL%26%25A1%25C8PIMP%25A1%25C9SESSIONS+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://d.hatena.ne.jp/keyword/SOIL&%A1%C8PIMP%A1%C9SESSIONS" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+17&nbsp;  <a href="http://d.hatena.ne.jp/keyword/SOIL&amp%3B%A1%C8PIMP%A1%C9SESSIONS">SOIL&amp;“<b>PIMP</b>”SESSIONSとは - はてなダイアリー</a><br> <div class="r">  <font size="-1">   はてなダイアリー &gt; キーワード &gt; SOIL&amp;“<b>PIMP</b>”SESSIONS <b>...</b> SOIL&amp;“<b>PIMP</b>”SESSIONS. <br>  このキーワードはまだ登録されていません。 はてなブックマーク はてな<br>  ブックマーク - 「SOIL&amp;“<b>PIMP</b>”SESSIONS」を含む注目エントリー &middot; RSSフィード <b>...</b><br>   <div class="g">
+    http://d.hatena.ne.jp/keyword/SOIL&amp;amp;??PIMP??SESSIO...    &nbsp;-&nbsp;9k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:PQA2kZcw4-wJ:http://d.hatena.ne.jp/keyword/SOIL%26amp%253B%25A1%25C8PIMP%25A1%25C9SESSIONS+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://d.hatena.ne.jp/keyword/SOIL&amp%3B%A1%C8PIMP%A1%C9SESSIONS" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+18&nbsp;  <a href="http://www.apple.com/jp/quicktime/trailers/asmik-ace/tp2/sp.html">アップル - Trailers - トランスポーター2 - SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS社長 <b>...</b></a><br> <div class="r">  <font size="-1">   デスジャズをキーワードに活躍の場を広げるSOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONSは、6人組のジャズ・<br>  バンド。クラブジャズ、ロック、パンクなど…さまざまなエッセンスがミクスチャーされ<br>  た彼らの型破りな音楽は、日本の若者だけにとどまらず、海外にも広がっています。 <b>...</b><br>   <div class="g">
+    http://www.apple.com/jp/quicktime/trailers/asmik-ace...    &nbsp;-&nbsp;23k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:gmijYKBZzDoJ:http://www.apple.com/jp/quicktime/trailers/asmik-ace/tp2/sp.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.apple.com/jp/quicktime/trailers/asmik-ace/tp2/sp.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+19&nbsp;  <a href="http://b.hatena.ne.jp/t/pimp">はてなブックマーク - タグ <b>pimp</b></a><br> <div class="r">  <font size="-1">   「<b>pimp</b>」を含む注目エントリー. 注目エントリーの閾値 3users 5users. 活字中毒R。 <br>  2007年8月28日「僕が人の話を聞く時に、絶対にやらないようにしていることが一つ<br>  あります」 www.enpitu.ne.jp <b>...</b><br>   <div class="g">
+    http://b.hatena.ne.jp/t/pimp    &nbsp;-&nbsp;38k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:XRi8hBTo_7cJ:http://b.hatena.ne.jp/t/pimp+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://b.hatena.ne.jp/t/pimp" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+20&nbsp;  <a href="http://codezine.jp/a/article/aid/1272.aspx">CodeZine：[PHPプロ!] =The <b>Pimp</b>= PHPとGDを使ってスクリーン <b>...</b></a><br> <div class="r">  <font size="-1">   ThePimpにて、PHPとGDライブラリを使ってスクリーンキャプチャを行う方法が紹介され<br>  ています。この方法は、最新のPHP 5.2.2で標準で使用できる機能ですが、PHP5.2であれ<br>  ば動作するWindows版GDライブラリも配布されています。Edin Kadribasic氏による、PHP <b>...</b><br>   <div class="g">
+    http://codezine.jp/a/article/aid/1272.aspx    &nbsp;-&nbsp;31k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:IjbIpHTTGYkJ:http://codezine.jp/a/article/aid/1272.aspx+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://codezine.jp/a/article/aid/1272.aspx" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+21&nbsp;  <a href="http://musico.jp/contents/artist_index.aspx?id=a7IUX">MUSICO | SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS &#8211; 試聴＆ダウンロード</a><br> <div class="r">  <font size="-1">   クラブ・シーンを中心にライヴを展開した後、2004年6月に初のアルバム『PIMPIN&#39;』を<br>  発表。欧米でも高い人気を獲得し、2005年にはBBC RADIO1主催の“WORLDWIDE AWARDS 2005”<br>  でJohn Peel Play More Jazz Awardを受賞。2006年3月、アルバム『<b>PIMP</b> OF THE <b>...</b><br>   <div class="g">
+    http://musico.jp/contents/artist_index.aspx?id=a7IUX    &nbsp;-&nbsp;55k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:dw2wdfMpJrcJ:http://musico.jp/contents/artist_index.aspx%3Fid%3Da7IUX+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://musico.jp/contents/artist_index.aspx?id=a7IUX" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+22&nbsp;  <a href="http://mysound.jp/artist/detail/aS560/">試聴: <b>PIMP</b>!CODE (ピンプ！コード)(ぴんぷ！こーど) - 音楽 <b>...</b></a><br> <div class="r">  <font size="-1">   MySoundで音楽配信中の<b>PIMP</b>!CODEのアーティスト詳細です。楽曲リストや関連情報など.<br>   <div class="g">
+    http://mysound.jp/artist/detail/aS560/    &nbsp;-&nbsp;48k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:zlmtqgSh3VEJ:http://mysound.jp/artist/detail/aS560/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://mysound.jp/artist/detail/aS560/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+23&nbsp;  <a href="http://tv.www.infoseek.co.jp/VHF/tv_detail.html?pg=tv_detail.html&program=p0908070831213000&area=000">SOIL ＆<b>PIMP</b>”SESSIONSライブ特番” - Infoseek テレビ <b>...</b></a><br> <div class="r">  <font size="-1">   ▽「SOIL ＆’<b>PIMP</b>’SESSIONS LIVE SPECIAL IN日比谷野外<br>  音楽堂」…日本のみならず、海外でも高い評価の彼ら。雨の中ド迫力の演奏で観客を魅了<br>  した興奮のライブをお届け！収録日：07年5／6（日）東京・日比谷野外音楽 <b>...</b><br>   <div class="g">
+    http://tv.www.infoseek.co.jp/VHF/tv_detail.html?pg=tv_det...    &nbsp;-&nbsp;29k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:sQ_Bk2gJjtkJ:http://tv.www.infoseek.co.jp/VHF/tv_detail.html%3Fpg%3Dtv_detail.html%26program%3Dp0908070831213000%26area%3D000+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://tv.www.infoseek.co.jp/VHF/tv_detail.html?pg=tv_detail.html&program=p0908070831213000&area=000" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+24&nbsp;  <a href="http://frf07.interfm.co.jp/2007/07/soil-pimp-sessions.html">Soil &amp; &quot;<b>Pimp</b>&quot; Sessions - InterFM : FUJI ROCK FESTIVAL &#39;07 BLOG</a><br> <div class="r">  <font size="-1">   前夜のSUPER FESTIVALにゲスト出演したSoil &amp; &quot;<b>Pimp</b>&quot; Sessions。最終日午後2時からWOWOW<br>  との同時中継にも登場。会場を盛り上げてくれました。 <b>...</b> Soil &amp; &quot;<b>Pimp</b>&quot; Sessionsは<br>  以下のブログから参照されています。 このブログ記事に対するトラックバックURL: <b>...</b><br>   <div class="g">
+    http://frf07.interfm.co.jp/2007/07/soil-pimp-sessions.htm...    &nbsp;-&nbsp;12k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:AE0RSQbW_CYJ:http://frf07.interfm.co.jp/2007/07/soil-pimp-sessions.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://frf07.interfm.co.jp/2007/07/soil-pimp-sessions.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+25&nbsp;  <a href="http://www.gaijinpot.com/bb/showthread.php?t=41298">Hello Mr.<b>PIMP</b> - Japan Forums</a><br> <div class="r">  <font size="-1">   Pete Sampras (whom <b>Pimp</b> is rumoured to resemble) confronted him on the street, <br>  and yelled &quot;Give me my face back, BE-ATCH!&quot;. CaliPIMP refused, fisticuffs ensued, <br>  and several hours he later woke up in a hospital bed with severe tennis <b>...</b><br>   <div class="g">
+    http://www.gaijinpot.com/bb/showthread.php?t=41298    &nbsp;-&nbsp;59k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:WH4TIzFiWo0J:http://www.gaijinpot.com/bb/showthread.php%3Ft%3D41298+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.gaijinpot.com/bb/showthread.php?t=41298" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+26&nbsp;  <a href="http://page.auctions.yahoo.co.jp/jp/auction/100591722">Yahoo!オークション - 「<b>Pimp</b> My Ride セカンド・シーズン」新品未開封 <b>...</b></a><br> <div class="r">  <font size="-1">   MTV発、自動車版シンデレラ・ストーリー「<b>Pimp</b> My Ride セカンド・シーズン」の新品<br>  未開封DVDです。 定価4935円 見本品のシールが貼られていますが、オリジナル商品と全く<br>  変わりありません。 ノークレーム・ノーリターンでお願い致します。 <b>...</b><br>   <div class="g">
+    http://page.auctions.yahoo.co.jp/jp/auction/10059172...    &nbsp;-&nbsp;19k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:cRKMc7cpYpYJ:http://page.auctions.yahoo.co.jp/jp/auction/100591722+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://page.auctions.yahoo.co.jp/jp/auction/100591722" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+27&nbsp;  <a href="http://www.newtone-records.com/index2.php?id=n_t0026596">HEIB/ Acid <b>Pimp</b> - SENIOR SOLUTION MANAGEMENT : Newtone Records</a><br> <div class="r">  <font size="-1">   HEIB / Acid <b>Pimp</b> - SENIOR SOLUTION MANAGEMENT ■. 1件中 || 1 件〜 1件 : | 1 | <br>  前へ 次へ. back. artist :, HEIB. title :, Acid <b>Pimp</b>. label :, SENIOR SOLUTION <br>  MANAGEMENT (GER). cat :, SSM01. format :, 12inch <b>...</b><br>   <div class="g">
+    http://www.newtone-records.com/index2.php?id=n_t0026596    &nbsp;-&nbsp;38k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:k4NF5NwUvmMJ:http://www.newtone-records.com/index2.php%3Fid%3Dn_t0026596+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.newtone-records.com/index2.php?id=n_t0026596" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+28&nbsp;  <a href="http://www.phppro.jp/news/367">=The <b>Pimp</b>= PHPとGDを使ってスクリーンキャプチャをする方法 - PHPプロ <b>...</b></a><br> <div class="r">  <font size="-1">   =The <b>Pimp</b>= PHPとGDを使ってスクリーンキャプチャをする方法PHPプロ！ニュース <br>  <b>...</b> =The <b>Pimp</b>= PHPとGDを使ってスクリーンキャプチャをする方法. 2007年04月20日. <br>  はてなブックマークに登録 &middot; del.icio.usに登録 &middot; Livedoor クリップに追加 <b>...</b><br>   <div class="g">
+    http://www.phppro.jp/news/367    &nbsp;-&nbsp;29k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:t7j8SB2yWeYJ:http://www.phppro.jp/news/367+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.phppro.jp/news/367" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+29&nbsp;  <a href="http://notrax.jp/video/detail/35.html">notrax | <b>P-I-M-P</b>／50セント</a><br> <div class="r">  <font size="-1">   Search. Video Bunch Up &gt; 50セント ft. スヌープ・ドッグ &gt; <b>P-I-M-P</b>. <b>P-I-M-P</b> 50 <br>  Cent ft. Snoop Dogg. <b>P-I-M-P</b> 50セント ft. スヌープ・ドッグ. 50セントの詳しい情報. <br>  Other Videos of 50 Cent ft. Snoop Dogg50セント ft. スヌープ・ドッグの他の <b>...</b><br>   <div class="g">
+    http://notrax.jp/video/detail/35.html    &nbsp;-&nbsp;17k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:fxrx86CET_QJ:http://notrax.jp/video/detail/35.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://notrax.jp/video/detail/35.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+30&nbsp;  <a href="http://game12.2ch.net/test/read.cgi/gameurawaza/1162178792/101-200">【<b>PiMP</b>】PSPでYouTube動画を見るスレ【Streamer】</a><br> <div class="r">  <font size="-1">   [PR]話し相手はここにいるかも【ASKS?】[PR]. 【<b>PiMP</b>】PSPでYouTube動画を見る<br>  スレ【Streamer】. 1 ：名無しさん＠お腹いっぱい。：2006/10/30(月) 12:26:32 ID:Ayd9yRCp: <br>  PiMPStreamer 0.76 - now with FLV and Youtube support <b>...</b><br>   <div class="g">
+    http://game12.2ch.net/test/read.cgi/gameurawaza/116217879...    &nbsp;-&nbsp;10k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:m6g27PiIdOsJ:http://game12.2ch.net/test/read.cgi/gameurawaza/1162178792/101-200+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://game12.2ch.net/test/read.cgi/gameurawaza/1162178792/101-200" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+31&nbsp;  <a href="http://game12.2ch.net/test/read.cgi/gameurawaza/1162178792/112">【<b>PiMP</b>】PSPでYouTube動画を見るスレ【Streamer】</a><br> <div class="r">  <font size="-1">   【<b>PiMP</b>】PSPでYouTube動画を見るスレ【Streamer】. 112 ：名無しさん＠<br>  お腹いっぱい。：2007/08/22(水) 01:21:26 ID:FC2Z65Hw: くそっ ダウンロードした動画<br>  をPSPTUBEで見ようとしたけど画面が真っ暗になって再生できない 誰か助けて下さいお願い<br>  します。 <b>...</b><br>   <div class="g">
+    http://game12.2ch.net/test/read.cgi/gameurawaza/116217879...    &nbsp;-&nbsp;4k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:PtWbFtaZ_uIJ:http://game12.2ch.net/test/read.cgi/gameurawaza/1162178792/112+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://game12.2ch.net/test/read.cgi/gameurawaza/1162178792/112" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+32&nbsp;  <a href="http://shop.arena.nikkeibp.co.jp/item_info/20558511911110.html">デジタルARENA / SOIL＆“<b>PIMP</b>” SESSIONS / LIVE <b>...</b></a><br> <div class="r">  <font size="-1">   SOIL＆“<b>PIMP</b>” SESSIONS / LIVE IN EUROPE／JAPAN（仮）＜<br>  通常盤＞の価格情報です。通販ショップ情報、販売価格を参考にしてお得にお買い物しよう。<br>   <div class="g">
+    http://shop.arena.nikkeibp.co.jp/item_info/20558511911110...    &nbsp;-&nbsp;11k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:uRlCcFLtObEJ:http://shop.arena.nikkeibp.co.jp/item_info/20558511911110.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://shop.arena.nikkeibp.co.jp/item_info/20558511911110.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+33&nbsp;  <a href="http://shop.arena.nikkeibp.co.jp/item_info/20558511921110.html">デジタルARENA / SOIL＆“<b>PIMP</b>” SESSIONS / LIVE <b>...</b></a><br> <div class="r">  <font size="-1">   SOIL＆“<b>PIMP</b>” SESSIONS / LIVE IN EUROPE／JAPAN（仮）＜<br>  初回限定盤＞の価格情報です。通販ショップ情報、販売価格を参考にしてお得にお買い物しよう。<br>   <div class="g">
+    http://shop.arena.nikkeibp.co.jp/item_info/20558511921110...    &nbsp;-&nbsp;11k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:hz2C_IfZxFEJ:http://shop.arena.nikkeibp.co.jp/item_info/20558511921110.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://shop.arena.nikkeibp.co.jp/item_info/20558511921110.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+34&nbsp;  <a href="http://blog.jvcmusic.co.jp/blog/soilpimp/">SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS STAFF BLOG [ スタッフ ブログ ]</a><br> <div class="r">  <font size="-1">   明らかにGIRLではないSOILですが（笑）、SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS×土屋アンナで登場。<br>  対バンのファンの方々も皆SOILコールで会場 <b>....</b> SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONSからはSax元晴が<br>  参加しました。いやースゴかった。あの中でプレイできるのは元さんしか居ない（笑）。 <b>...</b><br>   <div class="g">
+    http://blog.jvcmusic.co.jp/blog/soilpimp/    &nbsp;-&nbsp;35k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:4CBKOAogtCYJ:http://blog.jvcmusic.co.jp/blog/soilpimp/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://blog.jvcmusic.co.jp/blog/soilpimp/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+35&nbsp;  <a href="http://kakaku.livedoor.com/item_info/20558350301067.html">Soil ＆ <b>Pimp</b> Sessions/<b>Pimp</b> Master 価格情報 - livedoor価格比較</a><br> <div class="r">  <font size="-1">   Soil ＆ <b>Pimp</b> Sessions/<b>Pimp</b> Masterの価格情報です。livedoor価格比較のネット通販<br>  情報で販売店を検索！<br>   <div class="g">
+    http://kakaku.livedoor.com/item_info/20558350301067.html    &nbsp;-&nbsp;14k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:cMzkteo_riwJ:http://kakaku.livedoor.com/item_info/20558350301067.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://kakaku.livedoor.com/item_info/20558350301067.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+36&nbsp;  <a href="http://kakaku.livedoor.com/item_info/20558511911110.html">SOIL＆“<b>PIMP</b>” SESSIONS / LIVE IN EUROPE <b>...</b></a><br> <div class="r">  <font size="-1">   SOIL＆“<b>PIMP</b>” SESSIONS / LIVE IN EUROPE／JAPAN（<br>  仮）＜通常盤＞の価格情報です。livedoor価格比較のネット通販情報で販売店を検索！<br>   <div class="g">
+    http://kakaku.livedoor.com/item_info/20558511911110.html    &nbsp;-&nbsp;16k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:N5wt-BwsUtUJ:http://kakaku.livedoor.com/item_info/20558511911110.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://kakaku.livedoor.com/item_info/20558511911110.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+37&nbsp;  <a href="http://e0166.com/etube/video.php?v=iWM1-46svp4&sin=sin">Team Nonsense - <b>Pimp</b> my Rideの動画ですヨ。</a><br> <div class="r">  <font size="-1">   Team Nonsense - <b>Pimp</b> my Ride. 動画に感情をこめる. この動画を投稿したユーザーが、<br>  他にも動画を投稿してるか確認する。 この動画を投稿した人の、お気に入り動画なんか<br>  を覗いて見る。 動画によっては既に削除されている場合がありますので、あらかじめ <b>...</b><br>   <div class="g">
+    http://e0166.com/etube/video.php?v=iWM1-46svp4&amp;sin=si...    &nbsp;-&nbsp;8k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:40ij2WUQGNkJ:http://e0166.com/etube/video.php%3Fv%3DiWM1-46svp4%26sin%3Dsin+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://e0166.com/etube/video.php?v=iWM1-46svp4&sin=sin" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+38&nbsp;  <a href="http://www.greenonred.jp/index.php?main_page=artist&artist_name=SOIL%26%26quot%3BPIMP%26quot%3BSESSIONS">ARTIST FILE : GREENonRED, グリーンオンレッド</a><br> <div class="r">  <font size="-1">   04年6月にデビュー・アルバム『PIMPIN&#39;』をリリース。05年2月に1stフル・アルバム『<b>PIMP</b> <br>  MASTER』を発表。 <b>...</b> 今年7月にはドイツのCOMPOST RECORDSより『<b>PIMP</b> MASTER』が<br>  ヨーロッパ発売。またジャイルス・ピーターソンが立ち上げた新レーベルBROWNS WOOD <b>...</b><br>   <div class="g">
+    http://www.greenonred.jp/index.php?main_page=artist&amp;a...    &nbsp;-&nbsp;44k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:wvkPUPNe8pkJ:http://www.greenonred.jp/index.php%3Fmain_page%3Dartist%26artist_name%3DSOIL%2526%2526quot%253BPIMP%2526quot%253BSESSIONS+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.greenonred.jp/index.php?main_page=artist&artist_name=SOIL%26%26quot%3BPIMP%26quot%3BSESSIONS" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+39&nbsp;  <a href="http://streaming.yahoo.co.jp/c/t/00365/v01908/v0190800000000372016/">Yahoo!動画 - 音楽 - 夏フェス スペシャル (ビクター編) - SOIL＆“<b>PIMP</b> <b>...</b></a><br> <div class="r">  <font size="-1">   SOIL＆“<b>PIMP</b>” SESSIONS 「マシロケ」 (夏フェス スペシャル (ビクター編)) - ロング<br>  ヒット中の最新アルバム「PIMPOINT」からアルバム中最も上げ上げのナンバー「マシロケ」。フ.<br>   <div class="g">
+    http://streaming.yahoo.co.jp/c/t/00365/v01908/v0190800000...    &nbsp;-&nbsp;74k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:0mnRvhKbsuMJ:http://streaming.yahoo.co.jp/c/t/00365/v01908/v0190800000000372016/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://streaming.yahoo.co.jp/c/t/00365/v01908/v0190800000000372016/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+40&nbsp;  <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=203189397&s=143462">iTunes Store - 椎名林檎×SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS - カリソメ乙女(DEATH <b>...</b></a><br> <div class="r">  <font size="-1">   椎名林檎×SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS. カリソメ乙女(DEATH JAZZ ver.) - Single. お使いの<br>  コンピュータで iTunes が見つかりません。 iTunes が自動的に開かない場合は、Dock <br>  または Windows タスクバーで iTunes アプリケーションのアイコンをクリックして <b>...</b><br>   <div class="g">
+    http://phobos.apple.com/WebObjects/MZStore.woa/wa/vi...    &nbsp;-&nbsp;7k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:LL2eNYVpLmAJ:http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum%3Fid%3D203189397%26s%3D143462+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=203189397&s=143462" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+41&nbsp;  <a href="http://nihongo.istockphoto.com/design_spotlight_details.php?ID=12647">デザインスポットライト - <b>Pimp</b> my DJ Summer Edition | iStockphoto.com</a><br> <div class="r">  <font size="-1">   Royalty Free Stock photography and photos for printing brochures, advertising, <br>  annual reports, and electronic use on websites and presentations.<br>   <div class="g">
+    http://nihongo.istockphoto.com/design_spotlight_details.p...    &nbsp;-&nbsp;70k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:BRBAAaaDyw8J:http://nihongo.istockphoto.com/design_spotlight_details.php%3FID%3D12647+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://nihongo.istockphoto.com/design_spotlight_details.php?ID=12647" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+42&nbsp;  <a href="http://www.fujirockers.org/07/artist/soilpimpsessions.html">SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS | FUJIROCKERS.ORG &#39;07 | ARTIST INFO</a><br> <div class="r">  <font size="-1">   SOIL&amp;&quot;<b>PIMP</b>&quot;SESSIONS. アーティストインフォ原稿募集中！ 400字にアナタの熱い思いを<br>  詰め込んで、artists@fujirockers.orgまで送ってください。フジロッカーズによるフジ<br>  ロッカーズのためのアーティストインフォを作っていきいましょう。 <b>...</b><br>   <div class="g">
+    http://www.fujirockers.org/07/artist/soilpimpsessions.htm...    &nbsp;-&nbsp;27k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:sb2XKuMnIwsJ:http://www.fujirockers.org/07/artist/soilpimpsessions.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.fujirockers.org/07/artist/soilpimpsessions.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+43&nbsp;  <a href="http://w10.mocovideo.jp/search.php?MODE=VO_TAG&KEY=Pimp">MOCO Video-YouTube日本語タグ化アグリゲーター</a><br> <div class="r">  <font size="-1">   Tips on how to <b>pimp</b> out your firefox. タグ ：firefox : <b>pimp</b>. 再生時間 <b>...</b> <br>  50 Cents - <b>Pimp</b> (Rated Explicit).wmv. タグ ：snoop : dogg : rap : 50 : cents <b>...</b> <br>  50 Cent - <b>P-I-M-P</b> feat Snoop Dogg .divx. タグ ：<b>p-i-m-p</b> : <b>pimp</b> : 50 : cent <b>...</b><br>   <div class="g">
+    http://w10.mocovideo.jp/search.php?MODE=VO_TAG&amp;KEY=Pi...    &nbsp;-&nbsp;38k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:rLUI-hyVhg8J:http://w10.mocovideo.jp/search.php%3FMODE%3DVO_TAG%26KEY%3DPimp+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://w10.mocovideo.jp/search.php?MODE=VO_TAG&KEY=Pimp" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+44&nbsp;  <a href="http://w10.mocovideo.jp/search.php?MODE=DM_TAG&KEY=Pimp">MOCO Video-YouTube日本語タグ化アグリゲーター</a><br> <div class="r">  <font size="-1">   David Banner - Like a <b>pimp</b> feat. Lil Flip (VF by SOSOUTH). タグ ：David : <br>  Banner : - : Like : a : <b>pimp</b> : feat. <b>...</b> LES GRANDES GUEULES - <b>PIMP</b> MY RIDE onpp2 ;). <br>  タグ ：les : grandes : gueules : demi : portion : sprinter : onpp : vol.2 <b>...</b><br>   <div class="g">
+    http://w10.mocovideo.jp/search.php?MODE=DM_TAG&amp;KEY=Pi...    &nbsp;-&nbsp;39k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:9LxDp2JXaTEJ:http://w10.mocovideo.jp/search.php%3FMODE%3DDM_TAG%26KEY%3DPimp+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://w10.mocovideo.jp/search.php?MODE=DM_TAG&KEY=Pimp" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+45&nbsp;  <a href="http://music.jp.msn.com/interview/128_7.htm">MSNミュージック インタビュー SOIL＆“<b>PIMP</b>”SESSIONS</a><br> <div class="r">  <font size="-1">   SOIL＆“<b>PIMP</b>”SESSIONS プレイリスト. ヨーヨー・マから平井堅まで、メンバーの個性<br>  が反映された興味深いプレイリスト. 1. ZERO db「Bongos, Bleeps &amp; Basslines」（<br>  アルバム『Bongos, Bleeps &amp;Basslines』収録）. Amazon.co.jpでCDを買う <b>...</b><br>   <div class="g">
+    http://music.jp.msn.com/interview/128_7.htm    &nbsp;-&nbsp;11k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:-bELFMjh8McJ:http://music.jp.msn.com/interview/128_7.htm+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://music.jp.msn.com/interview/128_7.htm" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+46&nbsp;  <a href="http://wacca.tv/m/listen/track/pcca02457_1_02">Jazztronik(ジャズトロニック)/Heat feat.SACHO &lt; SOIL &amp; &quot; <b>PIMP</b> <b>...</b></a><br> <div class="r">  <font size="-1">   Jazztronikの「Heat feat.SACHO &lt; SOIL &amp; &quot; <b>PIMP</b> &quot; SESSIONS &gt;」が試聴できる！Waccaは<br>  楽曲配信サイトです。<br>   <div class="g">
+    http://wacca.tv/m/listen/track/pcca02457_1_02    &nbsp;-&nbsp;13k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:Ou53h5NDrjcJ:http://wacca.tv/m/listen/track/pcca02457_1_02+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://wacca.tv/m/listen/track/pcca02457_1_02" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+47&nbsp;  <a href="http://springnet.jaiku.com/presence/10775990">Jaiku | TheOBR: The new page design lets us <b>pimp</b> board threads <b>...</b></a><br> <div class="r">  <font size="-1">   TheOBR: The new page design lets us <b>pimp</b> board threads right on the front page. I just pimped <br>  the Cooler game thread. Webmaster happy. http://twitter.com/TheOBR/statuses/238270622. <br>  Fetched from Twitter / Paul Terry Walhus with friends. <b>...</b><br>   <div class="g">
+    http://springnet.jaiku.com/presence/10775990    &nbsp;-&nbsp;21k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:F4Ya7XFrKaEJ:http://springnet.jaiku.com/presence/10775990+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://springnet.jaiku.com/presence/10775990" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+48&nbsp;  <a href="http://item.rakuten.co.jp/10keiya/7498/">【楽天市場】[送料無料]ピンプ <b>Pimp</b> 腕時計 S SQUREシリーズ <b>...</b></a><br> <div class="r">  <font size="-1">   ピンプ <b>Pimp</b> 腕時計 S SQUREシリーズ スペクトラムブルー #7498 【リボ払いCP】 [0827<br>  秋先2]（… 日本最大級2万以上の取扱実績を持つ腕時計＆小物 <b>...</b> ピンプ<b>Pimp</b>腕時計SSQURE<br>  シリーズスペクトラムブルー#7498. [送料無料]ピンプ <b>Pimp</b> 腕時計 S SQURE <b>...</b><br>   <div class="g">
+    http://item.rakuten.co.jp/10keiya/7498/    &nbsp;-&nbsp;23k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:EV55ygzZq9kJ:http://item.rakuten.co.jp/10keiya/7498/+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://item.rakuten.co.jp/10keiya/7498/" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+49&nbsp;  <a href="http://www.7andy.jp/cd/detail?accd=C1070481">セブンアンドワイ - CD - PIMPOINT</a><br> <div class="r">  <font size="-1">   ジャズのフォーマットに、ロックとパンクの魂を持ち込んだ、6人編成の爆音ジャズ・<br>  バンド、SOIL＆｀<b>PIMP</b>｀SESSIONSのサード・アルバム。「DAWN」に<br>  はじまり、ユーモアたっぷり入ったポップなサードシングル「マシロケ」やファンキー <b>...</b><br>   <div class="g">
+    http://www.7andy.jp/cd/detail?accd=C1070481    &nbsp;-&nbsp;51k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:EO-qkwwMjL0J:http://www.7andy.jp/cd/detail%3Faccd%3DC1070481+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://www.7andy.jp/cd/detail?accd=C1070481" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<div style="margin-left:5px">
+50&nbsp;  <a href="http://video.1st-game.net/youtube/v_sv_dsc8suNk.html">SPATS <b>P.I.M.P</b> @1st YouTube Video</a><br> <div class="r">  <font size="-1">   YouTube動画。ゲーム、お笑い、お宝、ニュース、スポーツ、映画、アニメ、ドラマ、<br>  音楽、グラビアアイドル、芸能、神業等の無料動画.<br>   <div class="g">
+    http://video.1st-game.net/youtube/v_sv_dsc8suNk.html    &nbsp;-&nbsp;29k&nbsp;-&nbsp;<a class="g" href="http://asia.google.com/search?q=cache:yHWd1mTX73kJ:http://video.1st-game.net/youtube/v_sv_dsc8suNk.html+PIMP&lr=lang_ja&hl=ja&ie=EUC-JP&output=html&client=nttx">キャッシュ</a>    &nbsp;-&nbsp;<a class="g" href="http://video.1st-game.net/youtube/v_sv_dsc8suNk.html" target="_blank">別ウィンドウ表示</a>   </div>
+  </font><br>
+ </div><br>
+</div>
+<br clear="all">
+
+<!--PAGER-->
+<div align="center">
+<table width="1%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td nowrap width="1%"><b>
+
+
+&nbsp;&nbsp;</b></td>
+<td width="1%">
+<table width="1%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td nowrap>
+      &nbsp;<span class="cur">1</span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=50&from=pager">2</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=100&from=pager">3</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=150&from=pager">4</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=200&from=pager">5</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=250&from=pager">6</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=300&from=pager">7</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=350&from=pager">8</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=400&from=pager">9</a></span>
+      &nbsp;<span class="blk"><a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=450&from=pager">10</a></span>
+
+
+</td></tr>
+</table>
+</td>
+<td nowrap width="1%">
+<b>
+&nbsp;&nbsp;
+
+&nbsp;<a href="web.jsp?SM=MC&DC=50&MT=PIMP&FR=50&from=next">
+<strong>次の結果→</strong></a>
+
+
+</b>
+</td>
+</tr>
+</table>
+</div>
+<br>
+<!--/PAGER-->
+<br clear="all">
+<!--OSUSUME-->
+<!--/OSUSUME-->
+<!--/RESULT-->
+<!--FOOTER CONTENTS--><br>
+<!--search-bottom-->
+<TABLE cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+<TBODY>
+<TR>
+<form action="web.jsp" method="get" name="queryUnder">
+<input type="hidden" name="SM" value="MC">
+<TD>
+ <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+ <TBODY>
+ <TR>
+  <TD background="http://cmm001.goo.ne.jp/img/bg/header2_blue.gif" bgColor="#9dcce0">
+   <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+    <TBODY>
+    <TR>
+      <TD width="100%" bgColor="#9dcce0"><IMG height="1" alt="" src="/img/clear.gif" width="740"></TD>
+    </TR>
+    <TR>
+       <TD width="100%"><IMG height="1" alt="" src="/img/clear.gif" width="740"></TD>
+    </TR>
+    <TR>
+      <TD width="100%"><IMG height="4" alt="" src="/img/clear.gif" width="1"></TD>
+    </TR>
+    </TBODY>
+   </TABLE>
+   <TABLE cellSpacing="1" cellPadding="0" width="100%" border="0">
+    <TBODY>
+     <TR>
+       <TD width="5%" rowspan="2"><IMG height="1" alt="" src="/img/clear.gif" width="50" border="0"></TD>
+       <TD width="1%" rowspan="2" noWrap><IMG height="1" alt="" src="/img/clear.gif" width="8" border="0"></TD>
+     </TR>
+     <TR>
+       <TD width="22%">
+        <input style="form" type="text" name="MT" value="PIMP" size="45" >
+       </TD>
+       <TD width="1%"><IMG height="1" alt="" src="/img/clear.gif" width="2"></TD>
+       <TD width="9%">
+        <input type="image" height="22" alt="ウェブ" width="96" src="http://www.goo.ne.jp/img/bt/bt_search.gif" value="ウェブ" border="0" name="web22">
+       </TD>
+       <TD width="1%"><IMG height="1" alt="" src="/img/clear.gif" width="10"></TD>
+       <TD width="9%" noWrap><LABEL for="MD"></LABEL></TD>
+       <TD width="26%" noWrap>&nbsp;</TD>
+       <TD width="26%" align="right" noWrap>
+        <A href="http://guide.search.goo.ne.jp/changes/"><font size="-1">サービス変更履歴</font></A>
+       </TD>
+     </TR>
+    </TBODY>
+   </TABLE>
+   <TABLE height="3" cellSpacing="0" cellPadding="0" width="100%" border="0">
+    <TBODY>
+     <TR>
+      <TD></TD>
+     </TR>
+    </TBODY>
+   </TABLE>
+  </TD>
+ </TR>
+ </TBODY>
+ </TABLE>
+ <TABLE height="1" cellSpacing="0" cellPadding="0" width="100%" bgColor="#9dcce0" border="0">
+ <TBODY>
+  <TR>
+   <TD></TD>
+  </TR>
+ </TBODY>
+ </TABLE>
+ <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+  <TBODY>
+   <TR>
+     <TD bgColor="#d9d8bc" height="1"></TD>
+   </TR>
+   <TR>
+     <TD bgColor="#f0f0f0" height="1"></TD>
+   </TR>
+   <TR>
+     <TD bgColor="#f7f7f7" height="1"></TD>
+   </TR>
+  </TBODY>
+ </TABLE>
+</TD>
+</FORM>
+</TR>
+<TR>
+ <TD><IMG height="4" alt="" src="/img/clear.gif" width="1"></TD>
+</TR>
+</TBODY>
+</TABLE>
+<!--/search-bottom-->
+<!--STICK-PR-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center"><br>
+  <p><font size="-1">gooスティック5.2登場！どのページからでもgooの検索が簡単に使えます！<a href="http://stick.goo.ne.jp/">ダウンロード</a>、<a href="http://stick.goo.ne.jp/">詳細はこちら</a></font></p>
+  <p><a href="http://stick.goo.ne.jp/"><img width="800" height="29" src="/img/goostick.gif" border="0"></a></p>
+</td>
+</tr>
+</table>
+<!--/STICK-PR-->
+
+<!--FOOTER LINE-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5"></td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#c5c594"><img src="/img/clear.gif" alt="" height="1" width="1"></td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+</table>
+<!--/FOOTER LINE-->
+
+<!--PR-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td height="25"></td>
+</tr>
+<tr>
+<td align="center">
+<table width="468" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td>
+<nolayer><iframe width="468" height="20" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="#000000" src="http://ad.goo.ne.jp/html.ng/cat=search&contents=respage&kind=textdown&site=search&ord=34955?"></iframe></nolayer><ilayer id="ad_text1" visibility="hidden" width="468" height="20"></ilayer></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="25"></td>
+</tr>
+</table>
+<!--/PR-->
+
+<!--FOOTER GLOBAL-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" bgcolor="#F2F2F2">
+ <table width="740" border="0" cellspacing="0" cellpadding="12">
+  <tr>
+   <td align="center" bgcolor="#f2f2f2">
+   <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://www.goo.ne.jp"><font color="#333333">gooトップ</font></a></font></td>
+     <td width="14"></td>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://help.goo.ne.jp/info/map.html"><font color="#333333">サイトマップ</font></a></font></td>
+     <td width="14"></td>
+     <td nowrap><font size="-1" color="#333333"><a id="mydefault1" style="color:#333333" href="http://help.goo.ne.jp/start/start.html">gooをホームに設定</a></font>
+      <SCRIPT type=text/javascript>document.getElementById('mydefault1').href = 'javascript:setStartPage("mydefault1")';</SCRIPT>
+     </td>
+     <td width="14"></td>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://www.goo.ne.jp/rss/"><font color="#333333">RSS</font></a></font></td>
+     <td width="14"></td>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://help.goo.ne.jp/info/ad/index.html"><font color="#333333">広告掲載</font></a></font></td>
+     <td width="14"></td>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://help.goo.ne.jp/office/agreement.html"><font color="#333333">免責事項</font></a></font></td>
+     <td width="14"></td>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://help.goo.ne.jp/office/privacy.html"><font color="#333333">プライバシーポリシー</font></a></font></td>
+     <td width="14"></td>
+     <td nowrap><font size="-1"><a style="color:#333333" href="http://help.goo.ne.jp/"><font color="#333333">ヘルプ</font></a></font></td>
+    </tr>
+   </table>
+   <table width="8" border="0" cellspacing="0" cellpadding="0" height="14">
+    <tr>
+     <td></td>
+    </tr>
+   </table>
+   <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td nowrap>
+      <font size="-1">Copyright:(C) 2007 <a href="http://www.nttr.co.jp/" target="_blank">NTT Resonant Inc.</a> All Rights Reserved.</font>
+      <font size="-1">
+       <SCRIPT type="text/javascript" src="http://log000.goo.ne.jp/VL/Trace?c=1&tp=1&p="></SCRIPT>
+      </font>
+      <NOSCRIPT>
+       <font size="-1"><IMG src="http://log000.goo.ne.jp/VL/Trace?c=1&tp=1&noscript=1&p=00000000" width="0" height="0" border="0"></font>
+      </NOSCRIPT>
+     </td>
+    </tr>
+   </table>
+  </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+<!--/FOOTER GLOBAL-->
+<!--/FOOTER CONTENTS-->
+<layer src="http://ad.goo.ne.jp/html.ng/cat=search&contents=respage&kind=textdown&site=search&ord=34955?"visibility="hidden" width="468" height="20" onload="moveToAbsolute(ad_text1.pageX,ad_text1.pageY);visibility='show';"></layer></body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>デザインの設定</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://help.d-bb.com/blog/" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="DreamBaseballブログ　管理者メニュー">
+	</td>
+</tr>
+</table>
+
+<form action="./blog_looks.cgi" method="post" ENCTYPE="multipart/form-data">
+##_HIDDEN_##
+
+<table border="0" cellpadding="5" cellspacing="1" width="600">
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center">デザインの設定</td>
+</tr>
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+<tr class="a1" bgcolor="#d2d5ff">
+	<td>全体のデザイン</td>
+</tr>
+<tr class="a1">
+	<td align="center">
+		<table border="0" cellpadding="5" cellspacing="0">
+##_PAGEUP_##
+		<tr>
+			<td>
+##_THEME_##
+			</td>
+		</tr>
+##_PAGEDN_##
+##_DIRECT_START_##
+		<tr>
+			<td colspan=5>
+				<input type="radio" value="0" id="css_direct" name="skin" ##_SELECTED_SKIN000_##>
+				<label for="css_direct">CSSを直接指定する</label>
+				<input type=file size=50 name="css_path" value="##_CSS_PATH_##" maxlength="512">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=5>
+				※CSSを直接指定する場合は<a href="##_CSS_##/template.css">このCSS</a>をテンプレートにしてください。
+			</td>
+		</tr>
+##_DIRECT_END_##
+		</table>
+	</td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td align="center">
+		<input type="image" src="##_IMAGES_##/henkou.gif" value="変更" name="BTN_UPDATE_LOOKS">
+	</td>
+</tr>
+<tr>
+	<td height="15"></td>
+</tr>
+<tr class="a1" bgcolor="#d2d5ff">
+	<td>サイドバーのレイアウト</td>
+</tr>
+<tr class="a1">
+	<td align="center">
+		<table border="0" cellpadding="5" cellspacing="0">
+		<tr>
+			<td align="center" nowrap>
+				<img src="##_IMAGES_##/layout01.gif" border="0" width="90" height="120" alt="左側表示"><br>
+				<input type="radio" value="0" id="set_sidebar_left" name="sidebar" ##_SELECTED_SIDEBAR0_##>
+				<LABEL for="set_sidebar_left">サイドバーを記事の左側に表示</LABEL>
+			</td>
+			<td align="center" nowrap>
+				<img src="##_IMAGES_##/layout02.gif" border="0" width="90" height="120" alt="右側表示"><br>
+				<input type="radio" value="1" id="set_sidebar_right"name="sidebar" ##_SELECTED_SIDEBAR1_##>
+				<LABEL for="set_sidebar_right">サイドバーを記事の右側に表示</LABEL>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">
+		<input type="image" src="##_IMAGES_##/henkou.gif" value="変更" name="BTN_UPDATE_LOOKS">
+	</td>
+</tr>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) Sports Ratings Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</form>
+</center>
+
+</body>
+</html>

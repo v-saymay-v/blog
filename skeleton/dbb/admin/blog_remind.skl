@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>DBBブログ　リマインダー</title>
+<meta http-equiv="Content-Type" content="text/html;">
+</head>
+<body bgcolor="#ffffff">
+
+<table border="0" height="100%" align="center">
+<tr>
+	<td align="center">
+	<table border="0" cellpadding="0" cellspacing="0" width="340">
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+	<tr>
+		<td align="center">
+			<img src="##_IMAGES_##/logo.gif" border="0" alt="DBBブログ">　<img src="##_IMAGES_##/reminder.gif" border="0" alt="リマインダー">
+		</td>
+	</tr>
+	<tr>
+		<td height="15"></td>
+	</tr>
+	<tr>
+		<td><font size="2">お忘れになったパスワードをご登録されたメールアドレスにお送りいたします。ご登録された質問にお答えください。</font></td>
+	</tr>
+	</table>
+
+
+<form action="##_ACTION_##" method="post">
+##_HIDDEN_##
+	<table border="0" cellpadding="0" cellspacing="0" width="351" height="133" background="##_IMAGES_##/bg.gif">
+	<tr>
+		<td background="bg.gif" border="0" align="center" valign="top">
+		<table border="0" cellpadding="3" cellspacing="0">
+		<tr>
+			<td height="10"></td>
+		</tr>
+		<tr>
+			<td align="right"><img src="##_IMAGES_##/answer1.gif" border="0" alt="ログインID"></td>
+			<td><input type="text" name="btn_id" value="" size="30" maxlength="100" style="font-size:9pt; width:150px;" onfocus="this.select();"></td>
+		</tr>
+		<tr>
+			<td align="right"><img src="##_IMAGES_##/question.gif" border="0" alt="質問"></td>
+			<td>
+##_REMINDER_##
+			</td>
+		</tr>
+		<tr>
+			<td align="right"><img src="##_IMAGES_##/answer.gif" border="0" alt="答え"></td>
+			<td><input type="text" name="btn_answer" value="" size="30" maxlength="100" style="font-size:9pt; width:150px;" onfocus="this.select();"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><INPUT TYPE="image" src="##_IMAGES_##/submit.gif" NAME="btn_send_remind" VALUE="送信"></td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+
+</form>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

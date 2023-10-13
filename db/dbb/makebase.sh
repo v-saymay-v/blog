@@ -1,0 +1,10 @@
+./chasen2mysql.pl ∞Ï»Ã < baseball.txt
+
+grep 'ÃæªÏ' < dbbhelp.txt | ./chasen2mysql.pl £ƒ£¬£¬
+grep 'Ã§√Œ∏Ï' < dbbhelp.txt | ./chasen2mysql.pl £ƒ£¬£¬
+
+grep 'ÃæªÏ' < dbbrule.txt | ./chasen2mysql.pl £ƒ£¬£¬
+grep 'Ã§√Œ∏Ï' < dbbrule.txt | ./chasen2mysql.pl £ƒ£¬£¬
+
+grep 'ÃæªÏ' < players.txt | ./chasen2mysql.pl £Œ£–£¬
+grep 'Ã§√Œ∏Ï' < players.txt | ./chasen2mysql.pl £Œ£–£¬

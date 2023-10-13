@@ -1,0 +1,39 @@
+##_DOCTYPE_##
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>捨釈杓ﾌ鋙蜴ｹ酌鴫紗｡｡DBB</title>
+</head>
+<body bgcolor="#103042">
+
+<font size="1">
+<div align="center">
+<img src="##_IMAGE_PATH_##titleimg_blog.gif" alt="捨釈杓ﾌ鋙蜴ｹ酌鴫紗 DBB">
+<font color="#ffffff" size="1">
+<br />柴酌借鴫紗赦酌鴫漆斜酌鴫勺
+<br />謝写酌軸勺
+</font>
+</div>
+<br />
+<font color="#ffffff">
+<div align="center">
+<hr color="#ffffff">
+､ｴｳﾎﾇｧ､ｯ､ﾀ､ｵ､､
+<hr color="#ffffff">
+</div>
+<form action="##_ADMIN_URL_##" method="post">
+<input type="hidden" name="BTN_DELETE_ENTRY" value="1">
+##_HIDDEN_##
+##_ERROR_##
+<br />
+<input type="submit" name="yes" value="､ﾏ､､">
+<input type="submit" name="no" value="､､､､､ｨ">
+<hr color=#CCCCCC noshade size=5>
+<br /><div><font size=-1>Copyright(C)2006-2009<br />Sports Ratings Inc. All Rights Reserved.</div>
+<hr color=#CCCCCC noshade size=5>
+</font>
+</font>
+</form>
+
+</body>
+</html>

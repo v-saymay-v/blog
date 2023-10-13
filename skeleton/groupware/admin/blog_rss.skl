@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title>RSSの編集</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://www.asj.ne.jp/manual/shopper_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="HotBizブログ管理メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpadding="5" cellspacing="1" width="600">
+<form action="./blog_sidecontent.cgi" method="POST">
+##_HIDDEN_##
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">RSSの編集</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">
+		RSS のタイトル<br>
+		<span style="font-size:11;">(半角50字、全角25字以内)</span>
+	</td>
+	<td><input type="text" name="rss_title" size="56" value="##_RSS_TITLE_##" maxlength="50"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">URL </td>
+	<td>
+		<input type="text" name="rss_url" size="56" value="##_RSS_URL_##" maxlength="200"><br>
+		<input type="checkbox" name="rss_target" value="1" id="rss_target" ##_RSS_TARGET_##><label for="rss_target">新規ウィンドウで開く</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">表示件数</td>
+	<td><input type="text" name="rss_article" size="2" value="##_RSS_ARTICLE_##" maxlength="2"> 件(1件以上30件以内)</td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">
+		<input type="image" src="##_IMAGES_##/kettei.gif" value="更新" name="BTN_EDIT_RSS">　
+		<a href="./blog_sidecontent.cgi?BTN_DISP_EDIT_RSS=1&sidecontent=##_ID_##:11"><img src="##_IMAGES_##/reset.gif" border="0"></a>
+	</td>
+</tr>
+</form>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) ADMIRAL SYSTEM Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,609 @@
+@charset "Shift_JIS";
+
+
+body{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	background-image:url(../images/theme/bg40-2.jpg);
+	background-repeat: repeat;
+	background-position:left top;
+}
+
+a:link{color:#B00000;text-decoration:underline;}
+a:visited{color:#B00000;text-decoration:underline;}
+a:active{}
+a:hover{}
+
+
+/*ブログタイトルの書式*/
+.site_title{
+	background-image:url(../images/theme/blog_title40.jpg);
+	background-repeat: no-repeat;
+	width:100%;
+	height:80px;
+	font-size:24px;
+	line-height:110%;
+	font-weight:bold;
+	margin:0px;
+	padding:15px 0px 0 30px;
+	text-align:left;
+	vertical-align: top;
+	letter-spacing:2px;
+}
+
+/*サブタイトルの書式*/
+.description{
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+	letter-spacing:2px;
+}
+
+/*要素を囲む背景テーブル*/
+.tab-design{
+	margin:0px auto;
+	background-image:url(../images/theme/bg40.jpg);
+	background-repeat: repeat-y;
+	background-position:center top;
+}
+
+/*トップページのみ使用の記事枠全体*/
+.top-main{
+	table-layout: inherit;
+	width:100%;
+}
+
+/*記事の枠*/
+.frame-top-left{
+	background-image:url(../images/theme/frame40_01.jpg);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	width:30px;
+}
+
+.frame-top-middle{
+	background-image:url(../images/theme/frame40_02.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	height:30px;
+	width:80%;
+}
+
+.frame-top-right{
+	background-image:url(../images/theme/frame40_03.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	width:30px;
+}
+
+.frame-middle-left{
+}
+
+.frame-middle-right{
+}
+
+.frame-bottom-left{
+	background-image:url(../images/theme/frame40_06.jpg);
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+
+.frame-bottom-middle{
+	background-image:url(../images/theme/frame40_07.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	width:80%;
+	height:37px;
+}
+
+.frame-bottom-right{
+	background-image:url(../images/theme/frame40_08.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+
+/***** 記事の設定 *********************/
+/*記事全体*/
+.entrytable{
+/*	background:#ffccff;*/
+}
+
+/*記事の日時　0000年00月00日*/
+.entry-day-title{
+	color:#000000;
+	background-image:url(../images/theme/news_title40.gif);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	padding:2px 2px 1px 8px;
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+}
+
+/*記事タイトルの書式*/
+.entry_title{
+	font-size:13px;
+	line-height:130%;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:3px;
+	margin:20px 0px 15px 15px;
+}
+
+/*記事本文の書式*/
+.entry_body{
+	color:#000000;
+	font-size:13px;
+	line-height:130%;
+	letter-spacing:0px;
+	margin:10px 0px 20px 30px;
+}
+
+/*記事本文の「続きを読む」*/
+.entry_more_link{
+	color:#666666;
+	font-size:12px;
+	text-align:right;
+	margin:15px 30px 15px 0px;
+}
+
+/*関連リンクの書式*/
+.entry_associatelink{
+	color:#000000;
+	font-size:12px;
+	line-height:140%;
+	letter-spacing:0px;
+	margin:0px 0px 15px 35px;
+}
+
+/*時間16:11 | コメント(0) | 引用記事(0)　の書式*/
+.entry_state{
+	color:#00000;
+	font-size:11px;
+	text-align:right;
+	padding:5px 2px 2px 2px;
+	margin:0px 0px 15px 0px;
+}
+
+/*記事ページ　最新 ||| 前の記事 | 次の記事 ||| 最も古い／前のページ | 次のページ*/
+.entry_explore{
+	color:#000000;
+	font-size:12px;
+	text-align:center;
+}
+
+/*月別アーカイブ　前月｜記事トップ｜翌月の書式*/
+.article-list-title{
+	color:#000000;
+	padding:2px 0px 7px 0px;
+	text-align:center;
+	font-size:12px;
+}
+
+
+/***** コメントの設定 *********************/
+/*この記事を引用・リンクする・コメントの全体背景*/
+.article{
+	position:static;
+	text-align:left;
+}
+
+/*コメントありのコメント本文表示詳細*/
+.comment_body{
+	color:#696969;
+	font-size:12px;
+	line-height:130%;
+	margin:10px 0px 10px 30px;
+	text-align:left;
+	padding:3px;
+}
+
+/*「この記事にコメントする」タイトルの書式*/
+.comment-form-title{
+	text-align:left;
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:3px;
+	height:22px;
+	background-image:url(../images/theme/comment40.jpg) ;
+	background-repeat: no-repeat;
+	background-position:right bottom;
+}
+
+/*「この記事へのコメント[0件]」の書式*/
+.comment-list-title{
+	text-align:left;
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:3px;
+	height:22px;
+	background-image:url(../images/theme/comment40.jpg) ;
+	background-repeat: no-repeat;
+	background-position:right bottom;
+}
+
+/*コメントの情報 posted by と 日時*/
+.comment-state{
+	color:#696969;
+	font-size:10px;
+	line-height:100%;
+	text-align:right;
+	margin:0px 0px 10px 0px;
+}
+
+/*「この記事にコメントする」入力部分の書式*/
+.comment-form-area{
+	position:static;
+	color:#696969;
+	text-align:left;
+	font-size:11px;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+
+/*コメント記載者の書式*/
+.comment_author{
+	font-size:small;
+	line-height:135%;
+	margin:0 0 0 0;
+}
+
+/***** 引用記事の設定 *********************/
+/*「この記事とリンクする」「この記事を引用している記事　件」の書式*/
+.trackback-list-title{
+	text-align:left;
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:3px;
+	height:22px;
+	background-image:url(../images/theme/comment40.jpg) ;
+	background-repeat: no-repeat;
+	background-position:right bottom;
+}
+
+/*引用記事タイトル*/
+.trackback-title{
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+	padding:3px;
+	margin:20px 15px 15px 15px;
+}
+
+/*引用記事の作成・本文*/
+.trackback-body{
+	color:#696969;
+	font-size:12px;
+	line-height:130%;
+	margin:10px 0px 10px 30px;
+	padding:3px;
+}
+
+/*引用記事　Posted by と日時*/
+.trackback-state{
+	color:#696969;
+	font-size:10px;
+	line-height:100%;
+	text-align:right;
+	margin:0px 0px 20px 0px;
+}
+
+
+/********** サイドバー ***********************************/
+/*サイドバーの幅*/
+.sidebar{
+	width:189px;
+}
+
+/*サイドバー 各コンテンツのタイトル文字の書式*/
+.linktitle{
+	height:28px;
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding:0px 3px 3px 10px;
+	text-align:left;
+	border-top:1px solid #FFFFFF;
+	background-image:url(../images/theme/sidebar40.gif);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*カレンダーの書式*/
+.side-calendar{
+	color:#000000;
+	font-size:11px;
+	letter-spacing:1px;
+	padding:5px;
+	text-align:center;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*カレンダー 年月の書式*/
+.calendar-month{
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+}
+
+/*カレンダー 曜日の書式*/
+.calendar-week{
+	background:#666666;
+	color:#ffffff;
+	text-align:center;
+}
+
+/*カレンダー　日の書式*/
+.cell {
+	height:20px;
+	border:solid 1px #989898;
+	background:#ffffff;
+	text-align:center;
+}
+
+/*カレンダー 本日の書式*/
+.today {
+	border:solid 1px #989898;
+	background:#9BEAE2;
+}
+
+/*月別アーカイブの書式*/
+.side-marchive{
+	color:#000000;
+	font-size:11px;
+	line-height:130%;
+	letter-spacing:1px;
+	padding:5px;
+	text-align:left;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*月別アーカイブカレンダー 年月の書式*/
+.calendar-month_a{
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	padding:1px;
+	background:#ffffff;
+}
+
+/*月別アーカイブカレンダー　日の書式*/
+.cell_a {
+	color:#000000;
+	font-size:11px;
+	width:16px;
+	height:15px;
+	background:#ffffff;
+}
+
+/*月別カレンダー 本日の書式*/
+.today_a {
+	font-size:11px;
+	width:15px;
+	height:15px;
+	background:#9BEAE2;
+}
+
+/*引用された記事の書式*/
+.side-latest-trackback{
+	color:#000000;
+	font-size:11px;
+	line-height:110%;
+	letter-spacing:1px;
+	text-align:left;
+	padding:5px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*最新記事・最新のコメントの書式*/
+.side-latest-comment{
+	color:#000000;
+	font-size:11px;
+	line-height:110%;
+	letter-spacing:1px;
+	text-align:left;
+	padding:5px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*アバターの表示（HTML側指定あり）*/
+.side-profile{
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*ブログについての書式（HTML側指定あり）*/
+.side-about-blog{
+	color:#000000;
+	font-size:11px;
+	line-height:110%;
+	letter-spacing:1px;
+	text-align:left;
+	padding:5px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*BLOG内検索*/
+.side-blog-search{
+	color:#000000;
+	font-size:8px;
+	line-height:110%;
+	letter-spacing:0px;
+	text-align:center;
+	padding:5px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*管理メニュー*/
+.side-admin-menu{
+	color:#000000;
+	list-style-type:disc;
+	font-size:11px;
+	line-height:130%;
+	letter-spacing:1px;
+	text-align:left;
+	padding-top:10px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*訪問者リスト（あしあと）*/
+.side-visitor-list{
+	color:#000000;
+	list-style-type:disc;
+	font-size:11px;
+	line-height:110%;
+	letter-spacing:1px;
+	text-align:left;
+	padding:3px;
+	padding-top:10px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+/*アクセスカウンタ*/
+.side-access-counter{
+	color:#000000;
+	font-size:11px;
+	line-height:110%;
+	letter-spacing:1px;
+	text-align:left;
+	padding:5px;
+	background-image:url(../images/theme/sidemenu_back40.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+
+
+/***** 訪問者（あしあと）一覧＆サイト内検索結果 *********************/
+/*あしあと全体*/
+.visitor-list{
+	color:#666666;
+	font-size:12px;
+	padding:0px;
+}
+
+/*検索結果全体*/
+.search-result{
+	color:#666666;
+	font-size:12px;
+	padding:0px;
+}
+
+/*「あしあと一覧」「検索結果」タイトル書式*/
+.visitor-title{
+	text-align:left;
+	color:#000000;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:3px;
+}
+
+/*項目（ニックネーム・ブログ名・訪問日時）の書式*/
+.visitor-list-head{
+	color:#999999;
+	font-weight:bold;
+	text-align:center;
+}
+
+/*ニックネーム*/
+.visitor-list-nickname{
+	width:28%;
+	color:#000000;
+	font-size:11px;
+	text-align:left;
+	line-height:120%;
+	padding:5px;
+	background-image:url(../images/theme/endline40.gif) ;
+	background-repeat: repeat-x;
+	background-position:left bottom;
+}
+
+/*ブログ名*/
+.visitor-list-blogname{
+	width:50%;
+	color:#000000;
+	font-size:11px;
+	text-align:left;
+	line-height:120%;
+	padding:5px;
+	background-image:url(../images/theme/endline40.gif) ;
+	background-repeat: repeat-x;
+	background-position:left bottom;
+}
+
+/*訪問日時*/
+.visitor-list-datetime{
+	width:22%;
+	color:#999999;
+	text-align:left;
+	font-size:10px;
+	letter-spacing:1px;	padding:5px;
+	background-image:url(../images/theme/endline40.gif) ;
+	background-repeat: repeat-x;
+	background-position:left bottom;
+}
+
+/*検索されたタイトル*/
+.search-result-title{
+	color:#000000;
+	font-weight:bold;
+	text-align:left;
+	line-height:130%;
+	letter-spacing:1px;
+	margin:0px 5px 2px 0px;
+	padding:3px;
+}
+
+/*検索された本文*/
+.search-result-contents{
+	color:#000000;
+	line-height:130%;
+	text-align:left;
+	margin:0px 5px 2px 20px;
+	padding:3px;
+	background-image:url(../images/theme/endline40.gif) ;
+	background-repeat: repeat-x;
+	background-position:left bottom;
+}
+
+/*登録された日時*/
+.search-result-datetime{
+	color:#000000;
+	font-size:10px;
+	text-align:left;
+	letter-spacing:1px;}
+
+
+/***** オーダーリスト *******************************/
+/*オーダーリスト枠線*/
+.order_list{
+	background:#999999;
+	letter-spacing:1px;
+}

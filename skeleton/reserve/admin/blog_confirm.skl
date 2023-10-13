@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=shift_jis">
+<link href="##_CSS_##/asjblog.css" rel="stylesheet" type="text/css">
+<title>##_TITLE_##</title>
+</head>
+
+<body leftmargin="0" topmargin="120" marginwidth="0" marginheight="0" background="##_IMAGES_##/bg_dbb.gif">
+<div align="center">
+
+<!--･皈､･�-->
+<table width="800" align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td colspan="3" height="10"></td>
+</tr>
+<tr>
+	<td width="20"></td>
+	<td align="center">
+		<table width="400" border="0" cellspacing="0" cellpadding="3" align="center" style="border:solid 1px #0A3968;" bgcolor="#ffffff">
+		<tr>
+			<td><img src="##_IMAGES_##/title_kekka.gif" border="0"></td>
+		</tr>
+		<tr>
+			<td align="center" height="100" class="a2">##_MESSAGE_##</td>
+		</tr>
+		<tr>
+			<td align="center"><a href="##_RETURN_##"><img src="##_IMAGES_##/btn_back.gif" border="0" alt="ﾌ皃�"></a></td>
+		</tr>
+		<tr>
+			<td height="15"></td>
+		</tr>
+		</table>
+	</td>
+	<td width="20"></td>
+</tr>
+<tr>
+	<td colspan="3" height="15"></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

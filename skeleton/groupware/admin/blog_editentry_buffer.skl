@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>##_TITLE_##</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+<script type="text/javascript" src="##_SCRIPTS_##/editor.js"></script>
+<script language="JavaScript">
+<!--
+function OnLoad()
+{
+	SetupEditor('##_SCRIPTS_##', areas);
+}
+
+function StartUp()
+{
+	var path;
+	var title;
+	var entry;
+	var areas = new Array;
+
+	areas[0] = "entry_body";
+	areas[1] = "entry_more";
+	##_ONLOAD_##;
+
+	path = ##_DECODE1_##;
+	title = ##_DECODE2_##;
+	entry = ##_DECODE3_##;
+	title = title.replace(/\&/g, "&amp;");
+	title = title.replace(/</g, "&lt;");
+	title = title.replace(/>/g, "&gt;");
+	title = title.replace(/"/g, "&quot;");
+	entry = entry.replace(/\&/g, "&amp;");
+	entry = entry.replace(/</g, "&lt;");
+	entry = entry.replace(/>/g, "&gt;");
+	entry = entry.replace(/"/g, "&quot;");
+	document.myEscape.entry_body.value += "<a href=\"" + path + "\">" + title + "</a>" + "\n" + "<blockquote>" + entry + "</blockquote>";
+}
+//-->
+</script>
+
+<body onLoad="StartUp()">
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://www.asj.ne.jp/manual/shopper_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="HotBizブログ管理メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<form action="./blog_entry.cgi" ENCTYPE="multipart/form-data" method="POST" name="myEscape">
+<input type="hidden" name=after1 value="##_HIDDEN_ENTRYBODY1_##">
+<input type="hidden" name=after2 value="##_HIDDEN_ENTRYBODY2_##">
+<input type="hidden" name=after3 value="##_HIDDEN_ENTRYBODY3_##">
+##_HIDDEN_##
+##_ENTRYID_##
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">
+		##_TITLE_##<br>
+		<span style=font-size:10;>※入力項目に、半角カタカナは使用しないでください</span>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">
+		タイトル<span style="color:red;">（必須）</span><br><span style="font-size:11;">(半角50字、全角25字以内)</span>
+	</td>
+	<td>
+		<input type="text" name="entry_title" size="56" value="##_ENTRYTITLE_##" maxlength="100">
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">カテゴリー</td>
+	<td>
+##_CATEGORY_##
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">
+		内容
+		<span style="color:red;">（必須）</span><br>
+		<span style="font-size:11;">(半角8000字、全角4000字以内)</span>
+	</td>
+	<td><textarea id="entry_body" name="entry_body" rows="20" cols="65">##_INSERTIMG_####_ENTRYBODY_##</textarea></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">日付</td>
+	<td>
+##_DATE_##
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">自動削除</td>
+	<td>
+##_DELDATE_##
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">画像ファイル<br>
+		<span style="font-size:11;">(1ファイルあたり1MB以内)</span>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>添付できるファイル形式は、GIF、JPG、PNG、BMPです。
+				<li>１投稿につき、５ファイルまで添付可能です。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td>
+##_FILEBUTTON_##<br>
+##_ATTACHED_FILE_##
+	</td>
+</tr>
+<input type="hidden" name="entry_more" value="">
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">トラックバック</td>
+	<td>
+		<input type="radio" value="1" id="trackback1" name="trackback" ##_TRACKBACK1_##><label for="trackback1">受け付ける</label>
+		　<input type="radio" value="0" id="trackback0" name="trackback" ##_TRACKBACK0_##><label for="trackback0">受け付けない</label>
+		　<input type="radio" value="2" id="trackback3" name="trackback" ##_TRACKBACK2_##><label for="trackback3">確認する</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">コメント</td>
+	<td>
+		<input type="radio" value="1" id="comment1" name="comment" ##_COMMENT1_##><label for="comment1">受け付ける</label>
+		　<input type="radio" value="0" id="comment0" name="comment" ##_COMMENT0_##><label for="comment0">受け付けない</label>
+		　<input type="radio" value="2" id="comment2" name="comment" ##_COMMENT2_##><label for="comment2">確認する</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">公開</td>
+	<td>
+		<input type="radio" value="1" id="mode1" name="entry_mode" ##_MODE1_##><label for="mode1">公開</label>
+		　<input type="radio" value="0" id="mode0" name="entry_mode" ##_MODE0_##><label for="mode0">下書き</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">概要<br>
+		<span style="font-size:11;">(半角200字、全角100字以内)</span>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>トラックバックした際、相手のHotBizブログに概要を表示したい場合に入力します。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td valign="top" style="padding:10 20 0 6;">
+		<textarea rows="4" name="entry_summary" cols="65">##_ENTRYSUMMARY_##</textarea>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">トラックバック先URL<br>
+	<span style="font-size:11;">(５URL以内)</span><br>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>他のブログ内容を引用する場合、そのブログの「トラックバックURL」をhttp://から入力します。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td valign="top">
+		<small>１URLを１行として記入してください。(改行までを一行とする)</small><br>
+		<textarea name="trackback_url" size="90" cols="65" rows="4">##_TRACKBACKURL_##</textarea>
+	</td>
+</tr>
+##_TRACKBACKRT_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">関連リンク先<br>
+	<span style="font-size:11;">(５URL以内)</span><br>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>この記事に関連するURLをhttp://から入力します。トラックバックをする場合、その記事のURLを登録するようにしてください。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td valign="top">
+		<small>１URLを１行として記入してください。(改行までを一行とする)</small><br>
+		<textarea name="related_url" size="90" cols="65" rows="4">##_RERATEDURL_##</textarea>
+	</td>
+</tr>
+##_PING_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">更新ping 送信先</td>
+	<td>##_UPDATEPING_##</td>
+</tr>
+##_PING_END_##
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">
+		<input type="image" src="##_IMAGES_##/preview.gif" value="プレビュー" name="BTN_PREVIEW_DRAFT">　
+		<input type="image" src="##_IMAGES_##/##_BUTTON_##" value="これで決定する" name="BTN_EDIT_ENTRY">　
+		##_COPYBTN_##
+		##_RESETBTN_##
+	</td>
+</tr>
+</form>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) ADMIRAL SYSTEM Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>##_TITLE_##</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+<script type="text/javascript" src="##_SCRIPTS_##/editor.js"></script>
+<script language="JavaScript">
+<!--
+function OnLoad()
+{
+	var easy_trackback = ##_EASY_TRACKBACK_##;
+	if (easy_trackback) {
+		var btn = document.getElementById('back_btn');
+		btn.style.display = 'none';
+	}
+}
+//-->
+</script>
+</head>
+
+<body onload="OnLoad()">
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://help.d-bb.com/blog/" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="DreamBaseballブログ　管理者メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<form name=mainform action="./blog_entry.cgi" ENCTYPE="multipart/form-data" method="POST">
+<input type="hidden" name="trackback_url" value="##_TRACKBACKURL_##">
+<input type="hidden" name="entry_more" value="##_ENTRYMORE_##">
+<input type="hidden"  name="BTN_EDIT_ENTRY.x">
+##_HIDDEN_##
+##_ENTRYID_##
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="2" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">
+		##_TITLE_##<br>
+		<span style=font-size:10;>※入力項目に、半角カタカナは使用しないでください</span>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">
+		タイトル<span style="color:red;">（必須）</span><br><span style="font-size:11;">(半角50字、全角25字以内)</span>
+	</td>
+	<td>
+		<input type="text" name="entry_title" size="56" value="##_ENTRYTITLE_##" maxlength="100">
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">
+		内容
+		<span style="color:red;">（必須）</span><br>
+		<span style="font-size:11;">(半角8000字、全角4000字以内)</span>
+	</td>
+	<td>
+		<textarea id="entry_body" name="entry_body" rows="20" cols="65">##_ENTRYBODY_##</textarea>
+	</td>
+</tr>
+##_DATE_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">日付</td>
+	<td>
+##_DATE_##
+	</td>
+</tr>
+##_DATE_END_##
+
+##_ORDER_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">オーダー
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>指定した日付のオーダーがHTML形式で投稿画面に挿入されます。過去のオーダーのみ指定できます。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td valign="top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td valign="top">
+##_TEAM_##
+			</td>
+			<td valign="top">
+##_PREVIEW_##
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+##_ORDER_END_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">DBBトピック</td>
+	<td valign="top">##_DBBTOPIC_##</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">記事の引用</td>
+	<td>
+		<input type="radio" value="1" id="trackback1" name="trackback" ##_TRACKBACK1_##><label for="trackback1">受け付ける</label>
+		　<input type="radio" value="3" id="trackback3" name="trackback" ##_TRACKBACK3_##><label for="trackback3">球友だけ受け付ける</label>
+		　<input type="radio" value="0" id="trackback0" name="trackback" ##_TRACKBACK0_##><label for="trackback0">受け付けない</label>
+		　<input type="radio" value="2" id="trackback2" name="trackback" ##_TRACKBACK2_##><label for="trackback2">確認する</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">コメント</td>
+	<td>
+		<input type="radio" value="1" id="comment1" name="comment" ##_COMMENT1_##><label for="comment1">受け付ける</label>
+		　<input type="radio" value="3" id="comment3" name="comment" ##_COMMENT3_##><label for="comment3">球友だけ受け付ける</label>
+		　<input type="radio" value="0" id="comment0" name="comment" ##_COMMENT0_##><label for="comment0">受け付けない</label>
+		　<input type="radio" value="2" id="comment2" name="comment" ##_COMMENT2_##><label for="comment2">確認する</label>
+	</td>
+</tr>
+##_MODE_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">公開</td>
+	<td>
+		<input type="radio" value="1" id="mode1" name="entry_mode" ##_MODE1_##><label for="mode1">公開</label>
+		<input type="radio" value="0" id="mode0" name="entry_mode" ##_MODE0_##><label for="mode0">下書き</label>
+	</td>
+</tr>
+##_MODE_END_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">概要<br>
+		<span style="font-size:11;">(半角200字、全角100字以内)</span>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>記事を引用した際、相手のDBBブログに概要を表示したい場合に入力します。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td valign="top" style="padding:10 20 0 6;">
+		<textarea rows="4" name="entry_summary" cols="65">##_ENTRYSUMMARY_##</textarea>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">記事引用先URL</td>
+	<td valign="top">##_TRACKBACKURL_##</td>
+</tr>
+##_TRACKBACKRT_##
+##_LINK_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">関連リンク先<br>
+	<span style="font-size:11;">(５URL以内)</span><br>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>この記事に関連するURLをhttp://から入力します。記事を引用する場合、その記事のURLを登録するようにしてください。
+			</ul>
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td valign="top">
+		<small>１URLを１行として記入してください。(改行までを一行とする)</small><br>
+		<textarea name="related_url" size="90" cols="65" rows="4">##_RERATEDURL_##</textarea>
+	</td>
+</tr>
+##_LINK_END_##
+##_PING_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">更新ping 送信先</td>
+	<td>##_UPDATEPING_##</td>
+</tr>
+##_PING_END_##
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">
+		<input type="image" src="##_IMAGES_##/preview.gif" value="プレビュー" name="BTN_PREVIEW_DRAFT">
+		<input type="image" src="##_IMAGES_##/##_BUTTON_##" value="これで決定する" name="BTN_EDIT_ENTRY">
+		##_RESETBTN_##
+	</td>
+</tr>
+</form>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td id="back_btn" align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) Sports Ratings Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

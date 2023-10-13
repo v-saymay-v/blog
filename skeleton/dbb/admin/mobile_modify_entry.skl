@@ -1,0 +1,269 @@
+##_DOCTYPE_##
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>DBB Blog</title>
+</head>
+
+<body bgcolor="#103042" text="#FFFFFF" link="#67ffff" vlink="#a3ffff" alink="#ff0000">
+<font size=-1>
+<img src="##_IMAGE_PATH_##titleimg_blog.gif" alt="DBB" vspace="5">
+<table width="100%" bgcolor="#f26303">
+<tr>
+	<td align="center"><font size="-1">記事を編集</font></td>
+</tr>
+</table>
+<form action="##_ADMIN_URL_##" method="POST">
+<input type="hidden" name="pg" value="me">
+<input type="hidden" name="trackback_url" value="##_TRACKBACKURL_##">
+##_HIDDEN_##
+<div><font size="2">
+<img src="##_IMAGE_PATH_##blog_entry_title.gif" border="0"><br />全角25字以内<br />
+<input type="text" name="entry_title" size=14 maxlength=128 value="##_ENTRYTITLE_##">
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_contents.gif" border="0"><br />
+<div>※送信できる文字数は全角4000文字以内となります。</div>
+<textarea name="entry_body" rows="8" cols="30">##_ENTRYBODY_##</textarea>
+##_DATE_START_##
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_date.gif" border="0">
+<br /><select name="specify_date">
+<option value="0"##_SD0_##>保存した日時を投稿日時とする</option>
+<option value="1"##_SD1_##>日時を指定する</option>
+</select>
+<br /><select name="year">
+##_YEARS_##
+</select>年
+<select name="month">
+<option value="01"##_MON01_##>1</option>
+<option value="02"##_MON02_##>2</option>
+<option value="03"##_MON03_##>3</option>
+<option value="04"##_MON04_##>4</option>
+<option value="05"##_MON05_##>5</option>
+<option value="06"##_MON06_##>6</option>
+<option value="07"##_MON07_##>7</option>
+<option value="08"##_MON08_##>8</option>
+<option value="09"##_MON09_##>9</option>
+<option value="10"##_MON10_##>10</option>
+<option value="11"##_MON11_##>11</option>
+<option value="12"##_MON12_##>12</option>
+</select>月
+<select name="day">
+<option value="01"##_DAY01_##>1</option>
+<option value="02"##_DAY02_##>2</option>
+<option value="03"##_DAY03_##>3</option>
+<option value="04"##_DAY04_##>4</option>
+<option value="05"##_DAY05_##>5</option>
+<option value="06"##_DAY06_##>6</option>
+<option value="07"##_DAY07_##>7</option>
+<option value="08"##_DAY08_##>8</option>
+<option value="09"##_DAY09_##>9</option>
+<option value="10"##_DAY10_##>10</option>
+<option value="11"##_DAY11_##>11</option>
+<option value="12"##_DAY12_##>12</option>
+<option value="13"##_DAY13_##>13</option>
+<option value="14"##_DAY14_##>14</option>
+<option value="15"##_DAY15_##>15</option>
+<option value="16"##_DAY16_##>16</option>
+<option value="17"##_DAY17_##>17</option>
+<option value="18"##_DAY18_##>18</option>
+<option value="19"##_DAY19_##>19</option>
+<option value="20"##_DAY20_##>20</option>
+<option value="21"##_DAY21_##>21</option>
+<option value="22"##_DAY22_##>22</option>
+<option value="23"##_DAY23_##>23</option>
+<option value="24"##_DAY24_##>24</option>
+<option value="25"##_DAY25_##>25</option>
+<option value="26"##_DAY26_##>26</option>
+<option value="27"##_DAY27_##>27</option>
+<option value="28"##_DAY28_##>28</option>
+<option value="29"##_DAY29_##>29</option>
+<option value="30"##_DAY30_##>30</option>
+<option value="31"##_DAY31_##>31</option>
+</select>日
+<br /><select name="hour">
+<option value="">−</option>
+<option value="00"##_HR00_##>00</option>
+<option value="01"##_HR01_##>01</option>
+<option value="02"##_HR02_##>02</option>
+<option value="03"##_HR03_##>03</option>
+<option value="04"##_HR04_##>04</option>
+<option value="05"##_HR05_##>05</option>
+<option value="06"##_HR06_##>06</option>
+<option value="07"##_HR07_##>07</option>
+<option value="08"##_HR08_##>08</option>
+<option value="09"##_HR09_##>09</option>
+<option value="10"##_HR10_##>10</option>
+<option value="11"##_HR11_##>11</option>
+<option value="12"##_HR12_##>12</option>
+<option value="13"##_HR13_##>13</option>
+<option value="14"##_HR14_##>14</option>
+<option value="15"##_HR15_##>15</option>
+<option value="16"##_HR16_##>16</option>
+<option value="17"##_HR17_##>17</option>
+<option value="18"##_HR18_##>18</option>
+<option value="19"##_HR19_##>19</option>
+<option value="20"##_HR20_##>20</option>
+<option value="21"##_HR21_##>21</option>
+<option value="22"##_HR22_##>22</option>
+<option value="23"##_HR23_##>23</option>
+</select>
+時
+<select name="minute">
+<option value="">−</option>
+<option value="00"##_MIN00_##>00</option>
+<option value="01"##_MIN01_##>01</option>
+<option value="02"##_MIN02_##>02</option>
+<option value="03"##_MIN03_##>03</option>
+<option value="04"##_MIN04_##>04</option>
+<option value="05"##_MIN05_##>05</option>
+<option value="06"##_MIN06_##>06</option>
+<option value="07"##_MIN07_##>07</option>
+<option value="08"##_MIN08_##>08</option>
+<option value="09"##_MIN09_##>09</option>
+<option value="10"##_MIN00_##>10</option>
+<option value="11"##_MIN11_##>11</option>
+<option value="12"##_MIN12_##>12</option>
+<option value="13"##_MIN13_##>13</option>
+<option value="14"##_MIN14_##>14</option>
+<option value="15"##_MIN15_##>15</option>
+<option value="16"##_MIN16_##>16</option>
+<option value="17"##_MIN17_##>17</option>
+<option value="18"##_MIN18_##>18</option>
+<option value="19"##_MIN19_##>19</option>
+<option value="20"##_MIN20_##>20</option>
+<option value="21"##_MIN21_##>21</option>
+<option value="22"##_MIN22_##>22</option>
+<option value="23"##_MIN23_##>23</option>
+<option value="24"##_MIN24_##>24</option>
+<option value="25"##_MIN25_##>25</option>
+<option value="26"##_MIN26_##>26</option>
+<option value="27"##_MIN27_##>27</option>
+<option value="28"##_MIN28_##>28</option>
+<option value="29"##_MIN29_##>29</option>
+<option value="30"##_MIN20_##>30</option>
+<option value="31"##_MIN31_##>31</option>
+<option value="32"##_MIN32_##>32</option>
+<option value="33"##_MIN33_##>33</option>
+<option value="34"##_MIN34_##>34</option>
+<option value="35"##_MIN35_##>35</option>
+<option value="36"##_MIN36_##>36</option>
+<option value="37"##_MIN37_##>37</option>
+<option value="38"##_MIN38_##>38</option>
+<option value="39"##_MIN39_##>39</option>
+<option value="40"##_MIN40_##>40</option>
+<option value="41"##_MIN41_##>41</option>
+<option value="42"##_MIN42_##>42</option>
+<option value="43"##_MIN43_##>43</option>
+<option value="44"##_MIN44_##>44</option>
+<option value="45"##_MIN45_##>45</option>
+<option value="46"##_MIN46_##>46</option>
+<option value="47"##_MIN47_##>47</option>
+<option value="48"##_MIN48_##>48</option>
+<option value="49"##_MIN49_##>49</option>
+<option value="50"##_MIN50_##>50</option>
+<option value="51"##_MIN51_##>51</option>
+<option value="52"##_MIN52_##>52</option>
+<option value="53"##_MIN53_##>53</option>
+<option value="54"##_MIN54_##>54</option>
+<option value="55"##_MIN55_##>55</option>
+<option value="56"##_MIN56_##>56</option>
+<option value="57"##_MIN57_##>57</option>
+<option value="58"##_MIN58_##>58</option>
+<option value="59"##_MIN59_##>59</option>
+</select>
+分
+##_DATE_END_##
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_order.gif" border="0">
+<br /><input type="checkbox" value="1" name="INSERT_ORDER"##_INSORD_##>以下の日付のｵーﾀﾞーを挿入する。
+<br />1.日付を選択
+<br /><select name="ORDYEAR">
+##_ORDYEARS_##
+</select>年
+<select name="ORDMONTH">
+<option value="01"##_OMON01_##>1</option>
+<option value="02"##_OMON02_##>2</option>
+<option value="03"##_OMON03_##>3</option>
+<option value="04"##_OMON04_##>4</option>
+<option value="05"##_OMON05_##>5</option>
+<option value="06"##_OMON06_##>6</option>
+<option value="07"##_OMON07_##>7</option>
+<option value="08"##_OMON08_##>8</option>
+<option value="09"##_OMON09_##>9</option>
+<option value="10"##_OMON10_##>10</option>
+<option value="11"##_OMON11_##>11</option>
+<option value="12"##_OMON12_##>12</option>
+</select>月
+<select name="ORDDAY">
+<option value="01"##_ODAY01_##>1</option>
+<option value="02"##_ODAY02_##>2</option>
+<option value="03"##_ODAY03_##>3</option>
+<option value="04"##_ODAY04_##>4</option>
+<option value="05"##_ODAY05_##>5</option>
+<option value="06"##_ODAY06_##>6</option>
+<option value="07"##_ODAY07_##>7</option>
+<option value="08"##_ODAY08_##>8</option>
+<option value="09"##_ODAY09_##>9</option>
+<option value="10"##_ODAY10_##>10</option>
+<option value="11"##_ODAY11_##>11</option>
+<option value="12"##_ODAY12_##>12</option>
+<option value="13"##_ODAY13_##>13</option>
+<option value="14"##_ODAY14_##>14</option>
+<option value="15"##_ODAY15_##>15</option>
+<option value="16"##_ODAY16_##>16</option>
+<option value="17"##_ODAY17_##>17</option>
+<option value="18"##_ODAY18_##>18</option>
+<option value="19"##_ODAY19_##>19</option>
+<option value="20"##_ODAY20_##>20</option>
+<option value="21"##_ODAY21_##>21</option>
+<option value="22"##_ODAY22_##>22</option>
+<option value="23"##_ODAY23_##>23</option>
+<option value="24"##_ODAY24_##>24</option>
+<option value="25"##_ODAY25_##>25</option>
+<option value="26"##_ODAY26_##>26</option>
+<option value="27"##_ODAY27_##>27</option>
+<option value="28"##_ODAY28_##>28</option>
+<option value="29"##_ODAY29_##>29</option>
+<option value="30"##_ODAY30_##>30</option>
+<option value="31"##_ODAY31_##>31</option>
+</select>日
+<br /><small>2.</small> ﾁーﾑを選択 <select name="team">
+<option value="">(↓ﾁーﾑ選択↓)
+##_TEAMS_##
+</select>
+
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_tb.gif" border="0"><br />
+<select name="trackback">
+<option value="1"##_TRACKBACK1_##>受け付ける</option>
+<option value="3"##_TRACKBACK3_##>球友だけ受け付ける</option>
+<option value="0"##_TRACKBACK0_##>受け付けない</option>
+<option value="2"##_TRACKBACK2_##>確認する</option>
+</select>
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_comment.gif" border="0"><br />
+<select name="comment">
+<option value="1"##_COMMENT1_##>受け付ける</option>
+<option value="3"##_COMMENT3_##>球友だけ受け付ける</option>
+<option value="0"##_COMMENT0_##>受け付けない</option>
+<option value="2"##_COMMENT2_##>確認する</option>
+</select>
+##_MODE_START_##
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_open.gif" border="0"><br />
+<select name="entry_mode">
+<option value="1"##_MODE1_##>公開</option>
+<option value="0"##_MODE0_##>下書き</option>
+</select>
+##_MODE_END_##
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_brief.gif" border="0"><br />
+<div>※送信できる文字数は全角100文字以内となります。</div>
+<textarea name="entry_summary" rows="3" cols="30">##_ENTRYSUMMARY_##</textarea>
+<hr size="1"><img src="##_IMAGE_PATH_##blog_entry_tburl.gif" border="0">
+<br />##_TRACKBACKURL_##
+<hr size="1"></font></div>
+<p align=center><input type=submit name=BTN_EDIT_ENTRY value=記事登録> <input type="submit" name="BTN_DELETE_ASK" value="削除"> <input type=submit name=cancel value=ｷｬﾝｾﾙ></p>
+</form>
+
+<p align="right"><font size="-1"><a href="#top">▲PAGE TOP</a></font></p>
+<hr color="#CCCCCC" noshade size="5">
+<div><font size="-1">Copyright(C)2006-2009<br />Sports Ratings Inc. All Rights Reserved.</font></div>
+<hr color="#CCCCCC" noshade size="5">
+
+</body>
+</html>

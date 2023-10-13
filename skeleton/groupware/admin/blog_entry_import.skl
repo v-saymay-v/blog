@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>記事のアップロード</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://www.asj.ne.jp/manual/shopper_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="HotBizブログ管理メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpadding="5" cellspacing="1" width="600">
+<form action="./blog_menu.cgi" ENCTYPE="multipart/form-data" method="POST">
+##_HIDDEN_##
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">記事のアップロード</td>
+</tr>
+<tr class="a1">
+	<td align="center" colspan="2" style="padding:0 0 10 0;">
+		保存したデータを再アップロードしたり、他のブログデータを取り込む際にご利用ください。<br>
+		ファイル形式は「.XML」です。
+	</td>
+</tr>
+<tr class="a1">
+	<td align="center">
+		<table width="500" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td nowrap valign="top">記事ファイル</td>
+			<td><input type="file" name="entry_file" size="56"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">
+		<input type="image" src="##_IMAGES_##/upload.gif" value="アップロード" name="BTN_BLOG_IMPORT">
+		　<a href="./blog_menu.cgi?BTN_DISP_BLOG_IMPORT=1"><img src="##_IMAGES_##/reset.gif" border="0"></a>
+	</td>
+</tr>
+
+</form>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) ADMIRAL SYSTEM Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

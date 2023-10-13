@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="euc-jp"?>
+<response>
+<error>##_ERROR_NO_##</error>
+<rss version="0.91">
+<channel>
+<title>##_TITLE_##</title>
+<link>##_LINK_##</link>
+<description>##_DESCRIPTION_##</description>
+<language>ja-jp</language>
+##_ITEMS_##
+</channel>
+</rss></response>

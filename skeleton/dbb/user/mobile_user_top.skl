@@ -1,0 +1,67 @@
+##_DOCTYPE_##
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>DBBﾌﾞﾛｸﾞ</title>
+</head>
+
+<body bgcolor=#103042 text=#FFFFFF link=#67ffff vlink=#a3ffff alink=#ff0000>
+<a name=top></a>
+<img src=##_IMAGE_PATH_##titleimg_blog.gif alt=DBB vspace=5>
+
+<!--Main Menu-->
+<table width="100%" bgcolor="#f26303">
+<tr>
+	<td align="center">
+		<font size="-1">
+			<a href="##_USER_CGI_##?pg=tp&blog=##_BLOG_##&owner=##_OWNER_##&dbb_access_key=##_KEY_##">##_TITLE_##</a>
+			<br />##_SUBTITLE_##
+		</font>
+	</td>
+</tr>
+</table>
+<font size=-1>
+<hr size=1>
+<font color=yellow>##_ENTRY_TITLE_##</font>
+<br />##_DATETIME_##
+<hr size=1>
+##_ENTRY_BODY_##
+<hr size=1>##_NUMBERKEY1_####_PREV_##　##_NUMBERKEY2_####_NEXT_##
+<hr size=1>
+##_NUMBERKEY3_####_CMT_##
+<br />##_NUMBERKEY4_####_TRB_##
+<br />##_NUMBERKEY5_####_CMTWRT_##
+<br />##_NUMBERKEY6_####_TRBWRT_##
+<br />##_NUMBERKEY7_####_FAVORITE_##
+<hr size=1>
+<a href="##_USER_URL_##?pg=sl&blog=##_BLOG_##&owner=##_OWNER_##&dbb_access_key=##_KEY_##">最新記事一覧</a>
+<br /><a href="##_USER_URL_##?pg=ma&blog=##_BLOG_##&owner=##_OWNER_##&dbb_access_key=##_KEY_##">月別ｱｰｶｲﾌﾞ</a>
+<br /><a href="##_USER_URL_##?pg=ab&blog=##_BLOG_##&owner=##_OWNER_##&dbb_access_key=##_KEY_##">このﾌﾞﾛｸﾞについて</a>
+
+<form action="##_USER_URL_##" method="GET">
+<input type="hidden" name="pg" value="sl">
+##_HIDDEN_##
+<input type=text name=word size=14 maxlength=48><input type=submit name=search value=ﾌﾞﾛｸﾞ検索>
+<br /><input type="checkbox" name="search_subject" value="1">件名<input type="checkbox" name="search_content" value="1" checked>本文<input type="checkbox" name="search_comment" value="1">ｺﾒﾝﾄ<input type="checkbox" name="search_trackback" value="1">引用記事
+</form>
+##_MENU_START_##
+<hr size=1>
+##_NUMBERKEY8_####_ENTWRT_##
+<br />##_NUMBERKEY9_####_ENTEDT_##
+##_MENU_END_##
+<!--
+<br />##_NUMBERKEY9_##<a ##_ACCESSKEY_##=9 href="##_ADMIN_URL_##?pg=me&eid=##_EID_##&start=##_START_##&owner=##_OWNER_##&dbb_access_key=##_KEY_##">記事を編集</a>
+-->
+<hr size=1>
+</font>
+<div align=right><font size=-1><a href=#top>▲PAGE TOP</a></font></div>
+<hr />
+<div><font size=2><a href="##_TOP_URL_##?owner=##_OWNER_##&dbb_access_key=##_KEY_##"><img src="##_IMAGE_PATH_##go-home.gif">Blogへ戻る</a></font><br />
+<font size=2>##_NUMBERKEY0_##<a href="##_HOME_URL_##?owner=##_OWNER_##&dbb_access_key=##_KEY_##" ##_ACCESSKEY_##=0>DBB ﾎｰﾑへ戻る</a><br />
+##_NUMBERKEYS_##<a href="##_INQUIRY_URL_##?owner=##_OWNER_##&dbb_access_key=##_KEY_##" ##_ACCESSKEY_##=#>お問い合わせ</a></font></div>
+<hr color=#CCCCCC noshade size=5>
+<div><font size=-1>Copyright(C)2006-2010<br />ASJ Inc. All Rights Reserved.</div>
+<hr color=#CCCCCC noshade size=5>
+
+</body>
+</html>

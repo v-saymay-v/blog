@@ -1,0 +1,12 @@
+default:
+all:
+clean:
+hbsync:
+cartsync:
+rsvsync:
+dbbsync:
+depend:
+instdbb:
+insthb:
+instcart:
+instrsv:

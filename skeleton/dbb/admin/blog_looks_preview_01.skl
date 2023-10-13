@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Dream Baseballブログ</title>
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+</head>
+
+<body>
+<!--header_area-->
+<a name="top"></a>
+
+<table width="100%" bgcolor="#103042" cellspacing="5">
+<tr>
+	<td align="right"><img src="/images/user/dbb_logo02.gif" alt="DreamBaseballブログ"></td>
+</tr>
+</table>
+
+<table width="760" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+	<td>
+	<!--title_area-->
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td class="site_title">
+		<a href="">ドリームベースボール（ブログのタイトル）</a><br>
+		<span class="description">野球をもっと楽しもう！＼(^_^)／</span></td>
+	</tr>
+	</table></td>
+</tr>
+<!--HEAD OF MAINAREA-->
+<tr>
+	<td align="center">
+	<table width="100%" cellpadding=0 cellspacing=0 class="tab-design">
+	<tr>
+		<td colspan=4><img src="/images/theme/transparent.gif" height="7"></td>
+	</tr>
+	<tr>
+		<!--sidebar-->
+		<td width="15"><img src="/images/theme/transparent.gif"></td>
+		<td width="20%" valign="top">
+		<table width="100%" cellpadding=0 cellspacing=0>
+		<tr>
+			<td>
+		<table border="0" cellspacing="0" cellpadding="0" class="sidebar">
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">最新記事</td>
+		</tr>
+		<tr>
+			<td class="side-latest-comment">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td valign="top" width="10">*</td>
+				<td><a href="">DBBのはじめかた</a><br>
+				(2008年01月01日11時48分)</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+		<td class="linktitle"><img src="/images/theme/##_MINUS_##">最新のコメント</td>
+		</tr>
+		<tr>
+			<td class="side-latest-comment">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td valign="top" width="10">*</td>
+				<td valign="top"><a href="">初心者プレイヤー</a><br>
+				⇒DBBのはじめかた(2008年01月03日15時13分)</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##" border="0">引用された記事</td>
+		</tr>
+		<tr>
+			<td class="side-latest-trackback">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td valign="top" width="10">*</td>
+				<td>もっとDBBを楽しもう<br>
+				<small>(06年01月01日15時17分)</small><br>
+				⇒ドリームベースボール（ブログのタイトル）</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">カレンダー</td>
+		</tr>
+		<tr>
+			<td class="side-calendar">
+			<table width="100%" cellpadding="0" cellspacing="1">
+			<tr>
+				<td>&nbsp;</td>
+				<td><a href="" title="2008 June">&lt;&lt;</a></td>
+				<td colspan="5"><span class="calendar-month">2008 January</span></td>
+				<td><a href="" title="2008 August">&gt;&gt;</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="calendar-week">日</td>
+				<td class="calendar-week">月</td>
+				<td class="calendar-week">火</td>
+				<td class="calendar-week">水</td>
+				<td class="calendar-week">木</td>
+				<td class="calendar-week">金</td>
+				<td class="calendar-week">土</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell"><a href=""> 1</a><sup>*</sup></td>
+				<td class="cell"> 2</td>
+				<td class="cell"> 3</td>
+				<td class="cell"> 4</td>
+				<td class="cell"> 5</td>
+				<td class="today"><span title="today"> 6</span></td>
+				<td class="cell"> 7</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell"> 8</td>
+				<td class="cell"> 9</td>
+				<td class="cell">10</td>
+				<td class="cell">11</td>
+				<td class="cell">12</td>
+				<td class="cell">13</td>
+				<td class="cell">14</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell">15</td>
+				<td class="cell">16</td>
+				<td class="cell">17</td>
+				<td class="cell">18</td>
+				<td class="cell">19</td>
+				<td class="cell">20</td>
+				<td class="cell">21</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell">22</td>
+				<td class="cell">23</td>
+				<td class="cell">24</td>
+				<td class="cell">25</td>
+				<td class="cell">26</td>
+				<td class="cell">27</td>
+				<td class="cell">28</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="cell">29</td>
+				<td class="cell">30</td>
+				<td class="cell">31</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">月別アーカイブ</td>
+		</tr>
+		<tr>
+			<td class="side-marchive">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td colspan="5" class="side-marchive-year">- <b>2008</b></td>
+			</tr>
+			<tr>
+				<td nowrap>&nbsp;</td>
+				<td nowrap><a href="">1月</a></td>
+				<td nowrap>2月</td>
+				<td nowrap>3月</td>
+				<td nowrap>4月</td>
+				<td nowrap>5月</td>
+				<td nowrap>6月</td>
+			</tr>
+			<tr>
+				<td nowrap>&nbsp;</td>
+				<td nowrap>7月</td>
+				<td nowrap>8月</td>
+				<td nowrap>9月</td>
+				<td nowrap>10月</td>
+				<td nowrap>11月</td>
+				<td nowrap>12月</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">Ｍｙ Ａｖａｔａｒ</td>
+		</tr>
+		<tr>
+			<td class="side-profile">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="center">
+##_AVATAR_##
+				</td>
+			</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">ブログ内検索</td>
+		</tr>
+		<tr>
+			<td class="side-blog-search">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<form method="post" action="blog_build_html.cgi">
+			<input type="hidden" name="bid" value="26">
+			<tr>
+				<td>
+				<input type="text" name="search_string"><input type="submit" name="BTN_BLOG_SEARCH" value="検索"></td>
+			</tr>
+			<tr>
+				<td nowrap>
+				<input type="checkbox" name="search_subject" value="1">件名
+				<input type="checkbox" name="search_content" value="1" checked>本文
+				<input type="checkbox" name="search_comment" value="1">コメント
+				<input type="checkbox" name="search_trackback" value="1">引用記事</td>
+			</tr>
+			</form>
+			</table></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">あしあと</td>
+		</tr>
+		<tr>
+			<td class="side-visitor-list">
+			<ul>
+			<li>訪問者はいません</li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_PLUS_##">管理メニュー</td>
+		</tr>
+		<tr>
+			<td class="linktitle"><img src="/images/theme/##_MINUS_##">アクセス数</td>
+		</tr>
+		<tr>
+			<td class="side-access-counter">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="left"><b>・</b>アクセス数(累計)</td>
+				<td align="right">458</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>訪問者数(累計)</td>
+				<td align="right">446</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>アクセス数(本日)</td>
+				<td align="right">40</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>訪問者数(本日)</td>
+				<td align="right">35</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>ランキング</td>
+				<td align="right">1234</td>
+			</tr>
+			<tr>
+				<td align="left"><b>・</b>お気に入り登録数</td>
+				<td align="right">5</td>
+			</tr>
+			</table></td>
+		</tr>
+		</table></td>
+	</tr>
+	</table>
+	<br></td>
+		<td width="5"><img src="/images/theme/transparent.gif"></td>
+		<!--article_area-->
+		<td width="" valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" class="top-main">
+		<tr>
+			<td class="frame-top-left"></td>
+			<td class="frame-top-middle"></td>
+			<td class="frame-top-right"></td>
+		</tr>
+		<tr>
+			<td class="frame-middle-left"></td>
+			<td align="left">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entry-day-title">
+			<tr>
+				<td height="30">2008年01月01日</td>
+			</tr>
+			</table>
+
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entrytable">
+			<tr>
+				<td><div class="entry_title"><a href="">ＤＢＢのはじめかた</a></div>
+				<div class="entry_body">ドリームベースボールを楽しむには、会員登録が必要です。<br>
+				会員の登録は無料です。会員登録すると、ゲーム用のバーチャル選手カードがもらえます。この選手カードを集めて、自分だけのチームを作ります。ドリームベースボールのショップでは、専用の通貨「DC（ドリームクレジット）」を使って、選手カードやゲーム用アイテムを購入することができます。</td>
+			</tr>
+			<tr>
+				<td><div class="entry_state">11時48分 | <a href="">コメント(1)</a> | <a href="">引用記事(0)</a> | <a href="#top">↑TOP</a></div></td>
+			</tr>
+			</table>
+
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="entrytable">
+			<tr>
+				<td><div class="entry_title"><a href="">もっとDBBを楽しもう</a></div>
+				<div class="entry_body">日本でもコミュニティサイトを中心にすっかりおなじみになったアバターを利用できるのも、「ドリームベースボール」の楽しみの一つです。日本で初めてのNPB承認ゲームのアバターですから、各チームのユニフォームをそのまま、自分のアバターに着せたり、かわいい球団マスコットもコレクションできます！応援グッズに身を固めて、友達に自慢しましょう!!!<br>
+				「ドリームベースボール」では、仲間とクラブ（＝コミュニティ）を作って、プロ野球の試合結果に仲間と一喜一憂したり、仲間同士でチームのポイントを競ったりと、ワイワイ遊べるようになっています。「ドリームベースボール」は単なるゲームサイトではなく、コミュニティとして楽しむこともできます！<br>
+				<br>
+				ブログでチームのオーダーリストを挿入することができます。<br>
+				あなたのチームオーダーを公開して、弱点はどこか、入れ替えるなら誰か、上位を狙うには……など、仲間に意見を聞いてみるのも良いかもしれません。</div></td>
+			</tr>
+			<tr>
+				<td><div class="entry_state">10時48分 | <a href="">コメント(0)</a> | <a href="">引用記事(1)</a> | <a href="#top">↑TOP</a></div></td>
+			</tr>
+			</table></td>
+			<td class="frame-middle-right"></td>
+		</tr>
+		<tr>
+			<td class="frame-bottom-left"></td>
+			<td class="frame-bottom-middle"></td>
+			<td class="frame-bottom-right"></td>
+		</tr>
+		</table>
+
+		<table border="0" width="100%">
+		<tr>
+			<td align="center"><a href="#top"><img src="/images/theme/back_top.gif" border="0" alt="ページのTOPへ"></a>　<a href=""><img src="/images/theme/back_blogtop.gif" border="0" alt="ブログのTOPへ"></a></td>
+		</tr>
+		</table></td>
+	</tr>
+	</table></td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+
+<!--footer-->
+<table width="100%" bgcolor="#103042" cellspacing="5">
+<tr>
+	<td align="center"><img src="/images/user/coop.gif" alt="協力"><br>
+	<img src="/images/user/copyright.gif" alt="Copyright(C)2008 Sports Ratings Inc. All Rights Reserved."></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>eリザーブブログ管理メニュー</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+
+<div id="help">
+	<p><a href="http://www.asj.ne.jp/manual/e-reserve_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif"></a></p>
+</div>
+
+<div id="header">
+	<p><img src="##_IMAGES_##/logo.gif"></p>
+</div>
+
+<div id="container">
+	<h1>記事の管理</h1>
+	<dl>
+		<dt>新たに記事を投稿する</dt>
+		<dd><a href="blog_entry.cgi?BTN_DISP_NEWENTRY=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+		<dt class="white">記事を編集・削除する</dt>
+##_ENABLE_START_##
+		<dd><a href="blog_entry_list.cgi?BTN_DISP_ENTRYLIST=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+##_ENABLE_END_##
+##_DISABLE_START_##
+		<dd><img src="##_IMAGES_##/no_jikkou.gif"></dd>
+##_DISABLE_END_##
+	</dl>
+
+	<h1>Blog 設定管理</h1>
+	<dl>
+		<dt>カテゴリーの設定</dt>
+		<dd><a href="blog_category.cgi?BTN_DISP_CATEGORY=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+		<dt class="white">Blog全体に関する設定</dt>
+		<dd><a href="blog_configure.cgi?BTN_DISP_CONFIGURE=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+		<dt>サイドバーの設定</dt>
+		<dd><a href="blog_sidecontent.cgi?BTN_DISP_SETTING_SIDECONTENT=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+		<dt class="white">デザインの設定</dt>
+		<dd><a href="blog_looks.cgi?BTN_DISP_SETTING_LOOKS=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+##_COMMENT_START_##
+		<dt>ブックマークレットの設定</dt>
+		<dd><a href="blog_bookmarklet.cgi?BTN_DISP_SETTING_BOOKMARKLET=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+##_COMMENT_END_##
+##_PROFILE_START_##
+		<dt class="white">プロフィールの編集</dt>
+		<dd><a href="blog_sidecontent.cgi?BTN_DISP_PROFILE=1&sidecontent=6:6&from_top=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+##_PROFILE_END_##
+	</dl>
+
+	<h1>Blog データ</h1>
+	<dl>
+		<dt>保存(ダウンロード)</dt>
+		<p class="topmargin">※ データの保存にご利用ください。</p>
+		<p>※ ファイル形式は「.XML」です。</p>
+		<dd class="up"><a href="blog_menu.cgi?BTN_BLOG_EXPORT=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+		<dt class="white">ブログに取り込む(アップロード)</dt>
+		<p class="topmargin02">※ 保存したデータを再アップロードしたり、他のブログデー<br>　　タを取り込む際にご利用ください。</p>
+		<p class="white">※ ファイル形式は「.XML」です。</p>
+		<dd  class="up02"><a href="blog_menu.cgi?BTN_DISP_BLOG_IMPORT=1&blogid=##_BLOGID_##"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+	</dl>
+
+		<h1>Blog 参照</h1>
+	<dl>
+		<dt>ブログのトップページを開く</dt>
+		<p class="topmargin">※ 公開中のeリザーブブログトップページを開きます。</p>
+		<dd class="up03"><a href="##_BLOGTOP_##" target="_blank"><img src="##_IMAGES_##/jikkou.gif"></a></dd>
+	</dl>
+</div>
+
+<div id="copyright">
+	<p><img src="##_IMAGES_##/copyright.gif"></p>
+</div>
+
+##_DIALOG_##
+</body>
+</html>

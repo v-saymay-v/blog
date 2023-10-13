@@ -1,0 +1,31 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=EUC-JP">
+<title>コメント承認確認</title>
+</head>
+
+<body background="##_IMAGES_##/bg_dbb.gif">
+<form action="##_ACTION_##" method="post">
+##_HIDDEN_##
+<BR><BR><BR><BR><BR><BR>
+<TABLE BORDER="6" BORDERCOLOR="#FFCC00" WIDTH="400" ALIGN="center" BGCOLOR="#FFFFCC" CELLPADDING="4" CELLSPACING="0">
+<TR>
+	<TD ALIGN="CENTER">
+		<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="100%" ALIGN="center">
+		<TR>
+			<TD ALIGN="CENTER">
+				ログイン情報をブログ担当者のメールアドレスに送信しました。
+			</TD>
+		</TR>
+		<TR>
+			<TD ALIGN="CENTER">
+				<INPUT TYPE="submit" VALUE="  確 認  ">
+			</TD>
+		</TR>
+		</TABLE>
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</body>
+</html>

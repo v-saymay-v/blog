@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>DBB_blog 管理者メニュー</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+<br>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://help.d-bb.com/blog/" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="DreamBaseballブログ　管理者メニュー">
+	</td>
+</tr>
+</table>
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<tr class="a0" bgcolor="#E0EBF5">
+	<td>記事の管理</td>
+</tr>
+<tr>
+	<td align="center">
+		<table border="0" cellpadding="5" cellspacing="0" width="400">
+
+		<tr class="a1" bgcolor="#eeeeee">
+			<td>新たに記事を投稿する</td>
+			<td align="center" width="60"><a href="blog_entry.cgi?BTN_DISP_NEWENTRY=1"><img src="##_IMAGES_##/jikkou.gif" border="0"></a></td>
+		</tr>
+
+		<tr class="a1">
+			<td>記事を編集・削除する</td>
+##_ENABLE_START_##
+			<td align="center" width="60"><a href="blog_entry_list.cgi?BTN_DISP_ENTRYLIST=1"><img src="##_IMAGES_##/jikkou.gif" border="0"></a></td>
+##_ENABLE_END_##
+##_DISABLE_START_##
+			<td align="center" width="60"><img src="##_IMAGES_##/no_jikkou.gif" border="0"></td>
+##_DISABLE_END_##
+		</tr>
+
+		<tr class="a1" bgcolor="#eeeeee">
+			<td height="5" colspan="2"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td height="15"></td>
+</tr>
+<tr class="a0" bgcolor="#E0EBF5">
+	<td>Blog 設定管理</td>
+</tr>
+<tr>
+	<td align="center">
+		<table border="0" cellpadding="5" cellspacing="0" width="400">
+		<tr class="a1">
+			<td>Blog全体に関する設定</td>
+			<td align="center" width="60"><a href="blog_configure.cgi?BTN_DISP_CONFIGURE=1"><img src="##_IMAGES_##/jikkou.gif" border="0"></a></td>
+		</tr>
+		<tr class="a1" bgcolor="#eeeeee">
+			<td>サイドバーの設定</td>
+			<td align="center" width="60"><a href="blog_sidecontent.cgi?BTN_DISP_SETTING_SIDECONTENT=1"><img src="##_IMAGES_##/jikkou.gif" border="0"></a></td>
+		</tr>
+		<tr class="a1">
+			<td>デザインの設定</td>
+			<td align="center" width="60"><a href="blog_looks.cgi?BTN_DISP_SETTING_LOOKS=1"><img src="##_IMAGES_##/jikkou.gif" border="0"></a></td>
+		</tr>
+		<tr class="a1" bgcolor="#eeeeee">
+			<td height="5" colspan="2"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td height="15"></td>
+</tr>
+<tr class="a0" bgcolor="#E0EBF5">
+	<td>Blog 参照</td>
+</tr>
+<tr>
+	<td align="center">
+		<table border="0" cellpadding="5" cellspacing="0" width="400">
+		<tr class="a1" bgcolor="#eeeeee">
+			<td width="340">ブログのトップページを開く</td>
+			<td align="center" width="60"><a href="##_BLOGTOP_##" target="_blank"><img src="##_IMAGES_##/jikkou.gif" border="0"></a></td>
+		</tr>
+		<TR class="a1" bgColor="#eeeeee">
+			<TD colspan="2">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%;">
+			<tr>
+				<td style="padding:0 0 0 30;" width="16" valign="top">※</td>
+				<td style="padding:0 64 0 0;">公開中のDBBブログトップページを開きます</td>
+			</tr>
+			</table>
+			</td>
+		</TR>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td height="15"></td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) Sports Ratings Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+##_DIALOG_##
+</body>
+</html>

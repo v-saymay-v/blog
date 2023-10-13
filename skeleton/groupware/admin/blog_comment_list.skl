@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>コメントの編集・削除</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://www.asj.ne.jp/manual/shopper_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="HotBizブログ管理メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" width="800" cellpadding="0" cellspacing="0">
+<tr>
+	<td>
+		<table border="0" width="100%" cellpadding="5" cellspacing="1">
+		<tr class="a0" bgcolor="#a2c2ef">
+			<td align="center" colspan="2">コメントの編集・削除</td>
+		</tr>
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="2" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+		</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<table border="0" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td height="10"></td>
+		</tr>
+		<tr>
+			<td>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td><img src="##_IMAGES_##/k_tab_02.gif" border="0" usemap="#m_01"></td>
+					<map name="m_01">
+						<area shape="rect" coords="1,1,105,27" href="./blog_entry_list.cgi?BTN_DISP_ENTRYLIST=1##_FROM_USER_##" alt="記事の編集">
+						<area shape="rect" coords="131,1,252,27" href="./blog_comment_list.cgi?BTN_DISP_COMMENTLIST=1##_FROM_USER_##" alt="コメントの編集">
+						<area shape="rect" coords="280,1,442,27" href="./blog_tb_list.cgi?BTN_DISP_TRACKBACKLIST=1##_FROM_USER_##" alt="トラックバックの編集">
+					</map>
+			</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="10" style="background-color:#D2D5FF;"></td>
+		</tr>
+		<tr>
+			<td height="10"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<table border="0" width="100%" cellpadding="5" cellspacing="1">
+		<form action="./blog_comment_list.cgi" method="POST">
+##_HIDDEN_##
+##_FROMUSER_##
+		<tr class="a1" bgcolor="#a5c3ef">
+			<td colspan="2"></td>
+			<td colspan="6" align="center" height="18">
+				<table border="0" cellpadding="0" cellspacing="2" width="100%">
+				<tr class="a1">
+					<td align="left">
+						<input type="image" src="##_IMAGES_##/##_MAEMAE_##" value="一番前へ" name="BTN_TOPPAGE" style="width:40px" ##_BUTTONTOPPAGE_##>
+						<input type="image" src="##_IMAGES_##/##_MAE_##" value="前へ" name="BTN_PREVPAGE" style="width:40px" ##_BUTTONPREVPAGE_##>
+					</td>
+					<td align="center"><b>コメント管理  ##_PAGE_## </b></td>
+					<td align="right">
+						<input type="image" src="##_IMAGES_##/##_TUGI_##" value="次へ" name="BTN_NEXTPAGE" style="width:40px" ##_BUTTONNEXTPAGE_##>
+						<input type="image" src="##_IMAGES_##/##_TUGITUGI_##" value="一番最後へ" name="BTN_LASTPAGE" style="width:40px" ##_BUTTONLASTPAGE_##>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="a2" bgcolor="#c6e3ff">
+			<td align="center"><input type="image" src="##_IMAGES_##/delete.gif" value="削除" name="BTN_DISP_DELETE_COMMENT_ASK"></td>
+			<td align="center"><input type="image" src="##_IMAGES_##/shounin.gif" value="承認" name="BTN_DISP_ACCEPT_COMMENT_ASK"></td>
+			<td align="center" nowrap>投稿者</td>
+			<td align="center" nowrap>URL</td>
+##_IP_START_##
+			<td align="center" nowrap>IP</td>
+##_IP_END_##
+			<td align="center" nowrap>記事タイトル</td>
+			<td align="center" nowrap>フィルタ</td>
+			<td align="center" nowrap>日時</td>
+		</tr>
+##_LIST_##
+		<tr class="a2" bgcolor="#a5c3ef">
+			<td align="center"><input type="image" src="##_IMAGES_##/delete.gif" value="削除" name="BTN_DISP_DELETE_COMMENT_ASK"></td>
+			<td align="center"><input type="image" src="##_IMAGES_##/shounin.gif" value="承認" name="BTN_DISP_ACCEPT_COMMENT_ASK"></td>
+			<td colspan="6" align="center" height="18">
+				<table border="0" cellpadding="0" cellspacing="2" width="100%">
+				<tr class="a1">
+					<td align="left">
+						<input type="image" src="##_IMAGES_##/##_MAEMAE_##" value="一番前へ" name="BTN_TOPPAGE" style="width:40px" ##_BUTTONTOPPAGE_##>
+						<input type="image" src="##_IMAGES_##/##_MAE_##" value="前へ" name="BTN_PREVPAGE" style="width:40px" ##_BUTTONPREVPAGE_##>
+					</td>
+					<td align="center"><br></td>
+					<td align="right">
+						<input type="image" src="##_IMAGES_##/##_TUGI_##" value="次へ" name="BTN_NEXTPAGE" style="width:40px" ##_BUTTONNEXTPAGE_##>
+						<input type="image" src="##_IMAGES_##/##_TUGITUGI_##" value="一番最後へ" name="BTN_LASTPAGE" style="width:40px" ##_BUTTONLASTPAGE_##>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</form>
+		</table>
+	</td>
+</tr>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) ADMIRAL SYSTEM Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+
+##_DIALOG_##
+
+</body>
+</html>

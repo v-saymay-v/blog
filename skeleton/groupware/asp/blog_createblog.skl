@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>ブログの追加</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+<br>
+
+<table border="0" cellpadding="5" cellspacing="1" width="600">
+<form action="./blog_createblog.cgi" method="POST">
+##_HIDDEN_##
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">ブログの追加</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">Blog のタイトル</td>
+	<td><input type="text" name="blog_title" size="56" value="##_BLOG_TITLE_##" maxlength="100"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">Blogのサブタイトル</td>
+	<td><input type="text" name="blog_subtitle" size="56" value="##_BLOG_SUBTITLE_##" maxlength="100"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">Blogの説明</td>
+	<td><textarea rows="4" name="blog_description" cols="40">##_BLOG_DESCRIPTION_##</textarea></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">管理モードへのログインID</td>
+	<td><input type="text" name="blog_login" size="30" value="##_BLOG_LOGIN_##" maxlength="20"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">管理モードへのログインパスワード</td>
+	<td><input type="password" name="blog_pass1" size="30" maxlength="20"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">(確認のため再入力)</td>
+	<td><input type="password" name="blog_pass2" size="30" maxlength="20"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">トップページの表示</td>
+	<td>
+	<input type="radio" value="0" name="toppage_disp_type" id="disptype0" ##_DISP_TYPE_SELECTED_INDEX_##> <label for="disptype0">最新の</label><input type="text" name="latest_index" size="2" value="##_LATEST_INDEX_##" maxlength="2"><label for="disptype0">件の投稿を表示する</label><br>
+	<input type="radio" value="1" name="toppage_disp_type" id="disptype1" ##_DISP_TYPE_SELECTED_DAY_##> <label for="disptype1">最近の</label><input type="text" name="latest_day" size="2" value="##_LATEST_DAY_##" maxlength="2"><label for="disptype1">日の投稿を表示する</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">トラックバック(初期値)</td>
+	<td>
+	<input type="radio" value="1" id="trackback1" name="default_trackback" ##_TRACKBACK1_##><label for="trackback1">受け付ける</label>
+	　<input type="radio" value="0" id="trackback0" name="default_trackback" ##_TRACKBACK0_##><label for="trackback0">受け付けない</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">コメント(初期値)</td>
+	<td>
+	<input type="radio" value="1" id="comment1" name="default_comment" ##_COMMENT1_##><label for="comment1">受け付ける</label>
+	　<input type="radio" value="0" id="comment0" name="default_comment" ##_COMMENT0_##><label for="comment0">受け付けない</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">公開モード(初期値)</td>
+	<td>
+	<input type="radio" value="1" id="mode1" name="default_mode" ##_MODE1_##><label for="mode1">公開</label>
+	　<input type="radio" value="0" id="mode0" name="default_mode" ##_MODE0_##><label for="mode0">下書き</label>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">更新ping送信先(初期値)</td>
+	<td>
+	##_DEFAULT_PREPARED_PING_##
+	##_DEFAULT_OTHER_PING_##
+	<span style="font-size:75%">さらに追加する場合はIPアドレスもしくはホスト名1つを1行として記入してください。</span><br>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">カテゴリー(初期値)</td>
+	<td>##_DEFAULT_CATEGORY_##</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">コメント拒否ホスト</td>
+	<td>
+	##_DENIAL_COMMENT_HOST_##<br>
+	<span style="font-size:75%">拒否するIPアドレスもしくはホスト名1つを1行として記入してください。</span><br>
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">トラックバック拒否ホスト</td>
+	<td>
+	##_DENIAL_TRACKBACK_HOST_##<br>
+	<span style="font-size:75%">拒否するIPアドレスもしくはホスト名1つを1行として記入してください。</span><br>
+	</td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">##_BUTTON_CONFIGURE_##　<input type="reset" value="リセット" name="BTN_RESET"></td>
+</tr>
+
+</form>
+</table>
+
+<p align="center" class="a2"><a href="##_NEXTCGI_##">##_TOP_##のトップへ</a></p>
+
+</center>
+</body>
+</html>

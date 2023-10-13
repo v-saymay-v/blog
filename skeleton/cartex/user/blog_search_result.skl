@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>##_BLOGTITLE_##</title>
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="##_PATHRSS_##" />
+<script language="JavaScript">
+<!--
+function OnLoad()
+{
+	window.name = 'dbb_blog_main_wnd';
+}
+//-->
+</script>
+</head>
+
+<body onload="OnLoad()">
+<!--header_area-->
+<a name="top"></a>
+
+<!--title_area-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr>
+	<td class="site_title">
+##_TITLE_##
+##_SUBTITLE_##
+	</td>
+</tr>
+</table>
+
+<!--HEAD OF MAINAREA-->
+<table class="tab-design" align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr>
+	<td>
+		<table class="search-result" align="center" border="0" cellspacing="0" cellpadding="0" width="730">
+		<tr>
+			<td><img src="##_IMAGES_##/transparent.gif" height="7"></td>
+		</tr>
+		<tr>
+			<td align="center" class="visitor-title">ブログ内検索</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<!--result_area-->
+				<table border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td align="left">
+						<form method="post" action="blog_build_html.cgi">
+						<input type="hidden" name="BTN_BLOG_SEARCH">
+##_HIDDEN_##
+						<table border="0" cellspacing="5" cellpadding="0" width="100%">
+						<tr>
+							<td>
+								<input type="text" name="search_string" value="##_STRING_##" size="60" maxlength="256">
+								<input type="submit" name="BTN_BLOG_SEARCH" value="検索する">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="search_subject" value="1"##_SUBJECT_##>件名
+								<input type="checkbox" name="search_content" value="1"##_CONTENT_##>本文
+								<input type="checkbox" name="search_comment" value="1"##_COMMENT_##>コメント
+								<input type="checkbox" name="search_trackback" value="1"##_TRACKBACK_##>トラックバック
+							</td>
+						</tr>
+						</table>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="middle" height="25">検索結果&nbsp;：&nbsp;全 ##_ALL_## 件　##_PAGE_##</td>
+				</tr>
+##_RESULT_##
+##_RESULT_START_##
+				<tr>
+					<td align="left" valign="middle" height="25">検索結果&nbsp;：&nbsp;全 ##_ALL_## 件　##_PAGE_##</td>
+				</tr>
+##_RESULT_END_##
+				</table>
+			</td>
+		</tr>
+		</table>
+		<br><a href="#top"><img src="##_IMAGES_##/back_top.gif" border="0" alt="ページのTOPへ"></a>　<a href="##_BLOGTOP_##"><img src="##_IMAGES_##/back_blogtop.gif" border="0" alt="ブログのTOPへ"></a><br>
+		<br>
+	</td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+
+<!--footer-->
+<table width="760" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td class="copyright">
+		<img src="##_IMAGES_##/copyright.gif" alt="Copyright(C) ASJ Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>プレビュー</title>
+<!--記事-->
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+<script language="javascript">
+<!--
+function CallCGI(val) {
+	return;
+}
+// -->
+</script>
+</head>
+<body>
+
+<!--header_area-->
+##_HEADER_##
+
+<a name="top"></a>
+<!--title_area-->
+##_TITLE_##
+
+<!--HEAD OF MAINAREA-->
+<table width="760" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td align="center" height="30">
+		<img src="##_IMAGES_##/preview_b.gif" border="0">
+	</td>
+</tr>
+</table>
+
+<table class="tab-design" align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr valign="top">
+<!--article_area-->
+	<td>
+##_ARTICLE_##
+	</td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+
+<!--footer-->
+##_FOOTER_##
+<form action="./blog_entry.cgi" method="POST">
+<input type="hidden" name="from_preview" value="1">
+##_HIDDEN_##
+<table width="760" cellpadding="0" cellspacing="0" border="0" height="30" align="center">
+<tr>
+	<td align="center">
+		<input type="image" src="##_IMAGES_##/back_toukou.gif" value="投稿画面へ戻る" name="##_BUTTON_##">
+	</td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

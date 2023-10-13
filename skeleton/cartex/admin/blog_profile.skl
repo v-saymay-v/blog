@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>プロフィールの設定</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://www.asj.ne.jp/manual/shopper_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="店長ブログ管理メニュー">
+	</td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpadding="5" cellspacing="1" width="600">
+<form action="./blog_sidecontent.cgi" ENCTYPE="multipart/form-data" method="POST">
+##_HIDDEN_##
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="2" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center" colspan="2">プロフィールの設定</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">店長のニックネーム
+	<span style="color:red;">（必須）</span><br><span style="font-size:11;">(半角100字、全角50字以内)</span></td>
+	<td><input type="text" name="author_nickname" size="56" value="##_AUTHOR_NICKNAME_##" maxlength="100"></td>
+</tr>
+##_LOGIN_START_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">管理モードへのログインID</td>
+	<td><input type="text" name="author_login" size="30" value="##_AUTHOR_LOGIN_##" maxlength="20"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">管理モードへのログインパスワード</td>
+	<td><input type="password" name="author_pass1" size="30" value="##_AUTHOR_PASS1_##" maxlength="20"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">(確認のため再入力)</td>
+	<td><input type="password" name="author_pass2" size="30" value="##_AUTHOR_PASS2_##" maxlength="20"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">リマインダの質問</td>
+	<td>
+##_REMINDER_##
+	</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">リマインダの答え</td>
+	<td><input type="text" name="author_answer" size="30" value="##_AUTHOR_ANSWER_##" maxlength="255"></td>
+</tr>
+##_LOGIN_END_##
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">店長のメールアドレス
+		<span style="color:red;">（必須）</span><br><span style="font-size:11;">(半角200字以内)</span></td>
+	<td><input type="text" name="author_mail" size="56" value="##_AUTHOR_MAIL_##" maxlength="200"></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">メール受信</td>
+	<td><input type="checkbox" name="author_send" value="1" ##_AUTHOR_SEND_##>コメント・トラックバック時にメールを受け取る</td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">店長の説明
+	<br><span style="font-size:11;">(半角1,024字、全角512字以内)</span></td>
+	<td><textarea rows="4" name="author_notion" cols="40">##_AUTHOR_NOTION_##</textarea></td>
+</tr>
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#c2e2ff">店長画像<br>
+	<span style="font-size:11;">(1ファイルあたり512KB以内)</span>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:12; color:#666666; line-height:130%; padding:0 6 0 0;">
+		<tr>
+			<td>
+			<ul>
+				<li>添付できるファイル形式は、GIF、JPG、PNG、BMPです。
+			</ul>
+			</td>
+		</tr>
+		</table></td>
+	<td>
+		<table border="0">
+		<tr class="a1">
+			<td valign="bottom">
+##_AUTHOR_IMAGE_##
+			</td>
+		</tr>
+		<tr>
+			<td><input type="file" name="author_image" size="56"></td>
+		</tr>
+		<tr>
+			<td>
+				<lu>
+					<li><small>画像は 120ピクセル x 90ピクセル で表示されます。</small></li>
+					<li><small>画像ファイルのサイズは512KB以内にしてください。</small></li>
+				</lu>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr class="a1" bgcolor="#a2c2ef">
+	<td colspan="2" align="center">
+		<input type="image" src="##_IMAGES_##/settei.gif" value="設定" name="BTN_EDIT_PROFILE">
+		<a href="./blog_sidecontent.cgi?BTN_DISP_PROFILE=1&sidecontent=6:6##_FROM_TOP_####_FROM_USER_##"><img src="##_IMAGES_##/reset.gif" border="0"></a>
+	</td>
+</tr>
+
+</form>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="##_PREVCGI_##"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) ASJ Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

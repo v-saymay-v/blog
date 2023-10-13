@@ -1,0 +1,36 @@
+##_DOCTYPE_##
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>DBBﾌﾞﾛｸﾞ</title>
+</head>
+
+<body bgcolor=#103042 text=#FFFFFF link=#67ffff vlink=#a3ffff alink=#ff0000>
+<a name=top></a>
+<img src=##_IMAGE_PATH_##titleimg_blog.gif alt=DBB vspace=5>
+
+<!--Main Menu-->
+<a name=window></a>
+<table width="100%" bgcolor="#f26303">
+<tr>
+	<td align="center"><font size="-1">記事を編集</font></td>
+</tr>
+</table>
+<div><font size=-1>
+##_LIST_##
+</font></div>
+<hr color=#aaaaaa>
+<div align=right><font size=-1>[##_PREV_##]　[##_NEXT_##]</font></div>
+<hr color=#aaaaaa>
+<br />
+<div align=right><font size=-1><a href=#top>▲PAGE TOP</a></font></div>
+<hr />
+<div><font size=2><a href="##_TOP_URL_##?owner=##_OWNER_##&dbb_access_key=##_KEY_##"><img src="##_IMAGE_PATH_##go-home.gif">Blogへ戻る</a></font><br />
+<font size=2>##_NUMBERKEY0_##<a href="##_HOME_URL_##?owner=##_OWNER_##&dbb_access_key=##_KEY_##" ##_ACCESSKEY_##=0>DBB ﾎｰﾑへ戻る</a><br />
+##_NUMBERKEYS_##<a href="##_INQUIRY_URL_##?owner=##_OWNER_##&dbb_access_key=##_KEY_##" ##_ACCESSKEY_##=#>お問い合わせ</a></font></div>
+<hr color=#CCCCCC noshade size=5>
+<div><font size=-1>Copyright(C)2006-2009<br />Sports Ratings Inc. All Rights Reserved.</div>
+<hr color=#CCCCCC noshade size=5>
+
+</body>
+</html>

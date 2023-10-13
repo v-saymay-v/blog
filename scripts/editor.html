@@ -1,0 +1,453 @@
+<html>
+<head>
+<title> Browser Based HTML Editor </title>
+
+<script language="JavaScript">
+<!--
+	var viewMode = 1; // WYSIWYG
+	var URLParams = new Object() ;
+	var textArea = null;
+	var command = "";
+	var color_range;
+	var editHeight;
+	var tbHeight;
+
+	function Init()
+	{
+		var aParams = document.location.search.substr(1).split('&') ;
+		for ( var i = 0 ; i < aParams.length ; i++ ) {
+			var aParam = aParams[i].split('=') ;
+			var sParamName  = aParam[0] ;
+			var sParamValue = aParam[1] ;
+			URLParams[ sParamName ] = sParamValue ;
+		}
+		edit.document.designMode = 'On';
+
+		editHeight = edit.offsetHeight;
+		tbHeight = tblCtrls.offsetHeight;
+
+		textArea = parent.document.getElementById(URLParams['InstanceName']);
+		if (textArea) {
+			edit.innerHTML = textArea.value;
+			textArea.form.onsubmit = function() {
+				for (i = 0; i < parent.document.all.length; i++) {
+					var obj = parent.document.all(i);
+					if (obj.onchange)
+						obj.onchange();
+				}
+			}
+			textArea.onchange = function() {
+				textArea.value = edit.innerHTML;
+			//	textArea.value = edit.document.body.innerHTML;
+			}
+		}
+		var html = "<iframe width=\"125\" height=\"85\" id=\"colorpalette\" src=\"" + URLParams['ScriptBase'] + "/colors.html\" style=\"visibility:hidden; position: absolute;\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\"></iframe>";
+		if ( edit.insertAdjacentHTML ) {
+			// IE
+			edit.insertAdjacentHTML( 'beforeBegin', html ) ;
+		} else {
+			// Gecko
+			var oRange = document.createRange() ;
+			oRange.setStartBefore( view ) ;
+			var oFragment = oRange.createContextualFragment( html );
+			edit.parentNode.insertBefore( oFragment, view ) ;
+		}
+		edit.attachEvent('onkeypress', editorEvents);
+		edit.attachEvent('onmousedown', dismisscolorpalette);
+		document.attachEvent('onmousedown', dismisscolorpalette);
+	}
+
+	//Run Editor Events
+	function editorEvents(evt)
+	{
+		var keyCode = evt.keyCode ? evt.keyCode : evt.charCode;
+		var keyCodeChar = String.fromCharCode(keyCode).toLowerCase();
+		//run if enter key is pressed
+		if (evt.type=='keypress' && keyCode==13){
+			var editor = document.getElementById('edit');
+			var selectedRange = editor.document.selection.createRange();
+//			var parentElement = selectedRange.parentElement();
+//			var tagName = parentElement.tagName;
+//			while((/^(a|abbr|acronym|b|bdo|big|cite|code|dfn|em|font|i|kbd|label|q|s|samp|select|small|span|strike|strong|sub|sup|textarea|tt|u|var)$/i.test(tagName)) && (tagName!='HTML')){
+//				parentElement = parentElement.parentElement;
+//				tagName = parentElement.tagName;
+//			}
+			//Insert <div> instead of <p>
+//			if (parentElement.tagName == 'P'||parentElement.tagName=='BODY'||parentElement.tagName=='HTML'||parentElement.tagName=='TD'||parentElement.tagName=='THEAD'||parentElement.tagName=='TFOOT'||parentElement.tagName=='DIV'){
+//				selectedRange.pasteHTML('<div>');
+				selectedRange.pasteHTML('<br />');
+				selectedRange.select();
+				dismisscolorpalette();
+				return false;
+//			}
+		}
+		dismisscolorpalette();
+		return true;
+	}
+
+	function selOn(ctrl)
+	{
+		ctrl.style.borderColor = '#000000';
+		ctrl.style.backgroundColor = '#B5BED6';
+		ctrl.style.cursor = 'hand';
+	}
+
+	function selOff(ctrl)
+	{
+		ctrl.style.borderColor = '#C0C0C0';  
+		ctrl.style.backgroundColor = '#C0C0C0';
+	}
+
+	function selDown(ctrl)
+	{
+		ctrl.style.backgroundColor = '#8492B5';
+	}
+
+	function selUp(ctrl)
+	{
+		ctrl.style.backgroundColor = '#B5BED6';
+	}
+
+	function doBold()
+	{
+	  	edit.focus();
+		edit.document.execCommand('bold', false, null);
+	}
+
+	function doItalic()
+	{
+	  	edit.focus();
+		edit.document.execCommand('italic', false, null);
+	}
+
+	function doUnderline()
+	{
+	  	edit.focus();
+		edit.document.execCommand('underline', false, null);
+	}
+
+	function doLeft()
+	{
+	  	edit.focus();
+		edit.document.execCommand('justifyleft', false, null);
+	}
+
+	function doCenter()
+	{
+	  	edit.focus();
+		edit.document.execCommand('justifycenter', false, null);
+	}
+
+	function doRight()
+	{
+	  	edit.focus();
+		edit.document.execCommand('justifyright', false, null);
+	}
+
+	function doOrdList()
+	{
+	  	edit.focus();
+		edit.document.execCommand('insertorderedlist', false, null);
+	}
+
+	function doBulList()
+	{
+	  	edit.focus();
+		edit.document.execCommand('insertunorderedlist', false, null);
+	}
+
+	function dismisscolorpalette()
+	{
+		document.getElementById("colorpalette").style.visibility="hidden";
+	}
+
+	function initialiseCommand(selection)
+	{
+		var editor = document.getElementById('edit')
+		//retrieve selected range
+		var selectedRange = editor.document.selection;
+		if (selectedRange!=null){
+			selectedRange = selectedRange.createRange();
+			selectedRange = color_range;
+			selectedRange.select();
+		}
+		editor.document.execCommand(command, false, selection);
+		editor.focus();
+		document.getElementById("colorpalette").style.visibility="hidden";
+	}
+
+	function doForeCol()
+	{
+		this.command = 'forecolor';
+		document.getElementById("colorpalette").style.left = td_forecolor.offsetLeft;
+		document.getElementById("colorpalette").style.top = td_forecolor.offsetTop + td_forecolor.offsetHeight;
+		document.getElementById("colorpalette").style.visibility = "visible";
+		var view = document.getElementById('edit');
+		var selectedRange = view.document.selection;
+		if (selectedRange != null){
+			color_range = selectedRange.createRange();
+		}
+	}
+
+	function doBackCol()
+	{
+		this.command = 'backcolor';
+		document.getElementById("colorpalette").style.left = td_backcolor.offsetLeft;
+		document.getElementById("colorpalette").style.top = td_backcolor.offsetTop + td_backcolor.offsetHeight;
+		document.getElementById("colorpalette").style.visibility = "visible";
+		var view = document.getElementById('edit');
+		var selectedRange = view.document.selection;
+		if (selectedRange != null){
+			color_range = selectedRange.createRange();
+		}
+	}
+
+	function doLink()
+	{
+		edit.document.execCommand('createlink');
+	}
+
+	function doImage()
+	{
+		var imgSrc = prompt('‰æ‘œ‚ÌURL‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢', '');
+		if(imgSrc != null) {
+		  	edit.focus();
+			edit.document.execCommand('insertimage', false, imgSrc);
+		}
+	}
+
+	function doRule()
+	{
+	  	edit.focus();
+		edit.document.execCommand('inserthorizontalrule', false, null);
+	}
+
+	function doFont(fName)
+	{
+		if(fName != '')
+			edit.document.execCommand('fontname', false, fName);
+	}
+  
+	function doSize(fSize)
+	{
+		if(fSize != '')
+			edit.document.execCommand('fontsize', false, fSize);
+	}
+
+	function doHead(hType)
+	{
+		if(hType != '') {
+			edit.document.execCommand('formatblock', false, hType);  
+			doFont(selFont.options[selFont.selectedIndex].value);
+		}
+	}
+
+	function doCut()
+	{
+	  	edit.focus();
+		edit.document.execCommand('cut', false, null);
+	}
+
+	function doCopy()
+	{
+	  	edit.focus();
+		edit.document.execCommand('copy', false, null);
+	}
+
+	function doPaste()
+	{
+	  	edit.focus();
+		edit.document.execCommand('paste', false, null);
+	}
+
+	function doUndo()
+	{
+	  	edit.focus();
+		edit.document.execCommand('undo', false, null);
+	}
+
+	function doRedo()
+	{
+	  	edit.focus();
+		edit.document.execCommand('redo', false, null);
+	}
+
+	function doIndent()
+	{
+	  	edit.focus();
+		edit.document.execCommand('indent', false, null);
+	}
+
+	function doOutdent()
+	{
+	  	edit.focus();
+		edit.document.execCommand('outdent', false, null);
+	}
+
+	function doTable()
+	{
+		rowstext = prompt("s”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢", "");
+		colstext = prompt("Œ…”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢", "");
+		rows = parseInt(rowstext);
+		cols = parseInt(colstext);
+		if ((rows > 0) && (cols > 0)) {
+			table = edit.document.createElement("table");
+			table.setAttribute("border", "1");
+			table.setAttribute("cellpadding", "2");
+			table.setAttribute("cellspacing", "2");
+			tbody = edit.document.createElement("tbody");
+			for (var i = 0; i < rows; i++) {
+				tr = edit.document.createElement("tr");
+				for (var j = 0; j < cols; j++) {
+					td = edit.document.createElement("td");
+					br = edit.document.createElement("br");
+					td.appendChild(br);
+					tr.appendChild(td);
+				}
+				tbody.appendChild(tr);
+			}
+			table.appendChild(tbody);      
+		  	edit.focus();
+			var range = edit.document.selection.createRange();
+			range.pasteHTML(table.outerHTML);
+		}
+	}
+
+	function doToggleView()
+	{  
+		if(viewMode == 1) {
+//			iHTML = edit.document.body.innerHTML;
+//			edit.document.body.innerText = iHTML;
+			iHTML = edit.innerHTML;
+			edit.innerText = iHTML;
+			edit.style.height = (editHeight + tbHeight) + "px";
+			// Hide all controls
+			tblCtrls.style.display = 'none';
+			selFont.style.visibility = "hidden";
+			selSize.style.visibility = "hidden";
+			selHeading.style.visibility = "hidden";
+			edit.focus();
+			// Code
+			viewMode = 2;
+		} else {
+//			iText = edit.document.body.innerText;
+//			edit.document.body.innerHTML = iText;
+			iText = edit.innerText;
+			edit.innerHTML = iText;
+			edit.style.height = editHeight + "px";
+			// Show all controls
+			tblCtrls.style.display = 'inline';
+			selFont.style.visibility = "visible";
+			selSize.style.visibility = "visible";
+			selHeading.style.visibility = "visible";
+			edit.focus();
+			// WYSIWYG
+			viewMode = 1;
+		}
+	}
+//-->
+</script>
+
+<style>
+	.butClass
+	{    
+		height: 22;
+		width: 23;
+		border: solid 1px #C0C0C0;
+		background-color: #C0C0C0;
+/*
+		border: 1px solid;
+		border-color: #D6D3CE;
+*/
+	}
+	.tdClass
+	{
+		padding-left: 3px;
+		padding-top: 3px;
+	}
+</style>
+</head>
+
+<body onLoad="Init()">
+<!--
+	<table id="tblCtrls" width="100%" height="15%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D6D3CE">	
+-->
+	<table id="tblCtrls" width="100%" height="15%" border="0" cellspacing="0" cellpadding="0" bgcolor="#C0C0C0">
+	<tr>
+		<td id="td_bold" class="tdClass"><img alt="‘¾š" class="butClass" src="bold.gif" id="cmd_bold" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doBold()"></td>
+		<td id="td_italic" class="tdClass"><img alt="Î‘Ì" class="butClass" src="italic.gif" id="cmd_italic" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doItalic()"></td>
+		<td id="td_underline" class="tdClass"><img alt="‰ºü" class="butClass" src="underline.gif" id="cmd_underline" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doUnderline()"></td>
+		<td id="td_left" class="tdClass"><img alt="¶" class="butClass" src="left.gif" id="cmd_left" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doLeft()"></td>
+		<td id="td_center" class="tdClass"><img alt="’†‰›" class="butClass" src="center.gif" id="cmd_center" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doCenter()"></td>
+		<td id="td_right" class="tdClass"><img alt="‰E" class="butClass" src="right.gif" id="cmd_right" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doRight()"></td>
+		<td id="td_indent" class="tdClass"><img alt="ƒCƒ“ƒfƒ“ƒg" class="butClass" src="indent.gif" id="cmd_indent" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doIndent()"></td>
+		<td id="td_outdent" class="tdClass"><img alt="ƒCƒ“ƒfƒ“ƒg‰ğœ" class="butClass" src="outdent.gif" id="cmd_outdent" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doOutdent()"></td>
+		<td id="td_ordlist" class="tdClass"><img alt="’i—”Ô†" class="butClass" src="ordlist.gif" id="cmd_ordlist" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doOrdList()"></td>
+		<td id="td_bullist" class="tdClass"><img alt="‰Óğ‘‚«" class="butClass" src="bullist.gif" id="cmd_bullist" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doBulList()"></td>
+		<td id="td_forecolor" class="tdClass"><img alt="•¶š‚ÌF" class="butClass" src="forecol.gif" id="cmd_forecolor" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doForeCol()"></td>
+		<td id="td_backcolor" class="tdClass"><img alt="”wŒi‚ÌF" class="butClass" src="bgcol.gif" id="cmd_backcolor" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doBackCol()"></td>
+		<td id="td_link" class="tdClass"><img alt="ƒnƒCƒp[ƒŠƒ“ƒN‘}“üHyperlink" class="butClass" src="link.gif" id="cmd_link" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doLink()"></td>
+		<td id="td_image" class="tdClass"><img alt="‰æ‘œ‚Ì‘}“ü" class="butClass" src="image.gif" id="cmd_image" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doImage()"></td>
+		<td id="td_createtable" class="tdClass"><img alt="•\‚Ì‘}“ü" class="butClass" src="table.gif" id="cmd_createtable" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doTable()"></td>
+		<td id="td_rule" class="tdClass"><img alt="ƒ‹[ƒ‰[‘}“ü" class="butClass" src="rule.gif" id="cmd_rule" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doRule()"></td>
+		<td id="td_undo" class="tdClass"><img alt="‚â‚è’¼‚µ" class="butClass" src="undo.gif" id="cmd_undo" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doUndo()"></td>
+		<td id="td_redo" class="tdClass"><img alt="æ‚èÁ‚µ" class="butClass" src="redo.gif" id="cmd_redo" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doRedo()"></td>
+	</tr>
+	</table>
+	<div id="edit" contenteditable align="left" style="height:70%; width:100%; background-color:white; font-face:Arial; padding:3; border:inset; overflow=auto;"></div>
+<!--
+	<iframe id="iview" style="width: 100%; height:69%; display: none;" marginwidth="0" marginheight="0"></iframe>
+-->
+	<table id="tblEtc" width="100%" height="15%" border="0" cellspacing="0" cellpadding="0" bgcolor="#C0C0C0">	
+	<tr>
+		<td class="tdClass" colspan="1" width="73%" nowrap>
+			<select name="selFont" onChange="doFont(this.options[this.selectedIndex].value)">
+				<option value="">-- ƒtƒHƒ“ƒg --</option>
+				<option value="‚l‚r –¾’©">‚l‚r –¾’©</option>
+				<option value="‚l‚r ‚o–¾’©">‚l‚r ‚o–¾’©</option>
+				<option value="‚l‚r ƒSƒVƒbƒN">‚l‚r ƒSƒVƒbƒN</option>
+				<option value="‚l‚r ‚oƒSƒVƒbƒN">‚l‚r ‚oƒSƒVƒbƒN</option>
+				<option value="Arial">Arial</option>
+				<option value="Courier">Courier</option>
+				<option value="Sans Serif">Sans Serif</option>
+				<option value="Tahoma">Tahoma</option>
+				<option value="Verdana">Verdana</option>
+				<option value="Wingdings">Wingdings</option>
+			</select>
+			<select name="selSize" onChange="doSize(this.options[this.selectedIndex].value)">
+				<option value="">-- ƒTƒCƒY --</option>
+				<option value="1">‚·‚²‚­¬‚³‚¢</option>
+				<option value="2">¬‚³‚¢</option>
+				<option value="3">•’Ê</option>
+				<option value="4">­‚µ‘å‚«‚¢</option>
+				<option value="5">‘å‚«‚¢</option>
+				<option value="6">‚·‚²‚­‘å‚«‚¢</option>
+				<option value="7">Å‚à‘å‚«‚¢</option>
+			</select>
+			<select name="selHeading" onChange="doHead(this.options[this.selectedIndex].value)">
+				<option value="">-- ƒwƒbƒ_[ --</option>
+				<option value="<H1>">H1</option>
+				<option value="<H2>">H2</option>
+				<option value="<H3>">H3</option>
+				<option value="<H4>">H4</option>
+				<option value="<H5>">H5</option>
+				<option value="<H6>">H6</option>
+			</select>
+		</td>
+		<td class="tdClass" colspan="1" width="25%">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td align="right"><img alt="Ø‚èæ‚è" class="butClass" src="cut.gif" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doCut()"></td>
+				<td align="right"><img alt="ƒRƒs[" class="butClass" src="copy.gif" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doCopy()"></td>
+				<td align="right"><img alt="“\‚è•t‚¯" class="butClass" src="paste.gif" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doPaste()"></td>
+				<td align="right"><img alt="•\¦ƒ‚[ƒh" class="butClass" src="mode.gif" onMouseOver="selOn(this)" onMouseOut="selOff(this)" onMouseDown="selDown(this)" onMouseUp="selUp(this)" onClick="doToggleView()"></td>
+			</tr>
+			</table>
+		</td>
+		<td width="2%"></td>
+	</tr>
+	</table>
+</body>
+</html>
+
+

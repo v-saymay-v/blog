@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>##_BLOGTITLE_##</title>
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="##_PATHRSS_##" />
+<script language="javascript">
+<!--
+function clip(){
+	clipboardData.setData('text',"##_JAVASCRIPT_ARG_TRACKBACKURL_##");
+}
+function tb(){
+	d = document;
+	w = window;
+	t = '';
+	if(d.getSelection) {
+		t = d.getSelection();
+	} else if (d.selection) {
+		t = d.selection.createRange().text;
+	} else if(w.getSelection) {
+		t = w.getSelection();
+	}
+	w.open('##_PATH_##&BTN_DISP_NEWENTRY=1&BTN_EASY_TRACKBACK=1&bid=##_BID_##&eid=##_EID_##&from_user=1', '_blank', '');
+}
+-->
+</script>
+</head>
+
+<body>
+<!--header_area-->
+<a name="top"></a>
+
+<table width="100%" bgcolor="#103042" cellspacing="5">
+<tr>
+	<td align="right"><img src="##_IMAGES_##/dbb_logo02.gif" alt="DreamBaseballブログ"></td>
+</tr>
+<tr>
+	<td align=right>
+<!-- ##_FAV_START_##
+		<a href="##_FAVORITE_##"><img src="##_IMAGES_##/##_FAVGIF_##" border="0" alt=""></a>
+##_FAV_END_## -->
+		<a href="http://help.d-bb.com/rulebook2011/blog_kiyaku.html"><IMG border="0" src="##_IMAGES_##/btn_blog_kiyaku.gif" alt="ブログ利用規約"></a>
+		<IMG height=7 src="##_IMAGES_##/transparent.gif">
+	</td>
+</tr>
+</table>
+
+<!--title_area-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr>
+	<td class="site_title">
+##_TITLE_##
+	</td>
+</tr>
+</table>
+
+<!-- ##_ERR_START_##
+<table class="tab-design" align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<table border=0 cellpadding="10" align="center" width="560">
+		<tr>
+			<td>
+				<fieldset align="center" style="background:#ffffff;">
+					<table border=0 cellpadding="10" align="center">
+					<tr>
+						<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+					</tr>
+					<tr>
+						<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+					</tr>
+					</table>
+				</fieldset>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+##_ERR_END_## -->
+<!--HEAD OF MAINAREA-->
+<table class="tab-design" align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr>
+	<td><img src="##_IMAGES_##/transparent.gif" height="7"></td>
+</tr>
+<tr valign="top">
+	<td>
+		<a name="entry"></a>
+		<a name="explore"></a>
+	</td>
+</tr>
+<tr>
+	<td class="entry_explore">
+		<!--article_area-->
+##_ARTICLE_##
+		<table class="article" width="100%" cellpadding="0" cellspacing="0">
+##_TRACKBACKLIST_##
+		</table>
+##_TBSTP_START_##
+		<table class="article" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<div class="trackback-list-title">この記事とリンクする</div>
+				<div class="trackback">
+				<table class="trackback-comment-area" border="0" width="90%" align="center">
+				<tr>
+					<td>
+						この記事へ記事引用通知を送信し、リンクする記事を新たに作成します。
+					</td>
+				</tr>
+				<tr>
+					<td align="right" class="trackback-body">
+						<a href="javascript:void(0)" onclick="tb()">記事作成</a>
+					</td>
+				</tr>
+				<tr><td align="center" height="5"></td></tr>
+				</table>
+				</div>
+			</td>
+		</tr>
+		</table>
+##_TBSTP_END_##
+		<table class="article" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+##_COMMENTLIST_##
+			</td>
+		</tr>
+		</table>
+		<table class="comment-form-area" width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+##_COMMENTFORM_##
+			</td>
+		</tr>
+		</table>
+##_IMAGEFOOTER_##
+		<table border="0" width="100%">
+		<tr>
+			<td align="center">
+				<a href="#top"><img src="##_IMAGES_##/back_top.gif" border="0" alt="ページのTOPへ"></a>
+				<a href="##_BLOGTOP_##"><img src="##_IMAGES_##/back_blogtop.gif" border="0" alt="ブログのTOPへ"></a>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+<!--footer-->
+##_CSSEDIT_##
+<table width="100%" bgcolor="#103042" cellspacing="5">
+<tr>
+	<td align="center">
+		<img src="##_IMAGES_##/coop.gif" alt="協力"><br>
+		<img src="##_IMAGES_##/copyright.gif" alt="Copyright(C)2006-2010 ASJ Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

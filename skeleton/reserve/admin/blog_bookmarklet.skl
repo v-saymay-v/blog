@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>ブックマークレット</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+</head>
+
+<body>
+
+<div id="help">
+	<p><a href="http://www.asj.ne.jp/manual/e-reserve_blog/index.html" target="_blank"><img src="##_IMAGES_##/go_help.gif"></a></p>
+</div>
+
+<div id="header">
+	<p><img src="##_IMAGES_##/logo.gif"></p>
+</div>
+
+<center>
+<br>
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<tr class="a0" bgcolor="#64C2BF">
+	<td align="center" colspan="2">ブックマークレット</td>
+</tr>
+</table>
+
+<table border="0" width="600" cellpadding="5" cellspacing="1">
+<tr class="a1">
+	<td nowrap valign="top" bgcolor="#B3E1E0" rowspan="3">インストール方法</td>
+	<td bgcolor="#B3E1E0">下記「引用投稿」のリンクをマウスの右クリックで「お気に入り（ブックマーク）」に追加するか、ブックマークバーにドラッグしてください。</td>
+</tr>
+<tr>
+	<td align="center" style="padding:20 0 20 0;">
+	<table width="300" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffe5;">
+	<tr>
+		<td align="center">
+			<span class="a0"><font color="red">右クリックしてください→</font>　</span>
+			<a onClick="alert('右クリックで「お気に入りに追加」するか、ブックマークバーにドラッグしてください。'); return false;" href="javascript:d=document;w=window;t='';if(d.getSelection){t=d.getSelection();}else if(d.selection){t=d.selection.createRange().text;}else if(w.getSelection){t=w.getSelection();}void(w.open('##_PATH_##&BTN_DISP_NEWENTRY=1&BTN_EASY_ENTRY=1'+'&b='+##_ENCODE1_##+'&t='+##_ENCODE2_##+'&l='+##_ENCODE3_##, '_blank', ''));"><b>引用投稿</b></a>
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td align="center" class="a1">
+		右クリックするとメニューが表示されますので
+	<br>[ お気に入りに追加 ]をクリックしてください。
+	<br><img src="##_IMAGES_##/bookmarklet.gif" border="1" alt="インストール"></td>
+</tr>
+<tr class="a1" bgcolor="#A3E0A3">
+	<td valign="top" rowspan="2">引用投稿の方法</td>
+	<td>
+	引用したいサイトのテキスト部分をマウスドラッグで選択して、登録したブックマークをクリックしてください。<br>
+	他の記事を引用して、ブログの記事を書くことができます。<br>
+	</td>
+</tr>
+<tr class="a1">
+	<td colspan="2" align="center"><img src="##_IMAGES_##/bookmarklet2.gif" border="1" alt="使い方"></td>
+</tr>
+<tr class="a0" bgcolor="#64C2BF">
+	<td align="center" colspan="2">　　</td>
+</tr>
+</table>
+
+<!--戻るボタン-->
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td height="24"></td>
+</tr>
+<tr>
+	<td align="center">
+		<a href="javascript:history.back()"><img src="##_IMAGES_##/back.gif" border="0" alt="戻る"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="##_NEXTCGI_##"><img src="##_IMAGES_##/##_GIF_##" border="0" alt="##_TOP_##のトップへ"></a>
+	</td>
+	<td width="18"><img src="##_IMAGES_##/transparent.gif" border="0"></td>
+	<td align="center">
+		<a href="#top"><img src="##_IMAGES_##/top.gif" border="0" alt="このページのトップへ"></a>
+	</td>
+</tr>
+</table>
+
+</center>
+<br>
+
+<!--コピーライトー-->
+<div id="copyright">
+	<p><img src="##_IMAGES_##/copyright.gif"></p>
+</div>
+
+</body>
+</html>

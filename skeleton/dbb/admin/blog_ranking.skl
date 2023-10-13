@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>サイドバーの設定</title>
+<link rel="stylesheet" href="##_CSS_##/asjblog.css" type="text/css">
+<script language="JavaScript">
+<!--
+function SetShow(p1, p2)
+{
+	document.getElementById("page1").style.display = p1;
+	document.getElementById("page2").style.display = p2;
+}
+//-->
+</script>
+</head>
+
+<body onload="SetShow('##_PAGE1_##', '##_PAGE2_##')">
+
+<center>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="a0">
+<tr>
+	<td align="right" style="padding:0 10 10 0;"><a href="http://help.d-bb.com/blog/" target="_blank"><img src="##_IMAGES_##/go_help.gif" border="0"></a></td>
+</tr>
+</table>
+
+<!--ヘッダー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_00.gif');">
+		<img src="##_IMAGES_##/logo.gif" border="0" alt="DreamBaseballブログ　ランキング">
+	</td>
+</tr>
+</table>
+
+<table border="0" width="800" cellpadding="5" cellspacing="1">
+<tr class="a0" bgcolor="#a2c2ef">
+	<td align="center">コメント・引用記事ランキング</td>
+</tr>
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<fieldset>
+			<table border=0 cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+</table>
+
+<div id="page1" style="display: none">
+	<!--サブタイトル-->
+	<table width="800" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_01.gif" border="0" usemap="#m_01"></td>
+		<map name="m_01">
+			<area shape="rect" coords="0,1,105,28" href="javascript:SetShow('','none')" alt="コメント数ランキング">
+			<area shape="rect" coords="123,1,297,28" href="javascript:SetShow('none','')" alt="引用記事数ランキング">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#D2D5FF;"></td>
+	</tr>
+	</table>
+	<br>
+	<table border="0" width="800" cellpadding="5" cellspacing="1">
+	<tr class="a1" bgcolor="#a5c3ef">
+		<td colspan="4" align="center">
+			<table border="0" cellpadding="0" cellspacing="2" width="100%">
+			<tr class="a1">
+				<td align="left">##_PREV_##</td>
+				<td align="center"><b>コメント数ランキング  ##_PAGE_## </b></td>
+				<td align="right">##_NEXT_##</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="a2" bgcolor="#c6e3ff">
+		<td align="center" nowrap width="150">ブログ名</td>
+		<td align="center" nowrap>オーナー</td>
+		<td align="center" nowrap>更新日時</td>
+		<td align="center" nowrap>コメント数</td>
+	</tr>
+##_COMMENTLIST_##
+	<tr class="a2" bgcolor="#a5c3ef">
+		<td align="center" colspan="4">
+			<table border="0" cellpadding="0" cellspacing="2" width="100%">
+			<tr class="a1">
+				<td align="left">##_PREV_##</td>
+				<td align="center"><br></td>
+				<td align="right">##_NEXT_##</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</div>
+
+<div id="page2" style="display: none">
+	<table width="800" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td height="20"></td>
+	</tr>
+	<tr>
+		<td><img src="##_IMAGES_##/s_tab_02.gif" border="0" usemap="#m_02"></td>
+		<map name="m_02">
+			<area shape="rect" coords="0,1,105,28" href="javascript:SetShow('','none')" alt="コメント数ランキング">
+			<area shape="rect" coords="123,1,297,28" href="javascript:SetShow('none','')" alt="引用記事数ランキング">
+		</map>
+	</tr>
+	<tr>
+		<td height="10" style="background-color:#D2D5FF;"></td>
+	</tr>
+	</table>
+	<br>
+	<table border="0" width="800" cellpadding="5" cellspacing="1">
+	<tr class="a1" bgcolor="#a5c3ef">
+		<td colspan="4" align="center">
+			<table border="0" cellpadding="0" cellspacing="2" width="100%">
+			<tr class="a1">
+				<td align="left">##_TBPREV_##</td>
+				<td align="center"><b>引用記事数ランキング  ##_PAGE_## </b></td>
+				<td align="right">##_TBNEXT_##</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="a2" bgcolor="#c6e3ff">
+		<td align="center" nowrap width="150">ブログ名</td>
+		<td align="center" nowrap>オーナー</td>
+		<td align="center" nowrap>更新日時</td>
+		<td align="center" nowrap>引用記事数</td>
+	</tr>
+##_TRACKBACKLIST_##
+	<tr class="a2" bgcolor="#a5c3ef">
+		<td align="center" colspan="4">
+			<table border="0" cellpadding="0" cellspacing="2" width="100%">
+			<tr class="a1">
+				<td align="left">##_TBPREV_##</td>
+				<td align="center"><br></td>
+				<td align="right">##_TBNEXT_##</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</div>
+
+<!--コピーライトー-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="15"></td>
+</tr>
+<tr>
+	<td align="center" style="background-image:url('##_IMAGES_##/bg_01.gif');">
+		<img src="##_IMAGES_##/copyright.gif" border="0" alt="Copyright(C) Sports Ratings Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

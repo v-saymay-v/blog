@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=euc-jp">
+<title>e r r o r</title>
+</head>
+<body>
+
+<form action="./##_ACTION_##" method="POST">
+##_HIDDEN_##
+<br><br><br><br><br><br>
+<table border="6" bordercolor="#ffcc00" width="400" align="center" bgcolor="#ffffcc" cellpadding="4" cellspacing="0">
+<tr>
+	<td align="center">
+		<table border=0 cellpadding="5">
+		<tr>
+			<td align="left" nowrap><font color="#ff0000">ERROR<br></font>##_ERROR_##</td>
+		</tr>
+		<tr>
+			<td align="left">##_QUERY_##</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><input type="submit" value="戻る" name="##_BUTTON_NAME_##"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

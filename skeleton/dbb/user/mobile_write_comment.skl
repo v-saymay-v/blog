@@ -1,0 +1,41 @@
+##_DOCTYPE_##
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>DBB捨酌杓失酌</title>
+</head>
+
+<body bgcolor="#103042" text="#FFFFFF" link="#67ffff" vlink="#a3ffff" alink="#ff0000">
+<font size=-1>
+<img src="##_IMAGE_PATH_##titleimg_blog.gif" alt="DBB" vspace="5">
+<table width="100%" bgcolor="#f26303">
+<tr>
+	<td align="center">
+		<font size="-1">
+			<font color=yellow>｢｣##_TITLE_##</font>
+			<br />##_DATETIME_##
+		</font>
+	</td>
+</tr>
+</table>
+<form action="##_USER_URL_##" method="POST">
+<input type="hidden" name="pg" value="wc">
+##_HIDDEN_##
+<div>
+室者爵柴<br />
+<hr size="1">
+<div><font size="-1">ﾁｮ､ﾇ､ｭ､�ﾊｸｻ惞ﾏ2000ﾊｸｻ嵓ﾊﾆ筅ﾈ､ﾊ､熙ﾞ､ｹ｡｣</font></div>
+<textarea name="comment" rows="8" cols="30">##_COMMENT_##</textarea>
+<br /><br />
+<hr size="1">
+</font></div>
+<p align=center><input type=submit name=WRITE_COMMENT value=ﾁｮ> <input type=submit name=cancel value=執汐爵疾勺></p>
+</form>
+
+<hr color="#CCCCCC" noshade size="5">
+<div><font size="-1">Copyright(C)2006-2010<br />ASJ Inc. All Rights Reserved.</font></div>
+<hr color="#CCCCCC" noshade size="5">
+
+</font>
+</body>
+</html>

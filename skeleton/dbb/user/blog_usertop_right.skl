@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>##_BLOGTITLE_##</title>
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="##_PATHRSS_##" />
+</head>
+<body>
+
+<a name="top"></a>
+<!--header_area-->
+<table width="100%" bgcolor="#103042" cellspacing="5">
+<tr>
+	<td align="right"><img src="##_IMAGES_##/dbb_logo02.gif" alt="DreamBaseballブログ"></td>
+</tr>
+<tr>
+	<td align=right>
+<!-- ##_FAV_START_##
+		<a href="##_FAVORITE_##"><img src="##_IMAGES_##/##_FAVGIF_##" border="0" alt=""></a>
+##_FAV_END_## -->
+		<a href="http://help.d-bb.com/rulebook2011/blog_kiyaku.html"><IMG border="0" src="##_IMAGES_##/btn_blog_kiyaku.gif" alt="ブログのマナー"></a>
+		<IMG height=7 src="##_IMAGES_##/transparent.gif">
+	</td>
+</tr>
+</table>
+
+<!-- ##_ERR_START_##
+<table class="tab-design" align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<table border=0 cellpadding="10" align="center" width="560">
+		<tr>
+			<td>
+				<fieldset align="center" style="background:#ffffff;">
+					<table border=0 cellpadding="10" align="center">
+					<tr>
+						<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+					</tr>
+					<tr>
+						<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+					</tr>
+					</table>
+				</fieldset>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+##_ERR_END_## -->
+<table width="760" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+	<td>
+		<!--title_area-->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td class="site_title">
+##_TITLE_##
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<!--HEAD OF MAINAREA-->
+	<td align="center">
+		<table width="100%" cellpadding=0 cellspacing=0 class="tab-design">
+		<tr>
+			<td colspan=4><img src="##_IMAGES_##/transparent.gif" height="7"></td>
+		</tr>
+		<tr>
+			<!--article_area-->
+			<td width="5"><img src="##_IMAGES_##/transparent.gif"></td>
+			<td width="" valign="top">
+##_ARTICLE_##
+				<table border="0" width="100%">
+				<tr>
+					<td align="center">
+						<a href="#top"><img src="##_IMAGES_##/back_top.gif" border="0" alt="ページのTOPへ"></a>
+						<a href="##_BLOGTOP_##"><img src="##_IMAGES_##/back_blogtop.gif" border="0" alt="ブログのTOPへ"></a>
+					</td>
+				</tr>
+				</table>
+			</td>
+			<!--sidebar-->
+			<td width="20%" align="center" valign="top">
+				<table width="100%" cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+##_SIDEBAR_##
+					</td>
+				</tr>
+				</table>
+				<br>
+			</td>
+			<td width="15"><img src="##_IMAGES_##/transparent.gif"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+<!--footer-->
+##_CSSEDIT_##
+<table width="100%" bgcolor="#103042" cellspacing="5">
+<tr>
+	<td align="center">
+		<img src="##_IMAGES_##/coop.gif" alt="協力"><br>
+		<img src="##_IMAGES_##/copyright.gif" alt="Copyright(C)2006-2010 ASJ Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

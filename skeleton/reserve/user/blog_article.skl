@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>##_BLOGTITLE_##</title>
+<link rel="stylesheet" href="##_PATHCSS_##" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="##_PATHRSS_##" />
+<script language="javascript">
+<!--
+function clip(){
+	clipboardData.setData('text',"##_JAVASCRIPT_ARG_TRACKBACKURL_##");
+}
+function OnLoad()
+{
+	window.name = 'dbb_blog_main_wnd';
+}
+//-->
+</script>
+</head>
+<body onload="OnLoad()">
+
+<!--header_area-->
+<a name="top"></a>
+
+<!--title_area-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr>
+	<td class="site_title">
+##_TITLE_##
+	</td>
+</tr>
+</table>
+
+<!--HEAD OF MAINAREA-->
+<table class="tab-design" align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<!-- ##_ERR_START_##
+<tr class="a1">
+	<td align="center" colspan="1" style="padding-top:10;">
+		<fieldset>
+			<table border="0" cellpadding="10" width="100%" align="left">
+			<tr>
+				<td align="left" nowrap style="color:red; font-size:12; font-weight: bold;">##_ERROR_##</td>
+			</tr>
+			<tr>
+				<td align="left" style="color:red; font-size:12; font-weight: bold;">##_QUERY_##</td>
+			</tr>
+			</table>
+		</fieldset>
+	</td>
+</tr>
+##_ERR_END_## -->
+<tr>
+	<td><img src="##_IMAGES_##/transparent.gif" height="7"></td>
+</tr>
+<tr valign="top">
+	<td>
+		<a name="entry"></a>
+		<a name="explore"></a>
+	</td>
+</tr>
+<tr>
+	<td>
+	<!--article_area-->
+##_ARTICLE_##
+		<table class="article" width="100%" cellpadding="0" cellspacing="0">
+		<tr class="article">
+			<td>
+##_COMMENTLIST_##
+			</td>
+		</tr>
+		</table>
+		<table class="comment-form-area" width="100%" cellpadding="0" cellspacing="0">
+		<tr class="article">
+			<td>
+##_COMMENTFORM_##
+			</td>
+		</tr>
+		</table>
+		<table class="article" width="100%" cellpadding="0" cellspacing="0">
+##_TRACKBACKURL_##
+##_TRACKBACKLIST_##
+		</table>
+		<table class="article" width="100%" cellpadding="0" cellspacing="0">
+		<tr class="article">
+			<td>
+##_REVIEWLIST_##
+			</td>
+		</tr>
+		</table>
+		<table class="review-form-area" width="100%" cellpadding="0" cellspacing="0">
+		<tr class="article">
+			<td>
+##_REVIEWFORM_##
+			</td>
+		</tr>
+		</table>
+##_IMAGEFOOTER_##
+		<table border="0" width="100%">
+		<tr>
+			<td align="center">
+				<a href="#top"><img src="##_THEME_##/##_BACK_TOP_##" border="0" alt="ページのTOPへ"></a>　
+				<a href="##_BLOGTOP_##"><img src="##_THEME_##/##_BACK_BLOGTOP_##" border="0" alt="ブログのTOPへ"></a>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!--TAIL OF MAINAREA-->
+<!--footer-->
+##_CSSEDIT_##
+<table width="760" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+	<td class="copyright">
+		<img src="##_IMAGES_##/copyright.gif" alt="Copyright(C) ASJ Inc. All Rights Reserved.">
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
